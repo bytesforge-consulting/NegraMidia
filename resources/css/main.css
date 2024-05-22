@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+
+html{
+   font-family: "Madimi One", "Roboto", sans-serif !important;
+}
+
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {    
+   font-family: "Madimi One", "Roboto", sans-serif !important;
+}
+.uk-navbar-nav>li>a, .uk-navbar-toggle, .nav-main-dropdown-list>li>a{
+    color: #333 !important;
+}
+
+.uk-navbar-nav>li>a:hover, .nav-main-dropdown-list>li>a:hover{
+    color: rgba(255, 255, 255, .7) !important;
+}
+.icon-form-input{
+    display: block !important;
+}
+
+.logo-img{
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+.nav-main, .nav-main-dropdown{
+    background-color: #c08978 !important;
+}
+.nav-main > li> a {
+    color: whitesmoke;
+}
