@@ -6,6 +6,7 @@
     --auxiliary-gray: #6C5F5B;
     --auxiliary-darkgray: #4F4A45;
     --auxiliary-black: #070707;
+    --auxiliary-lighterblack: #222;
 }
 
 html{
@@ -26,6 +27,10 @@ html{
      color: var(--primary-color) !important;
  }
  
+.uk-icon.uk-navbar-toggle-icon svg{
+    max-width: none !important;
+}
+
 .nav-main, .nav-main-dropdown{
     background-color: var(--secundary-color) !important;
 }
@@ -67,4 +72,11 @@ html{
 
 .footer{
     padding-bottom: 0 !important;
+}
+
+.ltda{
+    background-color: var(--auxiliary-lighterblack);
+}
+.ltda *{    
+    color: var(--secundary-color) !important;
 }
