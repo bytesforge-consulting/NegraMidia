@@ -16,8 +16,7 @@
 </head>
 
 <body>
-    <div
-        uk-sticky="start: 120; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;  end: ! *; offset: 5">
+    <div uk-sticky="start: 120; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;  end: ! *; offset: 5">
         <nav class="uk-navbar-container uk-visible@s nav-main" uk-inverse="sel-active: .uk-navbar-transparent">
             <div class="uk-container">
                 <div
@@ -67,7 +66,8 @@
             </div>
         </nav>
     </div>
-    <div class="uk-section-secondary uk-background-cover uk-preserve-color uk-inverse-light">
+    
+    <main class="uk-section-secondary uk-background-cover uk-preserve-color uk-inverse-light">
         <div id="inicio" class="uk-section uk-light">
             <div class="uk-container">
                 <div class="uk-text-lead"> Início </div>
@@ -85,6 +85,7 @@
                     cillum.</p>
             </div>
         </div>
+
         <div id="servicos" class="uk-section uk-section-default">
             <div class="uk-container">
                 <div class="uk-text-lead"> Serviços </div>
@@ -102,6 +103,7 @@
                     cillum.</p>
             </div>
         </div>
+
         <div id="sobre" class="uk-section uk-light">
             <div class="uk-container">
                 <div class="uk-text-lead"> Sobre </div>
@@ -118,86 +120,86 @@
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum.</p>
             </div>
-        </div><footer id="contatos" class="uk-section footer">
-            <div class="uk-grid-collapse uk-grid-match uk-text-center" uk-grid>
-                <div class="uk-width-1-3@s">
-                    <div class="uk-tile tile-social">
-                        <div class="uk-panel uk-margin-medium uk-light">
-                            <h3>Conheça nossas redes sociais</h3>
-                        </div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <a href="" class="uk-icon-button uk-margin-small-right social-icons"
-                                uk-icon="instagram"></a>
-                            <a href="" class="uk-icon-button uk-margin-small-right social-icons"
-                                uk-icon="facebook"></a>
-                            <a href="https://wa.link/tiuj5y" class="uk-icon-button social-icons"
-                                uk-icon="whatsapp"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-width-expand@s">
-                    <div class="uk-tile tile-message">
-                        <div class="uk-text-lead uk-text-left uk-light"> Envie uma mensagem </div>
-                        <form id="formContato" action="mailto:hedgarbezerra@gmail.com" class="uk-grid-small"
-                            uk-grid>
-                            <div class="uk-width-1-1@s">
-                                <div class="uk-inline icon-form-input">
-                                    <span class="uk-form-icon" uk-icon="icon: user"></span>
-                                    <input type="text" class="uk-input" name="name" placeholder="nome*"
-                                        aria-label="nome" required title="nome" autocomplete="name">
-                                </div>
-                            </div>
-                            <div class="uk-width-1-1@s">
-                                <div class="uk-inline icon-form-input">
-                                    <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                                    <input type="email" class="uk-input" name="email" placeholder="email*"
-                                        aria-label="email" required title="email" autocomplete="email">
-                                </div>
-                            </div>
-                            <div class="uk-width-1-2@s">
-                                <div class="uk-inline icon-form-input">
-                                    <span class="uk-form-icon" uk-icon="icon: phone"></span>
-                                    <input type="tel" class="uk-input" name="body" placeholder="telefone"
-                                        aria-label="telefone"
-                                        title="telefone" autocomplete="tel"
-                                        pattern="\([0-9]{3}\)[0-9]{4-5}-[0-9]{4}">
-                                </div>
-                            </div>
-                            <div class="uk-width-1-2@s">
-                                <div class="uk-inline icon-form-input">
-                                    <span class="uk-form-icon" uk-icon="icon: forward"></span>
-                                    <input type="text" class="uk-input" name="subject" placeholder="assunto*"
-                                        aria-label="assunto"
-                                        required title="assunto" autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="uk-width-1-1@s">
-                                <div class="uk-inline icon-form-input">
-                                    <span class="uk-form-icon" uk-icon="icon: commenting"></span>
-                                    <textarea class="uk-input uk-form-large" name="body" placeholder="mensagem*"
-                                        required></textarea>
-                                </div>
-                            </div>
-                            <div class="uk-width-1-1@s">
-                                <button type="submit"
-                                    class="uk-button uk-button-secondary uk-width-1-1@s uk-margin-small">Entre em
-                                    contato</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        </div>        
+    </main>
 
-            <div class="ltda">
-                <div class="uk-text-meta uk-text-center">
-                    Copyright&copy; 2024-<span id="footerCurrentYear"></span> Negra Mídia LTDA.
-                </div>
-                <div class="uk-text-meta uk-text-center">
-                    CNPJ 0001-00000/0001
+    <footer id="contatos" class="uk-section footer">
+        <div class="uk-grid-collapse uk-grid-match uk-text-center" uk-grid>
+            <div class="uk-width-1-3@s">
+                <div class="uk-tile tile-social">
+                    <div class="uk-panel uk-margin-medium uk-light">
+                        <h3>Conheça nossas redes sociais</h3>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <a href="" class="uk-icon-button uk-margin-small-right social-icons"
+                            uk-icon="instagram"></a>
+                        <a href="" class="uk-icon-button uk-margin-small-right social-icons"
+                            uk-icon="facebook"></a>
+                        <a href="https://wa.link/tiuj5y" class="uk-icon-button social-icons"
+                            uk-icon="whatsapp"></a>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </div>
+            <div class="uk-width-expand@s">
+                <div class="uk-tile tile-message">
+                    <div class="uk-text-lead uk-text-left uk-light"> Envie uma mensagem </div>
+                    <form id="formContato" action="mailto:hedgarbezerra@gmail.com" class="uk-grid-small"
+                        uk-grid>
+                        <div class="uk-width-1-1@s">
+                            <div class="uk-inline icon-form-input">
+                                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                <input type="text" class="uk-input" name="name" placeholder="nome*"
+                                    aria-label="nome" required title="nome" autocomplete="name">
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1@s">
+                            <div class="uk-inline icon-form-input">
+                                <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                <input type="email" class="uk-input" name="email" placeholder="email*"
+                                    aria-label="email" required title="email" autocomplete="email">
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2@s">
+                            <div class="uk-inline icon-form-input">
+                                <span class="uk-form-icon" uk-icon="icon: phone"></span>
+                                <input type="tel" class="uk-input" name="body" placeholder="telefone"
+                                    aria-label="telefone"
+                                    title="telefone" autocomplete="tel"
+                                    pattern="\([0-9]{3}\)[0-9]{4-5}-[0-9]{4}">
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2@s">
+                            <div class="uk-inline icon-form-input">
+                                <span class="uk-form-icon" uk-icon="icon: forward"></span>
+                                <input type="text" class="uk-input" name="subject" placeholder="assunto*"
+                                    aria-label="assunto"
+                                    required title="assunto" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1@s">
+                            <div class="uk-inline icon-form-input">
+                                <span class="uk-form-icon" uk-icon="icon: commenting"></span>
+                                <textarea class="uk-input uk-form-large" name="body" placeholder="mensagem*"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1@s">
+                            <button type="submit"
+                                class="uk-button uk-button-secondary uk-width-1-1@s uk-margin-small">Entre em
+                                contato</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="ltda">
+            <div class="uk-text-meta uk-text-center">
+                Copyright&copy; 2024-<span id="footerCurrentYear"></span>
+                Negra Mídia LTDA. 
+            </div>
+            <div class="uk-text-meta uk-text-center"> CNPJ 0001-00000/0001 </div>
+        </div>
+    </footer>
 </body>
 
 </html>
