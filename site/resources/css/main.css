@@ -18,13 +18,8 @@ html{
     display: inline-block;
 }
 
-.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {    
-    font-family: "Madimi One", "Roboto", sans-serif !important;
- }
-
  .uk-navbar-nav>li>a, .uk-navbar-toggle, .nav-main-dropdown-list>li>a{
     color: var(--auxiliary-black) !important;
-    font-family: "Madimi One", "Roboto", sans-serif !important;
  }
  
  .uk-navbar-nav>li>a:hover, .nav-main-dropdown-list>li>a:hover{
@@ -68,4 +63,8 @@ html{
 }
 .icon-form-input input::placeholder, .icon-form-input textarea::placeholder {
     color: var(--secundary-color) !important;
+}
+
+.footer{
+    padding-bottom: 0 !important;
 }
