@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div uk-sticky="start: 120; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;  end: ! *; offset: 5">
+    <div uk-sticky="start: 120; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;  end: ! *; offset: 0">
         <nav class="uk-navbar-container uk-visible@s nav-main" uk-inverse="sel-active: .uk-navbar-transparent">
             <div class="uk-container">
                 <div
@@ -66,61 +66,149 @@
             </div>
         </nav>
     </div>
-    
-    <main class="uk-section-secondary uk-background-cover uk-preserve-color uk-inverse-light">
-        <div id="inicio" class="uk-section uk-light">
+
+    <main class="uk-preserve-color uk-inverse-light">
+        <div id="inicio" class="uk-section">
             <div class="uk-container">
-                <div class="uk-text-lead"> Início </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum.</p>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                    laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum.</p>
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-1-3@s">
+                        <h1 class="uk-heading">
+                            <span class=" heading-inicio">Comunicação com propósito</span>
+                            </h1>
+                        </div>
+                    <div class="uk-width-expand@s uk-flex-last">
+                        <img src="resources/images/InicioBG.png" width="1800" height="1200" alt="Image">
+                    </div>
+                </div>
+               
             </div>
         </div>
 
-        <div id="servicos" class="uk-section uk-section-default">
+        <div id="servicos" class="uk-section">
             <div class="uk-container">
-                <div class="uk-text-lead"> Serviços </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum.</p>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                    laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum.</p>
+                <h1 class="uk-text-lead"> Serviços </h1>
+                <!-- 
+                <p>Produção de conteúdos jornalísticos </p>
+                <p>Reportagens</p>
+                <p>Produção de releases</p>
+                <p>Newsletters </p>
+                <p>E-books</p>
+                <p> Mídias sociais </p> -->
+                
             </div>
         </div>
 
-        <div id="sobre" class="uk-section uk-light">
+        <div id="sobre" class="uk-section ">
             <div class="uk-container">
                 <div class="uk-text-lead"> Sobre </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum.</p>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                    laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum.</p>
+                <div class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: pull,ratio: false,finite: true">
+                    <div class="uk-slideshow-items" id="slideTeam" uk-height-viewport="min-height: 10">
+                        <div class="uk-grid-collapse uk-grid-match" uk-grid>
+                            
+                            
+                            <div class="uk-width-1-5@s">
+                                <img src="resources/images/team/fernanda-rosario.jpg" alt="" />
+                            </div>
+
+                            <div class="uk-width-expand@s">
+                                <div class="uk-overlay uk-overlay-primary uk-transition-slide-right uk-light">
+                                    <h2 uk-slideshow-parallax="x: 100,-100">Fernanda Rosário</h2>
+                                    <p class="uk-overflow-auto" uk-slideshow-parallax="x: 200,-200">Jornalista com atuação em projetos pautados
+                                        na temática racial, direitos humanos, combate ao racismo, meio ambiente,
+                                        educação midiática e diversidade. Já teve materiais publicados (entre textos,
+                                        vídeos, podcasts e apresentação de programa) na Alma Preta Jornalismo, Folha de
+                                        São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura. Recebeu o 3° lugar no
+                                        Prêmio 99 de Jornalismo com a matéria "Apps ajudam no deslocamento e dão
+                                        autonomia para pessoas com deficiência", publicada na Folha de São Paulo e
+                                        desenvolvida durante o Laboratório 99+Folha de SP, em que foi trainee em 2020 e
+                                        2021. Ficou em 2° lugar na mesma premiação com o podcast "Dinheiro para Todos:
+                                        Bancarização e Soluções Digitais" em 2021, publicado também na Folha de São
+                                        Paulo. Já teve conto selecionado para a antologia "O vazio não está nem quando é
+                                        silêncio" (Editora Mireveja, 2020) e fez parte da equipe de construção do
+                                        "Manual de Redação: O jornalismo antirracista a partir da experiência da Alma
+                                        Preta", que recupera e homenageia também quase 2 séculos de imprensa negra no
+                                        Brasil. </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uk-grid-match" uk-grid>
+                            <img src="resources/images/excluir/02.jpg" alt="fundo nevado" uk-cover>                            
+                            <div class="uk-width-1-5">
+                                <img src="resources/images/team/hedgar-bezerra.jpg" alt=""
+                                    class="uk-position-absolute uk-transform-center uk-responsive-width uk-border-circle"
+                                    style="left: 15%; top: 30%; width: 100px;"></img>
+                            </div>
+
+                            <div class="uk-width-expand">
+                                <div class="uk-overlay uk-overlay-primary uk-transition-slide-right uk-light">
+                                    <h2 uk-slideshow-parallax="x: 100,-100">Hedgar Bezerra</h2>
+                                    <p class="uk-overflow-auto" uk-slideshow-parallax="x: 200,-200">Jornalista com atuação em projetos pautados
+                                        na temática racial, direitos humanos, combate ao racismo, meio ambiente,
+                                        educação midiática e diversidade. Já teve materiais publicados (entre textos,
+                                        vídeos, podcasts e apresentação de programa) na Alma Preta Jornalismo, Folha de
+                                        São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura. Recebeu o 3° lugar no
+                                        Prêmio 99 de Jornalismo com a matéria "Apps ajudam no deslocamento e dão
+                                        Brasil. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uk-grid-match" uk-grid>
+                            <img src="resources/images/excluir/03.jpg" alt="fundo nevado" uk-cover>
+                            
+                            <div class="uk-width-1-5">
+                                <img src="resources/images/team/fernanda-rosario.jpg" alt=""
+                                    class="uk-position-absolute uk-transform-center uk-responsive-width uk-border-circle"
+                                    style="left: 15%; top: 30%; width: 100px;"></img>
+                            </div>
+
+                            <div class="uk-width-expand">
+                                <div class="uk-overlay uk-overlay-primary uk-transition-slide-right uk-light">
+                                    <h2 uk-slideshow-parallax="x: 100,-100">Fernanda Rosário</h2>
+                                    <p class="uk-overflow-auto" uk-slideshow-parallax="x: 200,-200">Jornalista com atuação em projetos pautados
+                                        na temática racial, direitos humanos, combate ao racismo, meio ambiente,
+                                        educação midiática e diversidade. Já teve materiais publicados (entre textos,
+                                        vídeos, podcasts e apresentação de programa) na Alma Preta Jornalismo, Folha de
+                                        São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura. Recebeu o 3° lugar no
+                                        Prêmio 99 de Jornalismo com a matéria "Apps ajudam no deslocamento e dão
+                                        autonomia para pessoas com deficiência", publicada na Folha de São Paulo e
+                                        desenvolvida durante o Laboratório 99+Folha de SP, em que foi trainee em 2020 e
+                                        2021. Ficou em 2° lugar na mesma premiação com o podcast "Dinheiro para Todos:
+                                        Bancarização e Soluções Digitais" em 2021, publicado também na Folha de São
+                                        Paulo. Já teve conto selecionado para a antologia "O vazio não está nem quando é
+                                        silêncio" (Editora Mireveja, 2020) e fez parte da equipe de construção do
+                                        "Manual de Redação: O jornalismo antirracista a partir da experiência da Alma
+                                        Preta", que recupera e homenageia também quase 2 séculos de imprensa negra no
+                                        Brasil. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large" href uk-slidenav-previous
+                        uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large" href uk-slidenav-next
+                        uk-slideshow-item="next"></a>
+                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+
+                    <div class="uk-position-bottom-center uk-position-small uk-invisible">
+                        <ul class="uk-thumbnav">
+                            <li uk-slideshow-item="0"><a href="#"><img class="team-item-img"
+                                        src="resources/images/team/fernanda-rosario.jpg" width="100" height="67"
+                                        alt=""></a></li>
+                            <li uk-slideshow-item="1"><a href="#"><img class="team-item-img"
+                                        src="resources/images/team/hedgar-bezerra.jpg" width="100" height="67"
+                                        alt=""></a></li>
+                            <li uk-slideshow-item="2"><a href="#"><img class="team-item-img"
+                                        src="resources/images/team/fernanda-rosario.jpg" width="100" height="67"
+                                        alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>        
+        </div>
     </main>
 
     <footer id="contatos" class="uk-section footer">
@@ -131,12 +219,15 @@
                         <h3>Conheça nossas redes sociais</h3>
                     </div>
                     <div class="uk-card uk-card-default uk-card-body">
-                        <a href="" class="uk-icon-button uk-margin-small-right social-icons"
-                            uk-icon="instagram"></a>
-                        <a href="" class="uk-icon-button uk-margin-small-right social-icons"
-                            uk-icon="facebook"></a>
-                        <a href="https://wa.link/tiuj5y" class="uk-icon-button social-icons"
-                            uk-icon="whatsapp"></a>
+                        <a href="mailto:fernandapfrosario@gmail.com?subject=Negra Midia" target="_blank" rel="noopener"
+                            class="uk-icon-button uk-margin-right social-icons"
+                            uk-icon="mail" ratio="1.5"></a>
+                        <a href="" target="_blank" rel="noopener"
+                            class="uk-icon-button uk-margin-right social-icons"
+                            uk-icon="linkedin" ratio="1.5"></a>
+                        <a href="https://wa.link/tiuj5y" target="_blank" rel="noopener"
+                            class="uk-icon-button social-icons"
+                            uk-icon="whatsapp" ratio="1.5"></a>
                     </div>
                 </div>
             </div>
@@ -162,10 +253,10 @@
                         <div class="uk-width-1-2@s">
                             <div class="uk-inline icon-form-input">
                                 <span class="uk-form-icon" uk-icon="icon: phone"></span>
-                                <input type="tel" class="uk-input" name="body" placeholder="telefone"
+                                <input type="tel" class="uk-input" name="phone" placeholder="telefone"
                                     aria-label="telefone"
                                     title="telefone" autocomplete="tel"
-                                    pattern="\([0-9]{3}\)[0-9]{4-5}-[0-9]{4}">
+                                    pattern="\([0-9]{2,3}\)[0-9]{8,9}">
                             </div>
                         </div>
                         <div class="uk-width-1-2@s">
@@ -193,11 +284,13 @@
             </div>
         </div>
         <div class="ltda">
-            <div class="uk-text-meta uk-text-center">
-                Copyright&copy; 2024-<span id="footerCurrentYear"></span>
-                Negra Mídia LTDA. 
+            <div class="uk-text-meta uk-text-center"> Copyright&copy; <span id="footerCurrentYear"></span> Negra
+                Mídia. </div>
+            <div class="uk-text-meta uk-text-center"> Desenvolvido por 
+                <a class="dev-url" href="https://www.linkedin.com/in/hedgarbezerra/" target="_blank" rel="noopener"> 
+                    Hedgar Bezerra.
+                </a>
             </div>
-            <div class="uk-text-meta uk-text-center"> CNPJ 0001-00000/0001 </div>
         </div>
     </footer>
 </body>

@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #ED7D31;
+    --primary-green: #515f36;
     --secundary-color: #F6F1EE;
     --auxiliary-gray: #6C5F5B;
     --auxiliary-darkgray: #4F4A45;
@@ -9,30 +10,17 @@
     --auxiliary-lighterblack: #222;
 }
 
+*{
+    font-family: "Montserrat", "Reddit Sans", "Madimi One", "Roboto", sans-serif !important;
+}
 html{
-   font-family: "Montserrat", "Reddit Sans", "Madimi One", "Roboto", sans-serif !important;
+      background-color: var(--secundary-color) !important;
 }
 
 .logo-img {
     max-width: 30%;
     height: auto;
     display: inline-block;
-}
-
- .uk-navbar-nav>li>a, .uk-navbar-toggle, .nav-main-dropdown-list>li>a{
-    color: var(--auxiliary-black) !important;
- }
- 
- .uk-navbar-nav>li>a:hover, .nav-main-dropdown-list>li>a:hover{
-     color: var(--primary-color) !important;
- }
- 
-.uk-icon.uk-navbar-toggle-icon svg{
-    max-width: none !important;
-}
-
-.nav-main, .nav-main-dropdown{
-    background-color: var(--secundary-color) !important;
 }
 
 .nav-main > li> a {
@@ -45,6 +33,8 @@ html{
     transform: scale(1.3);
 }
 .social-icons{
+    width: 48px !important;
+    height: 48px !important;
     color: var(--primary-color) !important;
     transition: transform 0.3s ease, background-color 0.3s !important;
 }
@@ -74,9 +64,53 @@ html{
     padding: 0 !important;
 }
 
-.ltda{
+.dev-url:hover{
+    color: var(--primary-color) !important;
+}
+
+.ltda{ 
+    padding: 10px 0 10px 0 !important;
     background-color: var(--auxiliary-lighterblack);
 }
 .ltda *{    
     color: var(--secundary-color) !important;
+}
+
+.team-item-img{
+    max-width: 70px;
+}
+.heading-inicio{
+    word-break: keep-all !important;
+    color: var(--primary-green) !important;
+    background-color: var(--primary-color);    
+}
+
+
+
+/* Sobrescrita do UIKit */
+.uk-navbar-nav>li>a, .uk-navbar-toggle, .nav-main-dropdown-list>li>a{
+    color: var(--auxiliary-black) !important;
+ }
+ 
+ .uk-navbar-nav>li>a:hover, .nav-main-dropdown-list>li>a:hover{
+     color: var(--primary-color) !important;
+     /* background-color: var(--primary-color) !important; */
+ }
+ 
+.uk-icon.uk-navbar-toggle-icon svg{
+    max-width: none !important;
+}
+
+.nav-main, .nav-main-dropdown{
+    background-color: #ffffff !important;
+}
+
+.uk-input, .uk-card{
+    border-radius: 3px !important;
+}
+.uk-input:focus, .uk-select:focus, .uk-textarea:focus{
+    border-color: var(--primary-color) !important;
+}
+.uk-dotnav>.uk-active>*{
+    background-color: var(--primary-color) !important;
 }
