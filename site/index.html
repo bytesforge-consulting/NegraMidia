@@ -12,6 +12,7 @@
     <script src="resources/js/main.js"></script>
     <script src="resources/js/uikit.min.js"></script>
     <script src="resources/js/uikit-icons.js"></script>
+    <script src="resources/js/imask.js"></script>
     <title>Negra Mídia</title>
 </head>
 
@@ -76,7 +77,7 @@
                             <span class=" heading-inicio">Comunicação com propósito</span>
                             </h1>
                         </div>
-                    <div class="uk-width-expand@s uk-flex-last">
+                    <div class="uk-width-expand@s uk-flex-last uk-padding-remove">
                         <img src="resources/images/InicioBG.png" width="1800" height="1200" alt="Image">
                     </div>
                 </div>
@@ -84,21 +85,71 @@
             </div>
         </div>
 
-        <div id="servicos" class="uk-section">
+        <div id="servicos" class="uk-section uk-padding-remove-top">
             <div class="uk-container">
                 <h1 class="uk-text-lead"> Serviços </h1>
-                <!-- 
-                <p>Produção de conteúdos jornalísticos </p>
-                <p>Reportagens</p>
-                <p>Produção de releases</p>
-                <p>Newsletters </p>
-                <p>E-books</p>
-                <p> Mídias sociais </p> -->
+                <div class="uk-slider-container"  uk-slider>
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+                        <div class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title" uk-slider-parallax="y: -100, 100">Produção de conteúdos jornalísticos</h3>
+                                        <p uk-slider-parallax="y: 100, -100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title" uk-slider-parallax="y: 100,-100">Reportagens</h3>
+                                        <p uk-slider-parallax="y: -100, 100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title" uk-slider-parallax="y: -100, 100">Produção de releases</h3>
+                                        <p uk-slider-parallax="y: 100, -100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title" uk-slider-parallax="y: 100,-100">Newsletters</h3>
+                                        <p uk-slider-parallax="y: -100, 100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title" uk-slider-parallax="y: -100,100; opacity:100, 0">E-books</h3>
+                                        <p uk-slider-parallax="y: 100, -100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title" uk-slider-parallax="y: 100,-100">Mídias sociais</h3>
+                                        <p uk-slider-parallax="y: -100,100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                
+                        <a class="uk-position-center-left uk-slidenav-large uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-slidenav-large uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
                 
+                    </div>                
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>                
+                </div>                
             </div>
         </div>
 
-        <div id="sobre" class="uk-section ">
+        <div id="sobre" class="uk-section uk-padding-remove-top">
             <div class="uk-container">
                 <div class="uk-text-lead"> Sobre </div>
                 <div class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: pull,ratio: false,finite: true">
@@ -253,10 +304,10 @@
                         <div class="uk-width-1-2@s">
                             <div class="uk-inline icon-form-input">
                                 <span class="uk-form-icon" uk-icon="icon: phone"></span>
-                                <input type="tel" class="uk-input" name="phone" placeholder="telefone"
+                                <input type="tel" class="uk-input" name="phone" placeholder="(00)00000-0000"
                                     aria-label="telefone"
                                     title="telefone" autocomplete="tel"
-                                    pattern="\([0-9]{2,3}\)[0-9]{8,9}">
+                                    pattern="\(\d{2}\)\d{4,5}-\d{4}">
                             </div>
                         </div>
                         <div class="uk-width-1-2@s">

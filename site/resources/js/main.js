@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     var currentYear = new Date().getFullYear();
     document.getElementById('footerCurrentYear').textContent = currentYear;
@@ -6,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var form = document.getElementById('formContato');
     form.addEventListener('submit', SendMessageForm);
 
+    MaskPhoneNumbers();
 });
 
 
@@ -15,7 +17,7 @@ function SendMessageForm(event){
     // Cria um objeto FormData com os dados do formulário
     const formData = new FormData(event.target);
     const formProps = Object.fromEntries(formData);
-    
+    //https://negramidia-funcs.azurewebsites.net/api/ReceivedEmailFunction
     fetch('http://localhost:7150/api/ReceivedEmailFunction', {
       method: 'POST',
       headers: {
@@ -34,4 +36,21 @@ function SendMessageForm(event){
       document.getElementById('formContato').reset();
     })
     .catch(error => UIkit.notification({message: '<span uk-icon=\'icon: warning\'></span> Houve um erro ao enviar sua mensagem', status: 'danger', pos: 'bottom-right'}));
+}
+
+function MaskPhoneNumbers(){
+  const phoneInput = Array.from(document.querySelectorAll('input[type="tel"]'));
+
+  phoneInput.forEach((input, index) => {
+    IMask(input, {
+      mask: [
+        {
+          mask: '(00)0000-0000',
+        },
+        {
+          mask: '(00)00000-0000',
+        }
+      ]
+    })
+  });
 }
