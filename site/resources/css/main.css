@@ -27,6 +27,16 @@ html{
     color: var(--secundary-color);
 }
 
+.card-social-icons{
+    background-color: #ffffff;
+    display: flex !important;
+    justify-content: space-evenly;
+}
+@media screen and (min-width: 640px) and (max-width: 834px) {
+    .card-social-icons{
+        display: flow-root !important;
+    }
+}
 .social-icons:hover{
     background-color: var(--primary-color) !important;
     color: var(--secundary-color) !important;
@@ -79,12 +89,16 @@ html{
 .team-item-img{
     max-width: 70px;
 }
+
 .heading-inicio{
     word-break: keep-all !important;
     color: var(--primary-green) !important;
     background-color: var(--primary-color);    
 }
 
+#servicos a[uk-slider-item]{
+    color: var(--primary-color) !important;
+}
 
 
 /* Sobrescrita do UIKit */
