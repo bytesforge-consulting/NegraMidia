@@ -17,7 +17,11 @@
 </head>
 
 <body>
-    <div uk-sticky="start: 120; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;  end: ! *; offset: 0">
+    <div id="loadingSpinner" class="spinner-container uk-invisible">
+        <div class="spinner-loading" uk-spinner="ratio:3.5">
+        </div>
+    </div>
+    <div uk-sticky="start: 100; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;  end: ! *; offset: 0">
         <nav class="uk-navbar-container uk-visible@s nav-main" uk-inverse="sel-active: .uk-navbar-transparent">
             <div class="uk-container">
                 <div

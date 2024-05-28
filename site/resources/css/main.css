@@ -3,7 +3,8 @@
 :root {
     --primary-color: #ED7D31;
     --primary-green: #515f36;
-    --secundary-color: #F6F1EE;
+    --primary-white: #F6F1EE;
+    --auxiliary-white: #ffffff;
     --auxiliary-gray: #6C5F5B;
     --auxiliary-darkgray: #4F4A45;
     --auxiliary-black: #070707;
@@ -13,10 +14,44 @@
 *{
     font-family: "Montserrat", "Reddit Sans", "Madimi One", "Roboto", sans-serif !important;
 }
+
 html{
-      background-color: var(--secundary-color) !important;
+      background-color: var(--primary-white) !important;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px; 
+}
+  
+::-webkit-scrollbar-thumb {
+background-color: var(--primary-color);
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+background-color: var(--auxiliary-white); 
+border-radius: 5px; 
+}
+
+.spinner-loading{
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color) !important;
+}
+
+.spinner-container {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(1.7px);
+}
+  
 .logo-img {
     max-width: 30%;
     height: auto;
@@ -24,11 +59,11 @@ html{
 }
 
 .nav-main > li> a {
-    color: var(--secundary-color);
+    color: var(--primary-white);
 }
 
 .card-social-icons{
-    background-color: #ffffff;
+    background-color: var(--auxiliary-white);
     display: flex !important;
     justify-content: space-evenly;
 }
@@ -39,7 +74,7 @@ html{
 }
 .social-icons:hover{
     background-color: var(--primary-color) !important;
-    color: var(--secundary-color) !important;
+    color: var(--primary-white) !important;
     transform: scale(1.3);
 }
 .social-icons{
@@ -57,17 +92,17 @@ html{
 }
 
 .uk-light{
-    color: var(--secundary-color) !important;
+    color: var(--primary-white) !important;
 }
 
 .icon-form-input{
     display: block !important;
 }
 .icon-form-input  * {
-    color: var(--secundary-color) !important;
+    color: var(--primary-white) !important;
 }
 .icon-form-input input::placeholder, .icon-form-input textarea::placeholder {
-    color: var(--secundary-color) !important;
+    color: var(--primary-white) !important;
 }
 
 .footer{
@@ -83,7 +118,7 @@ html{
     background-color: var(--auxiliary-lighterblack);
 }
 .ltda *{    
-    color: var(--secundary-color) !important;
+    color: var(--primary-white) !important;
 }
 
 .team-item-img{
@@ -116,7 +151,7 @@ html{
 }
 
 .nav-main, .nav-main-dropdown{
-    background-color: #ffffff !important;
+    background-color: var(--auxiliary-white) !important;
 }
 
 .uk-input, .uk-card{

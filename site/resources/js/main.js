@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function SendMessageForm(event){
     event.preventDefault(); 
-
+    let loadingSpinner = document.getElementById('loadingSpinner');
+    loadingSpinner.classList.remove('uk-invisible');
     // Cria um objeto FormData com os dados do formulário
     const formData = new FormData(event.target);
     const formProps = Object.fromEntries(formData);
@@ -35,7 +36,8 @@ function SendMessageForm(event){
       UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Mensagem enviada com sucesso.', status: 'primary', pos: 'bottom-right'});
       document.getElementById('formContato').reset();
     })
-    .catch(error => UIkit.notification({message: '<span uk-icon=\'icon: warning\'></span> Houve um erro ao enviar sua mensagem', status: 'danger', pos: 'bottom-right'}));
+    .catch(error => UIkit.notification({message: '<span uk-icon=\'icon: warning\'></span> Houve um erro ao enviar sua mensagem', status: 'danger', pos: 'bottom-right'}))
+    .finally(() => loadingSpinner.classList.add('uk-invisible'));
 }
 
 function MaskPhoneNumbers(){
