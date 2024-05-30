@@ -8,6 +8,23 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', SendMessageForm);
 
     MaskPhoneNumbers();
+
+    var teamSliderEl = document.getElementById('teamSlider');
+    teamSliderEl.addEventListener('itemshow', e =>{
+    })
+    
+    document.querySelectorAll('a[href^="#"]')
+      .forEach(link => link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      document.querySelector(e.currentTarget.getAttribute('href'))
+        .scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        })
+    }))
+
+    
 });
 
 
@@ -15,10 +32,10 @@ function SendMessageForm(event){
     event.preventDefault(); 
     let loadingSpinner = document.getElementById('loadingSpinner');
     loadingSpinner.classList.remove('uk-invisible');
-    // Cria um objeto FormData com os dados do formulário
+    
     const formData = new FormData(event.target);
     const formProps = Object.fromEntries(formData);
-    //https://negramidia-funcs.azurewebsites.net/api/ReceivedEmailFunction
+    
     fetch('http://localhost:7150/api/ReceivedEmailFunction', {
       method: 'POST',
       headers: {

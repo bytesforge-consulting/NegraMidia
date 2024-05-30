@@ -121,13 +121,17 @@ border-radius: 5px;
     color: var(--primary-white) !important;
 }
 
+.card-team{
+border: 10px var(--primary-green) !important;
+}
+
 .team-item-img{
     max-width: 70px;
 }
 
 .heading-inicio{
     word-break: keep-all !important;
-    color: var(--primary-green) !important;
+    color: var(--auxiliary-lighterblack) !important;
     background-color: var(--primary-color);    
 }
 
@@ -135,6 +139,26 @@ border-radius: 5px;
     color: var(--primary-color) !important;
 }
 
+.team-card > .uk-card-header{
+}
+
+
+.team-nav-img-styler{
+    display: contents;
+}
+.team-nav-img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    background: none !important;
+    max-width: 200px;
+    max-height: 230px;
+}
+
+#inicio{
+    color: #ffffff;
+    background-color: var(--auxiliary-gray);
+}
 
 /* Sobrescrita do UIKit */
 .uk-navbar-nav>li>a, .uk-navbar-toggle, .nav-main-dropdown-list>li>a{
@@ -162,4 +186,10 @@ border-radius: 5px;
 }
 .uk-dotnav>.uk-active>*{
     background-color: var(--primary-color) !important;
+}
+.uk-button-text:hover {
+    color: var(--primary-color) !important;
+}
+.uk-padding-medium{
+    padding: 40px;
 }

@@ -21,13 +21,13 @@
         <div class="spinner-loading" uk-spinner="ratio:3.5">
         </div>
     </div>
+
     <div uk-sticky="start: 100; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;  end: ! *; offset: 0">
         <nav class="uk-navbar-container uk-visible@s nav-main" uk-inverse="sel-active: .uk-navbar-transparent">
             <div class="uk-container">
-                <div
-                    uk-navbar="dropbar: true; dropbar-transparent-mode: remove; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
+                <div uk-navbar="dropbar: true; dropbar-transparent-mode: remove; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
                     <div class="uk-navbar-left">
-                        <a class="uk-logo" href="">
+                        <a class="uk-logo" href="#">
                             <img src="resources/images/logo.png" class="logo-img" alt="logo negra mídia"
                                 aria-label="logo escrito negra mídia">
                         </a>
@@ -43,11 +43,12 @@
                 </div>
             </div>
         </nav>
+
         <nav class="uk-navbar-container uk-hidden@s nav-main" uk-inverse="sel-active: .uk-navbar-transparent">
             <div class="uk-container">
                 <div uk-navbar>
                     <div class="uk-navbar-left">
-                        <a class="uk-logo" href="">
+                        <a class="uk-logo" href="#">
                             <img src="resources/images/logo.png" class="logo-img" alt="logo negra mídia"
                                 aria-label="logo escrito negra mídia">
                         </a>
@@ -72,76 +73,97 @@
         </nav>
     </div>
 
-    <main class="uk-preserve-color uk-inverse-light">
-        <div id="inicio" class="uk-section">
+    <main>
+        <div class="uk-section">
             <div class="uk-container">
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-1-3@s">
                         <h1 class="uk-heading">
-                            <span class=" heading-inicio">Comunicação com propósito</span>
-                            </h1>
-                        </div>
+                            <span class="heading-inicio">Comunicação com propósito</span>
+                        </h1>
+                    </div>
                     <div class="uk-width-expand@s uk-flex-last uk-padding-remove">
                         <img src="resources/images/InicioBG.png" width="1800" height="1200" alt="Image">
                     </div>
                 </div>
-               
             </div>
         </div>
 
-        <div id="servicos" class="uk-section uk-padding-remove-top">
-            <div class="uk-container">
-                <h1 class="uk-text-lead"> Serviços </h1> 
+        <div id="inicio" class="uk-section uk-padding-medium">
+            <div class="uk-container uk-text-center">
+                Uma empresa de comunicação criada para desenvolver conteúdos para múltiplas plataformas e mídias. Especializada em produção de conteúdo para empresas compromissadas com trabalhos de impacto e marcas engajadas em causas socioambientais. 
 
+            </div>
+        </div>
+
+        <div id="servicos" class="uk-section">
+            <div class="uk-container">
+                <h1 class="uk-text-lead"> Serviços </h1>
                 <div uk-slider>
-                    <div class="uk-position-relative">                
+                    <div class="uk-position-relative">
                         <div class="uk-slider-container">
                             <div class="uk-slider-items uk-child-width-1-2@s uk-grid">
                                 <div>
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-body">
-                                            <h3 class="uk-card-title" uk-slider-parallax="y: -100,0,-100">Produção de conteúdos jornalísticos</h3>
-                                            <p uk-slider-parallax="y: 100,0,100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                            <h3 class="uk-card-title" uk-slider-parallax="y: -100,0,-100">Produção de
+                                                conteúdos jornalísticos</h3>
+                                            <p uk-slider-parallax="y: 100,0,100">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div>
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-body">
-                                            <h3 class="uk-card-title" uk-slider-parallax="y: -100,0,-100">Reportagens</h3>
-                                            <p uk-slider-parallax="y: 100,0,100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                            <h3 class="uk-card-title" uk-slider-parallax="y: -100,0,-100">Reportagens
+                                            </h3>
+                                            <p uk-slider-parallax="y: 100,0,100">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div>
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-body">
-                                            <h3 class="uk-card-title" uk-slider-parallax="y: -100,0,-100">Produção de releases</h3>
-                                            <p uk-slider-parallax="y: 100,0,100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                            <h3 class="uk-card-title" uk-slider-parallax="y: -100,0,-100">Produção de
+                                                releases</h3>
+                                            <p uk-slider-parallax="y: 100,0,100">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div>
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-body">
-                                            <h3 class="uk-card-title" uk-slider-parallax="y: -100,0,-100">Newsletters</h3>
-                                            <p uk-slider-parallax="y: 100,0,100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                            <h3 class="uk-card-title" uk-slider-parallax="y: -100,0,-100">Newsletters
+                                            </h3>
+                                            <p uk-slider-parallax="y: 100,0,100">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div>
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-body">
                                             <h3 class="uk-card-title" uk-slider-parallax="y: -100,0,-100">E-books</h3>
-                                            <p uk-slider-parallax="y: 100, 0, 100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                            <p uk-slider-parallax="y: 100, 0, 100">Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div>
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-body">
-                                            <h3 class="uk-card-title" uk-slider-parallax="y: -100,0,-100">Mídias sociais</h3>
-                                            <p uk-slider-parallax="y: 100, 0, 100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                            <h3 class="uk-card-title" uk-slider-parallax="y: -100,0,-100">Mídias sociais
+                                            </h3>
+                                            <p uk-slider-parallax="y: 100, 0, 100">Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -149,126 +171,90 @@
                         </div>
 
                         <div class="uk-hidden@s">
-                            <a class="uk-position-center-left uk-slidenav-large" href uk-slidenav-previous uk-slider-item="previous"></a>
-                            <a class="uk-position-center-right uk-slidenav-large" href uk-slidenav-next uk-slider-item="next"></a>
+                            <a class="uk-position-center-left uk-slidenav-large" href uk-slidenav-previous
+                                uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-slidenav-large" href uk-slidenav-next
+                                uk-slider-item="next"></a>
                         </div>
+
                         <div class="uk-visible@s">
-                            <a class="uk-position-center-left-out uk-slidenav-large" href uk-slidenav-previous uk-slider-item="previous"></a>
-                            <a class="uk-position-center-right-out uk-slidenav-large" href uk-slidenav-next uk-slider-item="next"></a>
+                            <a class="uk-position-center-left-out uk-slidenav-large" href uk-slidenav-previous
+                                uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right-out uk-slidenav-large" href uk-slidenav-next
+                                uk-slider-item="next"></a>
                         </div>
                     </div>
-                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul> 
-                </div>                         
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
             </div>
         </div>
 
-        <div id="sobre" class="uk-section uk-padding-remove-top">
+        <div id="sobre" class="uk-section uk-padding-small">
             <div class="uk-container">
                 <div class="uk-text-lead"> Quem somos</div>
-                <div class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: pull,ratio: false,finite: true">
-                    <div class="uk-slideshow-items" id="slideTeam" uk-height-viewport="min-height: 10">
-                        <div class="uk-grid-collapse uk-grid-match" uk-grid>
-                            
-                            
-                            <div class="uk-width-1-5@s">
-                                <img src="resources/images/team/fernanda-rosario.jpg" alt="" />
-                            </div>
-
-                            <div class="uk-width-expand@s">
-                                <div class="uk-overlay uk-overlay-primary uk-transition-slide-right uk-light">
-                                    <h2 uk-slideshow-parallax="x: 100,-100">Fernanda Rosário</h2>
-                                    <p class="uk-overflow-auto" uk-slideshow-parallax="x: 200,-200">Jornalista com atuação em projetos pautados
-                                        na temática racial, direitos humanos, combate ao racismo, meio ambiente,
-                                        educação midiática e diversidade. Já teve materiais publicados (entre textos,
-                                        vídeos, podcasts e apresentação de programa) na Alma Preta Jornalismo, Folha de
-                                        São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura. Recebeu o 3° lugar no
-                                        Prêmio 99 de Jornalismo com a matéria "Apps ajudam no deslocamento e dão
-                                        autonomia para pessoas com deficiência", publicada na Folha de São Paulo e
-                                        desenvolvida durante o Laboratório 99+Folha de SP, em que foi trainee em 2020 e
-                                        2021. Ficou em 2° lugar na mesma premiação com o podcast "Dinheiro para Todos:
-                                        Bancarização e Soluções Digitais" em 2021, publicado também na Folha de São
-                                        Paulo. Já teve conto selecionado para a antologia "O vazio não está nem quando é
-                                        silêncio" (Editora Mireveja, 2020) e fez parte da equipe de construção do
-                                        "Manual de Redação: O jornalismo antirracista a partir da experiência da Alma
-                                        Preta", que recupera e homenageia também quase 2 séculos de imprensa negra no
-                                        Brasil. </p>
+                <div class="uk-margin-large-top">
+                    <div id="teamSlider" class="uk-slider-container team-slider" uk-slider="center:true; finite:true; draggable:true;clsActivated: uk-transition-active">
+                        <div class="uk-position-relative" tabindex="-1">
+                            <div class="uk-slider-items uk-child-width-3-4@s uk-grid uk-grid-match">
+                                
+                                <div>
+                                    <div class="uk-card team-card">
+                                        <div class="uk-card-media-top uk-text-center team-nav-container">
+                                            <a class="uk-slidenav-large team-nav uk-transition-slide-right" href uk-slidenav-previous uk-slider-item="previous"></a>
+                                            <div class="team-nav-img-styler">
+                                                <img src="resources/images/team/fernanda-rosario.jpg" class="team-nav-img" alt="">
+                                            </div>
+                                            <a class="uk-slidenav-large team-nav uk-transition-slide-left" href uk-slidenav-next uk-slider-item="next"></a>
+                                        </div>
+                                        <div class="uk-card-header">
+                                            <h3 class="uk-card-title"> Fernanda Rosário </h3>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <p>Jornalista com atuação em projetos pautados na temática racial, direitos
+                                                humanos, combate ao racismo, meio ambiente, educação midiática e
+                                                diversidade. Já teve materiais publicados (entre textos, vídeos,
+                                                podcasts e apresentação de programa) na Alma Preta Jornalismo, Folha de
+                                                São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura. Recebeu o 3°
+                                                lugar no Prêmio 99 de Jornalismo com a matéria "Apps ajudam no
+                                                deslocamento e dão autonomia para pessoas com deficiência", publicada na
+                                                Folha de São Paulo e desenvolvida durante o Laboratório 99+Folha de SP,
+                                                em que foi trainee em 2020 e 2021. Ficou em 2° lugar na mesma premiação
+                                                com o podcast "Dinheiro para Todos: Bancarização e Soluções Digitais" em
+                                                2021, publicado também na Folha de São Paulo. Fez parte da equipe de
+                                                construção do "Manual de Redação: O jornalismo antirracista a partir da
+                                                experiência da Alma Preta", que recupera e homenageia também quase 2
+                                                séculos de imprensa negra no Brasil. </p>
+                                        </div>
+                                        <div class="uk-card-footer uk-text-right">
+                                            <a href="https://www.linkedin.com/in/fernandapfrosario" target="_blank" rel="noopener" class="uk-button uk-button-text">Saiba mais</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <div class="uk-grid-match" uk-grid>
-                            <img src="resources/images/excluir/02.jpg" alt="fundo nevado" uk-cover>                            
-                            <div class="uk-width-1-5">
-                                <img src="resources/images/team/hedgar-bezerra.jpg" alt=""
-                                    class="uk-position-absolute uk-transform-center uk-responsive-width uk-border-circle"
-                                    style="left: 15%; top: 30%; width: 100px;"></img>
-                            </div>
 
-                            <div class="uk-width-expand">
-                                <div class="uk-overlay uk-overlay-primary uk-transition-slide-right uk-light">
-                                    <h2 uk-slideshow-parallax="x: 100,-100">Hedgar Bezerra</h2>
-                                    <p class="uk-overflow-auto" uk-slideshow-parallax="x: 200,-200">Jornalista com atuação em projetos pautados
-                                        na temática racial, direitos humanos, combate ao racismo, meio ambiente,
-                                        educação midiática e diversidade. Já teve materiais publicados (entre textos,
-                                        vídeos, podcasts e apresentação de programa) na Alma Preta Jornalismo, Folha de
-                                        São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura. Recebeu o 3° lugar no
-                                        Prêmio 99 de Jornalismo com a matéria "Apps ajudam no deslocamento e dão
-                                        Brasil. </p>
+                                <div>
+                                    <div class="uk-card team-card">
+                                        <div class="uk-card-media-top uk-text-center team-nav-container">
+                                            <a class="uk-slidenav-large team-nav uk-transition-slide-right" href uk-slidenav-previous uk-slider-item="previous"></a>
+                                            <div class="team-nav-img-styler">
+                                                <img src="resources/images/team/hedgar-bezerra.jpg" class="team-nav-img" alt="">
+                                            </div>
+                                            <a class="uk-slidenav-large team-nav uk-transition-slide-left" href uk-slidenav-next uk-slider-item="next"></a>
+                                        </div>
+                                        <div class="uk-card-header">
+                                            <h3 class="uk-card-title"> Hedgar Bezerra </h3>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <p>JLoremkq wiope qweiqwioue hscpçuhwiqj edshiu wqehascx quiwie hqwd
+                                                qwehuiqweghliudw shwqudghqweldhjk. </p>
+                                        </div>
+                                        <div class="uk-card-footer uk-text-right">
+                                            <a href="#" class="uk-button uk-button-text">Saiba mais</a>
+                                        </div>
+                                    </div>
                                 </div>
+                                
                             </div>
-                        </div>
-
-                        <div class="uk-grid-match" uk-grid>
-                            <img src="resources/images/excluir/03.jpg" alt="fundo nevado" uk-cover>
-                            
-                            <div class="uk-width-1-5">
-                                <img src="resources/images/team/fernanda-rosario.jpg" alt=""
-                                    class="uk-position-absolute uk-transform-center uk-responsive-width uk-border-circle"
-                                    style="left: 15%; top: 30%; width: 100px;"></img>
-                            </div>
-
-                            <div class="uk-width-expand">
-                                <div class="uk-overlay uk-overlay-primary uk-transition-slide-right uk-light">
-                                    <h2 uk-slideshow-parallax="x: 100,-100">Fernanda Rosário</h2>
-                                    <p class="uk-overflow-auto" uk-slideshow-parallax="x: 200,-200">Jornalista com atuação em projetos pautados
-                                        na temática racial, direitos humanos, combate ao racismo, meio ambiente,
-                                        educação midiática e diversidade. Já teve materiais publicados (entre textos,
-                                        vídeos, podcasts e apresentação de programa) na Alma Preta Jornalismo, Folha de
-                                        São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura. Recebeu o 3° lugar no
-                                        Prêmio 99 de Jornalismo com a matéria "Apps ajudam no deslocamento e dão
-                                        autonomia para pessoas com deficiência", publicada na Folha de São Paulo e
-                                        desenvolvida durante o Laboratório 99+Folha de SP, em que foi trainee em 2020 e
-                                        2021. Ficou em 2° lugar na mesma premiação com o podcast "Dinheiro para Todos:
-                                        Bancarização e Soluções Digitais" em 2021, publicado também na Folha de São
-                                        Paulo. Já teve conto selecionado para a antologia "O vazio não está nem quando é
-                                        silêncio" (Editora Mireveja, 2020) e fez parte da equipe de construção do
-                                        "Manual de Redação: O jornalismo antirracista a partir da experiência da Alma
-                                        Preta", que recupera e homenageia também quase 2 séculos de imprensa negra no
-                                        Brasil. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large" href uk-slidenav-previous
-                        uk-slideshow-item="previous"></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large" href uk-slidenav-next
-                        uk-slideshow-item="next"></a>
-                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
-
-                    <div class="uk-position-bottom-center uk-position-small uk-invisible">
-                        <ul class="uk-thumbnav">
-                            <li uk-slideshow-item="0"><a href="#"><img class="team-item-img"
-                                        src="resources/images/team/fernanda-rosario.jpg" width="100" height="67"
-                                        alt=""></a></li>
-                            <li uk-slideshow-item="1"><a href="#"><img class="team-item-img"
-                                        src="resources/images/team/hedgar-bezerra.jpg" width="100" height="67"
-                                        alt=""></a></li>
-                            <li uk-slideshow-item="2"><a href="#"><img class="team-item-img"
-                                        src="resources/images/team/fernanda-rosario.jpg" width="100" height="67"
-                                        alt=""></a></li>
-                        </ul>
+                        </div>                           
                     </div>
                 </div>
             </div>
@@ -348,11 +334,10 @@
             </div>
         </div>
         <div class="ltda">
-            <div class="uk-text-meta uk-text-center"> Copyright&copy; <span id="footerCurrentYear"></span> Negra
-                Mídia. </div>
-            <div class="uk-text-meta uk-text-center"> Desenvolvido por 
-                <a class="dev-url" href="https://www.linkedin.com/in/hedgarbezerra/" target="_blank" rel="noopener"> 
-                    Hedgar Bezerra.
+            <div class="uk-text-meta uk-text-center"> Copyright&copy; <span id="footerCurrentYear"></span> Negra Mídia.
+            </div>
+            <div class="uk-text-meta uk-text-center"> Desenvolvido por <a class="dev-url"
+                    href="https://www.linkedin.com/in/hedgarbezerra/" target="_blank" rel="noopener"> Hedgar Bezerra.
                 </a>
             </div>
         </div>
