@@ -134,10 +134,14 @@ html {
   color: var(--primary-white) !important;
 }
 
-.heading-inicio {
-  word-break: keep-all !important;
-  color: var(--auxiliary-lighterblack) !important;
-  background-color: var(--auxiliary-orange);
+.heading-inicio, .heading-inicio *{
+    font-family: "Madimi One" !important;
+    word-break: keep-word !important;
+    color: var(--auxiliary-lighterblack) !important;
+    font-size: 55px;
+}
+.heading-orange{
+    color: var(--primary-color) !important;
 }
 
 #servicos a[uk-slider-item] {
@@ -152,7 +156,7 @@ html {
     inherits: false;
   }
 
-.team-card {
+.team-card1 {
   --angle: 0deg;
   border: 3px solid;
   padding: 15px;
@@ -160,7 +164,7 @@ html {
   animation: 7s rotate linear infinite;
 }
 
-.team-card2 {
+.team-card {
   --angle: 45deg;
   background: radial-gradient(
         circle at 100% 100%,

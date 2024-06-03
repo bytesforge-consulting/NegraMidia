@@ -1,3 +1,4 @@
+const BASEAPI_URL = `${window.location.origin}/api`;
 
 document.addEventListener('DOMContentLoaded', function() {
     var currentYear = new Date().getFullYear();
@@ -35,8 +36,8 @@ function SendMessageForm(event){
     
     const formData = new FormData(event.target);
     const formProps = Object.fromEntries(formData);
-    
-    fetch('http://localhost:7150/api/ReceivedEmailFunction', {
+
+    fetch(`${BASEAPI_URL}/notify`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -72,4 +73,11 @@ function MaskPhoneNumbers(){
       ]
     })
   });
+}
+
+function GetCurrentUrl(){
+  let currentUrl = window.location.href;
+  let trimmedUrl = currentUrl.split('/')[0];
+
+  return trimmedUrl;
 }
