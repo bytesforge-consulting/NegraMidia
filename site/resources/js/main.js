@@ -40,9 +40,9 @@ function SendMessageForm(event){
     fetch(`${BASEAPI_URL}/notify`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify(formProps),
+      body: JSON.stringify(formProps)
     })
     .then(response => {
       if (!response.ok) {
@@ -73,11 +73,4 @@ function MaskPhoneNumbers(){
       ]
     })
   });
-}
-
-function GetCurrentUrl(){
-  let currentUrl = window.location.href;
-  let trimmedUrl = currentUrl.split('/')[0];
-
-  return trimmedUrl;
 }
