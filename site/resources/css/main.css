@@ -36,18 +36,6 @@ html {
   border-radius: 3px;
 }
 
-/* Responsive and definitions */
-@media screen and (min-width: 640px) and (max-width: 834px) {
-  .card-social-icons {
-    display: flow-root !important;
-  }
-}
-
-@keyframes rotate {
-  to {
-    --angle: 360deg;
-  }
-}
 /* Loading spinner */
 .spinner-loading {
   position: fixed !important;
@@ -134,35 +122,10 @@ html {
   color: var(--primary-white) !important;
 }
 
-.heading-inicio, .heading-inicio *{
-    font-family: "Madimi One" !important;
-    word-break: keep-word !important;
-    color: var(--auxiliary-lighterblack) !important;
-    font-size: 55px;
-}
-.heading-orange{
-    color: var(--primary-color) !important;
-}
-
 #servicos a[uk-slider-item] {
   color: var(--primary-color) !important;
 }
 
-/* Define team members elements */
-
-@property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-  }
-
-.team-card1 {
-  --angle: 0deg;
-  border: 3px solid;
-  padding: 15px;
-  border-image: linear-gradient(var(--angle), #ed7d31 39%, #ffa300 56%, #515f36 74%) 1;
-  animation: 7s rotate linear infinite;
-}
 
 .team-card {
   --angle: 45deg;
@@ -222,10 +185,74 @@ html {
   max-height: 230px;
 }
 
-#inicio {
+.header-inicial{
+  padding: 20px 40px 20px 40px;
+}
+.header-secundario  {
   color: #ffffff;
   background-color: var(--auxiliary-gray);
 }
+
+.heading-inicio, .heading-inicio *{
+    font-family: "Madimi One" !important;
+    word-break: keep-all !important;
+    color: var(--auxiliary-lighterblack) !important;
+    font-size: 80px;
+}
+
+.heading-orange{
+    color: var(--primary-color) !important;
+}
+
+
+/* Responsive and definitions */
+
+
+@media screen and (min-width: 1280px) {
+  .heading-inicio, .heading-inicio *{
+    font-size: 90px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 834px) {
+  .card-social-icons {
+    display: flow-root !important;
+  }
+  
+
+  .heading-inicio, .heading-inicio *{
+    font-size: 54px;
+  }
+}
+
+@media screen and (min-width: 640px){
+  .header-inicial{
+    height: 80vh;
+  }
+  
+  .header-inicial> * {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .heading-inicio, .heading-inicio *{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .heading-inicio, .heading-inicio *{
+    font-size: 40px;
+  }
+}
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+
 
 /* Sobrescrita do UIKit */
 .uk-navbar-nav > li > a,
