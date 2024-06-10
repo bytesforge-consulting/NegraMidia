@@ -1,14 +1,15 @@
 const BASEAPI_URL = `${window.location.origin}/api`;
+const MESSAGE_STOREKEY = 'SAVEDMESSAGE';
 
 document.addEventListener('DOMContentLoaded', function() {
-    var currentYear = new Date().getFullYear();
+    const currentYear = new Date().getFullYear();
     document.getElementById('footerCurrentYear').textContent = currentYear;
 
-    
-    var form = document.getElementById('formContato');
-    form.addEventListener('submit', SendMessageForm);
-
     MaskPhoneNumbers();
+    LoadExistingMessage();
+
+    const form = document.getElementById('formContato');
+    form.addEventListener('submit', SendMessageForm);
 
     var teamSliderEl = document.getElementById('teamSlider');
     teamSliderEl.addEventListener('itemshow', e =>{
@@ -25,9 +26,32 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }))
 
-    
+    document.querySelectorAll('#formContato input')
+      .forEach(link => link.addEventListener('keyup', debounce((e) => {        
+        let formData = new FormData(form);
+        let formProps = Object.fromEntries(formData);
+
+        localStorage.setItem(MESSAGE_STOREKEY, JSON.stringify(formProps));
+    }, 1000)));    
+
+    document.querySelectorAll('#formContato textarea')
+      .forEach(link => link.addEventListener('keyup', debounce((e) => {        
+        let formData = new FormData(form);
+        let formProps = Object.fromEntries(formData);
+
+        localStorage.setItem(MESSAGE_STOREKEY, JSON.stringify(formProps));
+    }, 1000))); 
 });
 
+function debounce(func, timeout = 500) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func.apply(this, args);
+    }, timeout);
+  };
+}
 
 function SendMessageForm(event){
     event.preventDefault(); 
@@ -53,6 +77,7 @@ function SendMessageForm(event){
     .then(data => {
       UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Mensagem enviada com sucesso.', status: 'primary', pos: 'bottom-right'});
       document.getElementById('formContato').reset();
+      localStorage.removeItem(MESSAGE_STOREKEY);
     })
     .catch(error => UIkit.notification({message: '<span uk-icon=\'icon: warning\'></span> Houve um erro ao enviar sua mensagem', status: 'danger', pos: 'bottom-right'}))
     .finally(() => loadingSpinner.classList.add('uk-invisible'));
@@ -72,5 +97,19 @@ function MaskPhoneNumbers(){
         }
       ]
     })
+  });
+}
+
+function LoadExistingMessage(){
+  let messageStored = localStorage.getItem(MESSAGE_STOREKEY);
+  if(messageStored == undefined || messageStored == null)
+    return;
+  
+  let message = JSON.parse(messageStored);
+  let form = document.getElementById('formContato');
+  let inputs = form.querySelectorAll('input, textarea');
+
+  inputs.forEach(el =>{
+    el.value = message[el.name] || '';
   });
 }
