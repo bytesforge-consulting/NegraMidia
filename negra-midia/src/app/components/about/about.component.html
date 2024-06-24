@@ -1,0 +1,16 @@
+<div id="sobre" class="uk-section">
+  <div class="uk-container">
+      <h1 class="uk-heading-small uk-heading-line"><span> Quem faz</span></h1>
+      <div class="uk-margin-large-top">
+          <div id="teamSlider" class="uk-slider-container team-slider" uk-slider="center:true; finite:true; clsActivated: uk-transition-active">
+              <div class="uk-position-relative" tabindex="-1">
+                  <div class="uk-slider-items">
+                    <div *ngFor="let member of members">
+                      <app-about-item [member]="member"></app-about-item>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

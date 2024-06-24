@@ -1,0 +1,82 @@
+<footer id="contatos" class="uk-section footer">
+  <div class="uk-grid-collapse uk-grid-match uk-text-center" uk-grid>
+      <div class="uk-width-1-3@s">
+          <div class="uk-tile tile-social">
+              <div class="uk-panel uk-margin-medium uk-light">
+                  <h3>Entre em contato</h3>
+              </div>
+              <div class="uk-card uk-card-body card-social-icons">
+                  <a href="mailto:comunicacao@negramidia.net?subject=Negra Midia" target="_blank" rel="noopener"
+                      class="uk-icon-button social-icons"
+                      uk-icon="mail" ratio="1.5"></a>
+                  <a href="https://www.linkedin.com/in/fernandapfrosario" target="_blank" rel="noopener"
+                      class="uk-icon-button social-icons"
+                      uk-icon="linkedin" ratio="1.5"></a>
+                  <a href="https://wa.link/nip49k" target="_blank" rel="noopener"
+                      class="uk-icon-button social-icons"
+                      uk-icon="whatsapp" ratio="1.5"></a>
+              </div>
+          </div>
+      </div>
+      <div class="uk-width-expand@s">
+          <div class="uk-tile tile-message">
+              <div class="uk-text-lead uk-text-left uk-light"> Envie uma mensagem </div>
+              <form [formGroup]="notification" (submit)="onContactSubmit()" id="formContato"class="uk-grid-small"
+                  uk-grid>
+                  <div class="uk-width-1-1@s">
+                      <div class="uk-inline icon-form-input">
+                          <span class="uk-form-icon" uk-icon="icon: user"></span>
+                          <input type="text" class="uk-input" name="name" placeholder="Nome*"
+                              aria-label="Nome" required title="Nome" autocomplete="name" formControlName="name"/>
+                      </div>
+                  </div>
+                  <div class="uk-width-1-1@s">
+                      <div class="uk-inline icon-form-input">
+                          <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                          <input type="email" class="uk-input" name="email" placeholder="E-mail*"
+                              aria-label="E-mail" required title="email" autocomplete="email" formControlName="email">
+                      </div>
+                  </div>
+                  <div class="uk-width-1-2@s">
+                      <div class="uk-inline icon-form-input">
+                          <span class="uk-form-icon" uk-icon="icon: phone"></span>
+                          <input type="tel" class="uk-input" name="phone" placeholder="(00)00000-0000"
+                              aria-label="telefone"
+                              title="telefone" autocomplete="tel"
+                              pattern="\(\d{2}\)\d{4,5}-\d{4}"
+                              [imask]="{mask: [ { mask: '(00)0000-0000'}, { mask: '(00)00000-0000' } ]}"
+                              formControlName="phone">
+                      </div>
+                  </div>
+                  <div class="uk-width-1-2@s">
+                      <div class="uk-inline icon-form-input">
+                          <span class="uk-form-icon" uk-icon="icon: forward"></span>
+                          <input type="text" class="uk-input" name="subject" placeholder="Assunto*"
+                              aria-label="Assunto"
+                              required title="assunto" autocomplete="off" formControlName="subject">
+                      </div>
+                  </div>
+                  <div class="uk-width-1-1@s">
+                      <div class="uk-inline icon-form-input">
+                          <span class="uk-form-icon" uk-icon="icon: commenting"></span>
+                          <textarea class="uk-input uk-form-large" name="body" placeholder="Mensagem*"
+                              required formControlName="body"></textarea>
+                      </div>
+                  </div>
+                  <div class="uk-width-1-1@s">
+                      <button type="submit"
+                          class="uk-button uk-button-secondary uk-width-1-1@s uk-margin-small">Enviar</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  <div class="ltda">
+      <div class="uk-text-meta uk-text-center"> Copyright&copy; {{CURRENTYEAR}} Negra Mídia.
+      </div>
+      <div class="uk-text-meta uk-text-center"> Desenvolvido por <a class="dev-url"
+              href="https://www.linkedin.com/in/hedgarbezerra/" target="_blank" rel="noopener"> Hedgar Bezerra.
+          </a>
+      </div>
+  </div>
+</footer>
