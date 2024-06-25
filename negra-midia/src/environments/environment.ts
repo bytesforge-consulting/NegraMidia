@@ -1,3 +1,3 @@
 export const environment = {
-  APIURL: ''
+  APIURL: 'https://negramidia.net/api'
 };
