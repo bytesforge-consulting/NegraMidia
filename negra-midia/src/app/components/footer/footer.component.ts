@@ -28,13 +28,14 @@ export class FooterComponent {
   onContactSubmit(){
     let contact = this.notification.value as AppNotification;
 
-    this.httpClient.post(`${environment.APIURL}/notify`, contact)
+    this.httpClient.post(`${environment.APIURL}/notify`, contact, {
+      responseType: 'text'
+    })
     .subscribe({
       next: res =>{
-
-      UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Mensagem enviada com sucesso.', status: 'primary', pos: 'bottom-right'});
-      this.notification.reset();
-      localStorage.removeItem(this.MESSAGE_STOREKEY);
+        UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Mensagem enviada com sucesso.', status: 'primary', pos: 'bottom-right'});
+        this.notification.reset();
+        localStorage.removeItem(this.MESSAGE_STOREKEY);
       },
       error: err => UIkit.notification({message: '<span uk-icon=\'icon: warning\'></span> Houve um erro ao enviar sua mensagem', status: 'danger', pos: 'bottom-right'})
     });

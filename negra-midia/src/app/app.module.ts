@@ -29,7 +29,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
   declarations: [AppComponent, FooterComponent, NavbarComponent, HeaderComponent, ServicesComponent, AboutComponent, AboutItemComponent, LoadingSpinnerComponent],
   providers: [
     {
-      provide: HTTP_INTERCEPTORS, useClass: RequestLoadingInterceptor
+      provide: HTTP_INTERCEPTORS, useClass: RequestLoadingInterceptor, multi: true
     },
   ],
   bootstrap: [ AppComponent]

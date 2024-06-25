@@ -3,7 +3,9 @@ import { Injectable } from "@angular/core";
 import { tap, catchError, throwError } from "rxjs";
 import { SpinnerService } from "../services/spinner-service.service";
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class RequestLoadingInterceptor implements HttpInterceptor {
     constructor(private spinnerService : SpinnerService) { }
 
