@@ -2,7 +2,7 @@
   <div class="uk-text-center team-nav-container">
       <a class="uk-slidenav-large team-nav uk-transition-slide-right" href uk-slidenav-previous uk-slider-item="previous"></a>
       <div class="team-nav-img-styler">
-          <img [src]="member.img" class="team-nav-img" alt="">
+          <img fetchpriority="high" [src]="member.img" class="team-nav-img" [alt]="member.name">
       </div>
       <a class="uk-slidenav-large team-nav uk-transition-slide-left" href uk-slidenav-next uk-slider-item="next"></a>
   </div>
