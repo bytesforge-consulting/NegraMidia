@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('a[href^="#"]')
+    document.querySelectorAll('ul a[href^="#"]')
       .forEach(link => link.addEventListener('click', (e) => {
       e.preventDefault();
 
