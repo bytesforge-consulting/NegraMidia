@@ -4,4 +4,4 @@ Disallow: /css/
 Disallow: /js/
 Disallow: /styles.css
 
-Sitemap: https://negramidiav2.pages.dev/sitemap.xml
+Sitemap: https://negramidia.net/sitemap.xml

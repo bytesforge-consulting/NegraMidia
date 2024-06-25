@@ -1,8 +1,7 @@
 {
   "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
-  "assetGroups": [
-    {
+  "assetGroups": [{
       "name": "app",
       "installMode": "prefetch",
       "resources": {
@@ -11,8 +10,12 @@
           "/index.html",
           "/manifest.webmanifest",
           "/*.css",
+          "/*.png",
+          "/*.jpeg",
+          "/*.jpg",
           "/*.js"
-        ]
+        ],
+        "urls": ["https://chronos-common-cdn.azureedge.net/negramidia/site/**"]
       }
     },
     {
