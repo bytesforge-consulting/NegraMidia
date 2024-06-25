@@ -1,0 +1,62 @@
+{
+  "name": "Negra Mídia",
+  "short_name": "Negra Mídia",
+  "description": "Uma empresa de comunicação criada para desenvolver conteúdos para múltiplas plataformas e mídias. Especializada em produção de conteúdo para empresas compromissadas com trabalhos de impacto e marcas engajadas em causas socioambientais.",
+  "theme_color": "#ed7d31",
+  "background_color": "#f6f1ee",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "pt-br",
+  "scope": "https://negramidia.net",
+  "start_url": "https://negramidia.net",
+  "icons": [
+    {
+      "src": "icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
