@@ -8,8 +8,8 @@
   "orientation": "portrait",
   "lang": "pt-br",
   "id": "/",
-  "scope": "https://negramidia.net",
-  "start_url": "https://negramidia.net",
+  "scope": "https://negramidiav2.pages.dev",
+  "start_url": "https://negramidiav2.pages.dev",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
