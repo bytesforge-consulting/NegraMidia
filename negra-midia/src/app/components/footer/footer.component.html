@@ -21,7 +21,7 @@
       <div class="uk-width-expand@s">
           <div class="uk-tile tile-message">
               <div class="uk-text-lead uk-text-left uk-light"> Envie uma mensagem </div>
-              <form [formGroup]="notification" (submit)="onContactSubmit()" id="formContato"class="uk-grid-small"
+              <form [formGroup]="notification" [noValidate]="false" (submit)="onContactSubmit()" id="formContato"class="uk-grid-small"
                   uk-grid>
                   <div class="uk-width-1-1@s">
                       <div class="uk-inline icon-form-input">
