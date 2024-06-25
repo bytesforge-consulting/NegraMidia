@@ -15,7 +15,7 @@
           "/*.jpg",
           "/*.js"
         ],
-        "urls": ["https://chronos-common-cdn.azureedge.net/negramidia/site/**"]
+        "urls": ["https://chronos-common-cdn.azureedge.net/negramidia/**"]
       }
     },
     {
@@ -25,8 +25,12 @@
       "resources": {
         "files": [
           "/**/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
-        ]
+        ],
+        "urls": ["https://chronos-common-cdn.azureedge.net/negramidia/**"]
       }
     }
+  ],
+  "navigationUrls": [
+    "/**"
   ]
 }

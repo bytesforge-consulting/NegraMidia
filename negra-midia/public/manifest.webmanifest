@@ -8,8 +8,8 @@
   "orientation": "portrait",
   "lang": "pt-br",
   "id": "/",
-  "scope": "https://negramidiav2.pages.dev",
-  "start_url": "https://negramidiav2.pages.dev",
+  "scope": "https://negramidia.net",
+  "start_url": "https://negramidia.net",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
@@ -39,8 +39,7 @@
     {
       "src": "icons/icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable any"
+      "type": "image/png"
     },
     {
       "src": "icons/icon-384x384.png",
