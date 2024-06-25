@@ -298,3 +298,9 @@ html {
     top: calc(80% - (calc(.2px + .05em)/ 2)) ;
     border-bottom: calc(.2px + .05em) solid #333 !important;
 }
+
+.uk-navbar-sticky{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
