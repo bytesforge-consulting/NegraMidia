@@ -10,8 +10,18 @@
           "/favicon.ico",
           "/index.html",
           "/manifest.webmanifest",
+          "/robots.txt",
+          "/sitemap.xml",
+          "/*.js",
+          "/*.css",
           "**/**.css",
-          "**/**.js"
+          "**/**.js",
+          "**/**.ts"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/**",
+          "https://fonts.gstatic.com/**",
+          "https://chronos-common-cdn.azureedge.net/negramidia/**"
         ]
       }
     },
@@ -23,15 +33,17 @@
           "**/**.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
         ]
       }
-    },
+    }
+  ],
+  "dataGroups": [
     {
-      "name": "cdn",
-      "installMode": "prefetch",
-      "resources": {
-        "files": [
-          "**/**.*"
-        ],
-        "urls": ["https://chronos-common-cdn.azureedge.net/negramidia"]
+      "name": "request api",
+      "urls": ["http://localhost.com/posts"],
+      "cacheConfig": {
+        "maxSize": 5,
+        "maxAge": "12h",
+        "timeout": "20s",
+        "strategy": "freshness"
       }
     }
   ]
