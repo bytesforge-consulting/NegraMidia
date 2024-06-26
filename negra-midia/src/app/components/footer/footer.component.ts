@@ -9,55 +9,94 @@ declare var UIkit: any;
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  styleUrl: './footer.component.css',
 })
 export class FooterComponent {
   constructor(private httpClient: HttpClient) {}
 
   protected readonly CURRENTYEAR: number = new Date().getFullYear();
-  private  readonly MESSAGE_STOREKEY: string = 'SAVEDMESSAGE';
+  private readonly MESSAGE_STOREKEY: string = 'SAVEDMESSAGE';
 
   notification = new FormGroup({
     name: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required, Validators.email]),
-    phone: new FormControl('', [Validators.required, Validators.pattern('\(\d{2}\)\d{4,5}-\d{4}')]),
+    phone: new FormControl('', [
+      Validators.required,
+      Validators.pattern('(d{2})d{4,5}-d{4}'),
+    ]),
     body: new FormControl('', [Validators.required]),
-    subject: new FormControl('', [Validators.required])
+    subject: new FormControl('', [Validators.required]),
   });
 
-  onContactSubmit(){
+  onContactSubmit() {
     let contact = this.notification.value as AppNotification;
 
-    this.httpClient.post(`${environment.APIURL}/notify`, contact, {
-      responseType: 'text'
-    })
-    .subscribe({
-      next: res =>{
-        UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Mensagem enviada com sucesso.', status: 'primary', pos: 'bottom-right'});
-        this.notification.reset();
-        localStorage.removeItem(this.MESSAGE_STOREKEY);
-      },
-      error: err => UIkit.notification({message: '<span uk-icon=\'icon: warning\'></span> Houve um erro ao enviar sua mensagem', status: 'danger', pos: 'bottom-right'})
-    });
+    this.httpClient
+      .post(`${environment.APIURL}/notify`, contact, {
+        responseType: 'text',
+      })
+      .subscribe({
+        next: (res) => {
+          UIkit.notification({
+            message:
+              "<span uk-icon='icon: check'></span> Mensagem enviada com sucesso.",
+            status: 'primary',
+            pos: 'bottom-right',
+          });
+          this.notification.reset();
+          localStorage.removeItem(this.MESSAGE_STOREKEY);
+        },
+        error: (err) =>
+          UIkit.notification({
+            message:
+              "<span uk-icon='icon: warning'></span> Houve um erro ao enviar sua mensagem",
+            status: 'danger',
+            pos: 'bottom-right',
+          }),
+      });
   }
 
-  onContactFieldChanged(){
-    localStorage.setItem(this.MESSAGE_STOREKEY, JSON.stringify(this.notification.value));
+  onContactFieldChanged() {
+    localStorage.setItem(
+      this.MESSAGE_STOREKEY,
+      JSON.stringify(this.notification.value)
+    );
   }
 
   ngOnInit() {
     this.LoadExistingContactForm();
-    this.notification.valueChanges.
-      pipe(debounceTime(1000), distinctUntilChanged())
-      .subscribe(() => this.onContactFieldChanged())
+    this.notification.valueChanges
+      .pipe(debounceTime(1000), distinctUntilChanged())
+      .subscribe(() => this.onContactFieldChanged());
   }
 
-  LoadExistingContactForm(){
+  LoadExistingContactForm() {
     let messageStored = localStorage.getItem(this.MESSAGE_STOREKEY);
-    if(messageStored == undefined || messageStored == null)
-      return;
+    if (messageStored == undefined || messageStored == null) return;
 
     let message = JSON.parse(messageStored) as AppNotification;
     this.notification.setValue(message);
+  }
+
+  requestsNotificationPermission() {
+    if ('Notification' in window && Notification.permission === 'default') {
+      Notification.requestPermission().then((permission) => {
+        if (permission === 'granted') {
+          // Permissão concedida, você pode criar notificações
+          const notification = new Notification('Olá!');
+          // ...
+        } else if (permission === 'denied') {
+          // O usuário negou a permissão
+          console.log('Permissão negada para notificações.');
+        }
+      });
+    } else if (Notification.permission === 'granted') {
+      // Permissão já concedida, você pode criar notificações
+      const notification = new Notification('Olá!');
+      // ...
+    } else {
+      // Permissão negada
+      console.log('Permissão negada para notificações.');
+    }
   }
 }

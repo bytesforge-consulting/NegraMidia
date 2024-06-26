@@ -10,7 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ServicesComponent } from './components/services/services.component';
 import { IMaskModule } from 'angular-imask';
 import { AboutItemComponent } from './components/about-item/about-item.component';
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule, provideHttpClient, withFetch, withInterceptorsFromDi } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RequestLoadingInterceptor } from './helpers/RequestLoadingInterceptor';
@@ -19,17 +19,36 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   imports: [
-    BrowserModule, CommonModule, RouterOutlet, IMaskModule, FormsModule, ReactiveFormsModule, HttpClientModule, AppRoutingModule, ServiceWorkerModule.register('ngsw-worker.js', {
-  enabled: !isDevMode(),
-  registrationStrategy: 'registerImmediately'
-})
+    BrowserModule,
+    CommonModule,
+    RouterOutlet,
+    IMaskModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      registrationStrategy: 'registerImmediately',
+    }),
   ],
-  declarations: [AppComponent, FooterComponent, NavbarComponent, HeaderComponent, ServicesComponent, AboutComponent, AboutItemComponent, LoadingSpinnerComponent],
+  declarations: [
+    AppComponent,
+    FooterComponent,
+    NavbarComponent,
+    HeaderComponent,
+    ServicesComponent,
+    AboutComponent,
+    AboutItemComponent,
+    LoadingSpinnerComponent,
+  ],
   providers: [
     {
-      provide: HTTP_INTERCEPTORS, useClass: RequestLoadingInterceptor, multi: true
+      provide: HTTP_INTERCEPTORS,
+      useClass: RequestLoadingInterceptor,
+      multi: true,
     },
+    provideHttpClient(withInterceptorsFromDi(), withFetch())
   ],
-  bootstrap: [ AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
