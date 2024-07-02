@@ -1,0 +1,20 @@
+<div class="uk-card team-card">
+  <div class="uk-text-center team-nav-container">
+      <a class="uk-slidenav-large team-nav uk-transition-slide-right" href uk-slidenav-previous uk-slider-item="previous"></a>
+      <div class="team-nav-img-styler">
+          <img fetchpriority="high" [src]="member.img" class="team-nav-img" [alt]="member.name">
+      </div>
+      <a class="uk-slidenav-large team-nav uk-transition-slide-left" href uk-slidenav-next uk-slider-item="next"></a>
+  </div>
+
+  <div class="uk-card-header uk-text-center">
+      <h3 class="uk-card-title">{{member.name}}</h3>
+  </div>
+
+  <div class="uk-card-body">
+      <p>{{member.intro}}</p>
+  </div>
+  <div class="uk-card-footer uk-text-right">
+      <a [href]="member.knowMore" target="_blank" rel="noopener" class="uk-button uk-button-text">Saiba mais</a>
+  </div>
+</div>

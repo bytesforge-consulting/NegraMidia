@@ -1,0 +1,50 @@
+<div class="uk-navbar-sticky">
+  <nav class="uk-navbar-container uk-visible@s nav-main" uk-inverse="sel-active: .uk-navbar-transparent">
+      <div class="uk-container">
+          <div uk-navbar="dropbar: true; dropbar-transparent-mode: remove; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
+              <div class="uk-navbar-left">
+                  <a class="uk-logo" href="#">
+                      <img src="https://chronos-common-cdn.azureedge.net/negramidia/site/logo.png" class="logo-img" alt="logo negra mídia"
+                          aria-label="logo escrito negra mídia">
+                  </a>
+              </div>
+              <div class="uk-navbar-right">
+                  <ul class="uk-navbar-nav">
+                      <li><a href="#inicio">Início</a></li>
+                      <li><a href="#servicos">Serviços</a></li>
+                      <li><a href="#sobre">Sobre</a></li>
+                      <li><a href="#contatos">Contatos</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <nav class="uk-navbar-container uk-hidden@s nav-main" uk-inverse="sel-active: .uk-navbar-transparent">
+      <div class="uk-container">
+          <div uk-navbar>
+              <div class="uk-navbar-left">
+                  <a class="uk-logo" href="#">
+                      <img src="https://chronos-common-cdn.azureedge.net/negramidia/site/logo.png" class="logo-img" alt="logo negra mídia"
+                          aria-label="logo escrito negra mídia">
+                  </a>
+              </div>
+              <div class="uk-navbar-right">
+                  <a class="uk-navbar-toggle" href="#">
+                      <span uk-navbar-toggle-icon></span>
+                      <span class="uk-margin-small-left">Menu</span>
+                  </a>
+                  <div class="uk-navbar-dropdown nav-main-dropdown"
+                      uk-drop="stretch: x; target: !.uk-navbar-container; animation: reveal-top; animate-out: true; duration: 700">
+                      <ul class="uk-nav uk-navbar-dropdown-nav nav-main-dropdown-list">
+                          <li><a href="#inicio">Início</a></li>
+                          <li><a href="#servicos">Serviços</a></li>
+                          <li><a href="#sobre">Sobre</a></li>
+                          <li><a href="#contatos">Contatos</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+</div>

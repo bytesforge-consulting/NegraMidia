@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+Disallow: /css/
+Disallow: /js/
+Disallow: /styles.css
+
+Sitemap: https://negramidia.net/sitemap.xml
