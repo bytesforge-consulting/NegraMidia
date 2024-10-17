@@ -10,7 +10,7 @@ export class AboutComponent {
   members: TeamMember[] = [
     {
       name: 'Fernanda Rosário',
-      img: 'https://chronos-common-cdn.azureedge.net/negramidia/site/team/fernanda-rosario.jpg',
+      img: 'https://chronos-common-cdn.azurefd.net/negramidia/site/team/fernanda-rosario.jpg',
       knowMore: 'https://fernandapfrosario.journoportfolio.com',
       intro: `Jornalista com atuação em projetos pautados na temática racial, direitos
               humanos, combate ao racismo, meio ambiente, educação midiática e
