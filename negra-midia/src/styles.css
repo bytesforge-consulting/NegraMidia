@@ -212,8 +212,12 @@ html {
 }
 
 .header-secundario {
-  color: #ffffff;
   background-color: var(--auxiliary-gray);
+}
+
+.header-secundario h2{
+  color: #ffffff;
+  font-size: 16px !important;
 }
 
 .heading-inicio {
