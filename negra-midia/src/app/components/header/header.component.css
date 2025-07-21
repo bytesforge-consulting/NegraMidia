@@ -1,0 +1,106 @@
+.header-inicial {
+  background-color: var(--primary-blue);
+  padding: 20px 40px 20px 40px;
+}
+
+.heading-inicio {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  pointer-events: none;
+}
+
+.estrategia-card {
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.estrategia-titulo {
+  color:  var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.estrategia-texto {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.estrategia-texto-italico {
+  font-style: italic;
+}
+
+.estrategia-texto-destaque {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* Para adicionar a imagem da pena como background */
+.estrategia-card::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 0; /* Alterado para 0 para alinhar à direita */
+  width: 15%; /* Alterado para porcentagem para ser responsivo */
+  max-width: 120px; /* Tamanho máximo para telas grandes */
+  min-width: 80px; /* Tamanho mínimo para telas pequenas */
+  height: 0;
+  padding-bottom: 22%; /* Proporção de altura baseada na largura para manter aspecto */
+  max-padding-bottom: 180px; /* Limite máximo para o padding */
+  background-image: url('/content/pena.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top; /* Alinhado à direita */
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Para adicionar a linha abaixo como imagem */
+.header-secundario .uk-container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 2%; /* Altura responsiva baseada na largura */
+  max-height: 20px; /* Altura máxima */
+  background-image: url('/content/listra-pena.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center; /* Alinhado à direita */
+  margin-top: 20px;
+}
+
+
+/* Media queries para ajustes em telas menores */
+@media (max-width: 640px) {
+  .estrategia-card::after {
+    width: 12%; /* Ligeiramente menor em telas pequenas */
+    min-width: 60px;
+    opacity: 0.2; /* Mais transparente em telas pequenas */
+  }
+
+  .header-secundario .uk-container::after {
+    padding-bottom: 3%; /* Proporcionalmente maior em telas pequenas */
+  }
+
+  .uk-width-1-2\@s {
+    margin-bottom: 30px;
+  }
+
+  .uk-width-1-2\@s:last-child {
+    margin-bottom: 0;
+  }
+}
+
+img {
+  pointer-events: none;
+}
+
+.header-secundaria-img{
+  width: 90%;
+}

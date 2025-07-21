@@ -1,0 +1,58 @@
+.uk-card {
+  background-color: var(--light-brown);
+  border-radius: 10px;
+}
+
+.uk-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 20px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  backface-visibility: visible;
+  transform: rotateY(0deg);
+}
+
+.uk-card img:hover {
+  transform: rotateY(360deg);
+}
+
+.uk-card h2 {
+  color: var(--primary-white);
+}
+
+.uk-card p {
+  color: var(--primary-white);
+  opacity: 0.9;
+}
+
+.uk-icon-button {
+  background-color: var(--primary-white);
+  color: var(--primary-blue);
+}
+
+.uk-icon-button:hover {
+  background-color: var(--primary-color);
+  color: var(--primary-white);
+}
+
+.uk-position-small {
+  color: var(--primary-white);
+}
+
+.uk-dotnav > * > * {
+  background-color: var(--primary-white);
+}
+
+.uk-dotnav > .uk-active > * {
+  background-color: var(--primary-color);
+}
+
+
+@media (max-width: 959px) {
+  .uk-padding-remove-left {
+    padding-left: 40px !important;
+  }
+}

@@ -1,0 +1,58 @@
+.social-icons.no-background{
+  background-color: transparent!important;
+  background: var(--primary-white)!important;
+}
+.social-icons.whatsapp:hover {
+  background-color: #25d366 !important;
+  color: var(--primary-white) !important;
+  transform: scale(1.5);
+}
+.social-icons.whatsapp {
+  height: 6vw;
+  width: 6vw;
+  max-height: 80px;
+  max-width: 80px;
+  color: #25d366 !important;
+  transition: transform 0.3s ease, background-color 0.3s !important;
+}
+
+.social-icons.linkedin:hover {
+  background-color: #0a66c2 !important;
+  color: var(--primary-white) !important;
+  transform: scale(1.5);
+}
+.social-icons.linkedin {
+  height: 6vw;
+  width: 6vw;
+  max-height: 80px;
+  max-width: 80px;
+  color: #0a66c2 !important;
+  transition: transform 0.3s ease, background-color 0.3s !important;
+}
+
+.social-buttons-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Versão para telas maiores - ícones em coluna */
+@media screen and (min-width: 640px) {
+  .social-buttons-container {
+    flex-direction: column;
+  }
+}
+
+/* Versão para telas menores - ícones em linha */
+@media screen and (max-width: 639px) {
+  .social-buttons-container {
+    flex-direction: row;
+    bottom: 10px;
+    right: 10px;
+  }
+}

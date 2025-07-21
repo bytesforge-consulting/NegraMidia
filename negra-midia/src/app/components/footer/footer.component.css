@@ -1,0 +1,30 @@
+
+.footer {
+  padding: 0 !important;
+}
+
+.card-social-icons {
+  display: flex !important;
+  justify-content: space-evenly;
+}
+
+.social-icons:hover {
+  background-color: var(--primary-white) !important;
+  color: var(--primary-color) !important;
+  transform: scale(1.3);
+}
+.social-icons {
+  width: 7vh !important;
+  height: 7vh !important;
+  color: var(--primary-white) !important;
+  background-color: var(--primary-color) !important;
+  transition: transform 0.3s ease, background-color 0.3s !important;
+}
+
+.tile-message {
+  background-color: var(--medium-white);
+}
+.tile-social,
+.tile-message .uk-input {
+  background-color: var(--primary-white) !important;
+}

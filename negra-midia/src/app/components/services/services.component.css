@@ -1,0 +1,57 @@
+/* Estilização da seção de serviços */
+#servicos {
+  background-color: var(--light-brown); /* Fundo da div de serviços com --light-brown */
+  color: var(--primary-white); /* Cor do texto padrão */
+}
+
+/* Estilização do título da seção */
+#servicos h1 {
+  color: var(--primary-white);
+}
+
+/* Estilização do container do slider */
+#servicos .uk-slider-container {
+  background-color: var(--medium-brown);
+  padding: 20px 0;
+}
+
+/* Estilização dos cards dentro do slider */
+#servicos .uk-card {
+  background-color: var(--medium-brown); /* Mantém a consistência com o container */
+  border: none;
+  box-shadow: none;
+}
+
+/* Estilização dos títulos dos cards */
+#servicos *{
+  color: var(--primary-white);
+}
+
+#servicos h2{
+  font-weight: 600;
+}
+
+#servicos h3{
+  font-weight: 300;
+}
+
+/* Estilização dos dots de navegação */
+#servicos .uk-dotnav > * > * {
+  background-color: var(--primary-white);
+}
+
+#servicos .uk-dotnav > .uk-active > * {
+  background-color: var(--primary-color);
+}
+
+.uk-heading-line > ::after, .uk-heading-line > ::before {
+    border-bottom: calc(0.2px + 0.05em) solid var(--primary-white) !important;
+}
+
+.uk-button-green{
+  color: var(--primary-white)!important;
+  background-color: #558d57;
+}
+.uk-button-green:hover{
+  background-color: #365a37!important;
+}

@@ -1,0 +1,22 @@
+#historico {
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+}
+
+.uk-heading-line > ::after, .uk-heading-line > ::before {
+    border-bottom: calc(0.2px + 0.05em) solid var(--primary-white) !important;
+}
+
+#historico h1 {
+  color: var(--primary-white);
+}
+
+.history-text {
+  font-weight: 300;
+  color: var(--primary-white);
+  opacity: 0.9;
+}
+
+img {
+  pointer-events: none;
+}

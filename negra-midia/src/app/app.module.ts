@@ -9,13 +9,14 @@ import { LoadingSpinnerComponent } from './components/loading-spinner/loading-sp
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ServicesComponent } from './components/services/services.component';
 import { IMaskModule } from 'angular-imask';
-import { AboutItemComponent } from './components/about-item/about-item.component';
 import { HTTP_INTERCEPTORS, HttpClientModule, provideHttpClient, withFetch, withInterceptorsFromDi } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RequestLoadingInterceptor } from './helpers/RequestLoadingInterceptor';
 import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { HistoryComponent } from "./components/history/history.component";
+import { FloatingIconsComponent } from "./components/floating-icons/floating-icons.component";
 
 @NgModule({
   imports: [
@@ -27,10 +28,10 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     ReactiveFormsModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: !isDevMode(),
-      registrationStrategy: 'registerImmediately',
+        enabled: !isDevMode(),
+        registrationStrategy: 'registerImmediately',
     }),
-  ],
+],
   declarations: [
     AppComponent,
     FooterComponent,
@@ -38,8 +39,9 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     HeaderComponent,
     ServicesComponent,
     AboutComponent,
-    AboutItemComponent,
     LoadingSpinnerComponent,
+    HistoryComponent,
+    FloatingIconsComponent
   ],
   providers: [
     {
