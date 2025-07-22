@@ -1,7 +1,16 @@
 User-agent: *
-Disallow:
+Allow: /
 Disallow: /css/
 Disallow: /js/
 Disallow: /styles.css
+Disallow: /*.js$
+Disallow: /*.css$
+
+User-agent: Googlebot-Image
+Allow: /content/
+Allow: /icons/
+
+User-agent: Googlebot
+Allow: /content/
 
 Sitemap: https://negramidia.net/sitemap.xml
