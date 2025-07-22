@@ -1,18 +1,17 @@
 <div class="uk-container">
-    <nav class="uk-navbar-container uk-visible@s nav-main" uk-navibar>
+    <nav class="uk-navbar-container uk-visible@s nav-main" uk-navibar role="navigation" aria-label="Menu principal">
     <div uk-navbar>
       <div class="uk-navbar-left">
-        <a class="uk-logo" href="#">
-          <img src="/content/logo.png" class="logo-img" alt="logo negra mídia"
-            aria-label="logo escrito negra mídia">
+        <a class="uk-logo" href="#" aria-label="Página inicial Negra Mídia">
+          <img src="/content/logo.png" class="logo-img" alt="Logo Negra Mídia - Comunicação com propósito" width="200" height="80">
         </a>
       </div>
       <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contatos">Contatos</a></li>
+        <ul class="uk-navbar-nav" role="menubar">
+          <li role="none"><a href="#inicio" role="menuitem">Início</a></li>
+          <li role="none"><a href="#servicos" role="menuitem">Serviços</a></li>
+          <li role="none"><a href="#sobre" role="menuitem">Sobre</a></li>
+          <li role="none"><a href="#contatos" role="menuitem">Contatos</a></li>
         </ul>
       </div>
     </div>
