@@ -118,16 +118,6 @@ body.scrolling > * {
   -webkit-backdrop-filter: blur(1.7px);
 }
 
-.logo-img {
-  max-width: 30%;
-  height: auto;
-  display: inline-block;
-}
-
-.nav-main > li > a {
-  color: var(--primary-white);
-}
-
 .uk-light {
   color: var(--primary-white) !important;
 }

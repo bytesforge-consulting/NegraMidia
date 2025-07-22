@@ -1,5 +1,5 @@
 .uk-card {
-  background-color: var(--light-brown);
+  background-color: var(--primary-white);
   border-radius: 10px;
 }
 
@@ -20,30 +20,30 @@
 }
 
 .uk-card h2 {
-  color: var(--primary-white);
+  color:  #242424;
 }
 
 .uk-card p {
-  color: var(--primary-white);
+  color:  #242424;
   opacity: 0.9;
 }
 
 .uk-icon-button {
-  background-color: var(--primary-white);
+  background-color:  var(--primary-white);
   color: var(--primary-blue);
 }
 
 .uk-icon-button:hover {
   background-color: var(--primary-color);
-  color: var(--primary-white);
+  color:  #242424;
 }
 
 .uk-position-small {
-  color: var(--primary-white);
+  color:  #242424;
 }
 
 .uk-dotnav > * > * {
-  background-color: var(--primary-white);
+  background-color:  #242424;
 }
 
 .uk-dotnav > .uk-active > * {
@@ -55,4 +55,16 @@
   .uk-padding-remove-left {
     padding-left: 40px !important;
   }
+}
+
+
+div > a.uk-icon-button {
+  color: var(--primary-color);
+  height: 7vh;
+  width: 7vh;
+}
+
+div > a.uk-icon-button:hover {
+  color: var(--primary-white);
+  background-color: var(--primary-color);
 }

@@ -20,3 +20,8 @@
 img {
   pointer-events: none;
 }
+
+.img-parceiros{
+  height: 60%;
+  width: 60%;
+}

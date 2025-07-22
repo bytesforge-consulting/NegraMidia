@@ -1,3 +1,18 @@
+@keyframes sprayEffect {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+  }
+}
+
+
 .header-inicial {
   background-color: var(--primary-blue);
   padding: 20px 40px 20px 40px;
@@ -40,48 +55,33 @@
   font-weight: 500;
 }
 
-/* Para adicionar a imagem da pena como background */
-.estrategia-card::after {
-  content: "";
+.pena-decorativa {
   position: absolute;
   top: 20px;
-  right: 0; /* Alterado para 0 para alinhar à direita */
-  width: 15%; /* Alterado para porcentagem para ser responsivo */
-  max-width: 120px; /* Tamanho máximo para telas grandes */
-  min-width: 80px; /* Tamanho mínimo para telas pequenas */
-  height: 0;
-  padding-bottom: 22%; /* Proporção de altura baseada na largura para manter aspecto */
-  max-padding-bottom: 180px; /* Limite máximo para o padding */
-  background-image: url('/content/pena.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right top; /* Alinhado à direita */
+  right: 0;
+  width: 15%;
   opacity: 0.3;
   z-index: 0;
 }
 
-/* Para adicionar a linha abaixo como imagem */
-.header-secundario .uk-container::after {
-  content: "";
+.listra-decorativa {
   display: block;
   width: 100%;
-  height: 0;
-  padding-bottom: 2%; /* Altura responsiva baseada na largura */
-  max-height: 20px; /* Altura máxima */
-  background-image: url('/content/listra-pena.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right center; /* Alinhado à direita */
-  margin-top: 20px;
+  height: auto;
+  animation: sprayEffect 1.5s ease-out forwards;
 }
-
 
 /* Media queries para ajustes em telas menores */
 @media (max-width: 640px) {
-  .estrategia-card::after {
-    width: 12%; /* Ligeiramente menor em telas pequenas */
+  .pena-decorativa {
+    width: 12%;
     min-width: 60px;
-    opacity: 0.2; /* Mais transparente em telas pequenas */
+    opacity: 0.2;
+  }
+
+  .listra-decorativa {
+    height: auto;
+    max-height: 25px;
   }
 
   .header-secundario .uk-container::after {
@@ -102,5 +102,6 @@ img {
 }
 
 .header-secundaria-img{
-  width: 90%;
+  width: 75%;
 }
+

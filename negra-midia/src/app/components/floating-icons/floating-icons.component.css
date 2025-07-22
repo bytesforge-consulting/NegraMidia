@@ -2,14 +2,18 @@
   background-color: transparent!important;
   background: var(--primary-white)!important;
 }
+
+.social-icons {
+  height: 6vw;
+  width: 6vw;
+}
+
 .social-icons.whatsapp:hover {
   background-color: #25d366 !important;
   color: var(--primary-white) !important;
   transform: scale(1.5);
 }
 .social-icons.whatsapp {
-  height: 6vw;
-  width: 6vw;
   max-height: 80px;
   max-width: 80px;
   color: #25d366 !important;
@@ -22,8 +26,6 @@
   transform: scale(1.5);
 }
 .social-icons.linkedin {
-  height: 6vw;
-  width: 6vw;
   max-height: 80px;
   max-width: 80px;
   color: #0a66c2 !important;
@@ -52,7 +54,9 @@
 @media screen and (max-width: 639px) {
   .social-buttons-container {
     flex-direction: row;
-    bottom: 10px;
-    right: 10px;
   }
+.social-icons {
+  height: 10vw;
+  width: 10vw;
+}
 }

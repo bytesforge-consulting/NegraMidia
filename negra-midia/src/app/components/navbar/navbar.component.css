@@ -1,10 +1,9 @@
+.logo-img {
+  max-width: 12vh;
+  height: auto;
+  display: inline-block;
+}
 
-
-/*
-TODO: Verificar isso aqui, se mantem ou não
-.uk-navbar-sticky {
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  display: contents;
-} */
+.nav-main > li > a {
+  color: var(--primary-white);
+}
