@@ -15,7 +15,7 @@
 
 .header-inicial {
   background-color: var(--primary-blue);
-  padding: 20px 40px 20px 40px;
+  height: 70%;
 }
 
 .heading-inicio {
@@ -89,7 +89,7 @@
   }
 
   .uk-width-1-2\@s {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .uk-width-1-2\@s:last-child {
@@ -101,7 +101,32 @@ img {
   pointer-events: none;
 }
 
-.header-secundaria-img{
-  width: 75%;
+.header-inicial-img{
+  width: 120%;
 }
 
+.header-secundaria-img{
+  width: 80%;
+}
+
+#inicio > .uk-container > div {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@keyframes drawImage {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.header-inicial-img {
+  animation: drawImage 1.5s ease-out forwards;
+}
