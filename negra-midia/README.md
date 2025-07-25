@@ -1,27 +1,196 @@
 # NegraMidia
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+## Descrição
 
-## Development server
+NegraMidia é uma aplicação web desenvolvida em Angular 18 que oferece suporte a múltiplos idiomas (Português, Inglês e Espanhol). A aplicação funciona como uma Single Page Application (SPA) e inclui recursos de Progressive Web App (PWA) através do Angular Service Worker. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Seu objetivo é informar os visitantes dos serviços oferecidos pela Negra Mídia, bem como apresentar informações sobre a empresa e seu time.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Estrutura do Projeto
+
+```              
+├── public/                  # Arquivos públicos estáticos
+│   ├── _redirects           # Regras de redirecionamento para SPA
+│   ├── content/             # Conteúdo estático (imagens, etc.)
+│   ├── css/                 # Arquivos CSS (UIKit)
+│   ├── js/                  # Scripts JavaScript
+│   ├── icons/               # Ícones para PWA
+│   ├── manifest.webmanifest # Configuração do PWA
+│   └── screenshots/         # Capturas de tela do aplicativo
+├── src/                     # Código-fonte da aplicação
+│   ├── app/                 # Componentes e lógica Angular
+│   │   ├── components/      # Componentes da aplicação
+│   │   ├── helpers/         # Funções auxiliares
+│   │   ├── interfaces/      # Interfaces TypeScript
+│   │   └── services/        # Serviços Angular
+│   ├── assets/              # Recursos estáticos
+│   │   └── i18n/            # Arquivos de internacionalização
+│   └── environments/        # Configurações de ambiente
+└── angular.json            # Configuração principal do Angular
+```
+
+## Requisitos
+
+- Node.js: versão ^18.19.1, ^20.11.1 ou >=22.0.0
+- Angular CLI: versão 18.0.3 ou superior
+
+## Configuração do Ambiente de Desenvolvimento
+
+### Instalação de Dependências
+
+```bash
+npm install
+```
+
+### Servidor de Desenvolvimento
+
+Para iniciar o servidor de desenvolvimento em português (idioma padrão):
+
+```bash
+npm start
+```
+
+Para iniciar o servidor em inglês:
+
+```bash
+npm run start:en
+```
+
+Para iniciar o servidor em espanhol:
+
+```bash
+npm run start:es
+```
+
+Para iniciar os servidores em todos os idiomas simultaneamente:
+
+```bash
+npm run start:all
+```
+
+Navegue para os seguintes endereços para acessar a aplicação em cada idioma:
+- Português: `http://localhost:4200/`
+- Inglês: `http://localhost:4201/en/`
+- Espanhol: `http://localhost:4202/es/`
+
+A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos de origem.
+
+## Internacionalização (i18n)
+
+O projeto suporta três idiomas:
+- Português (padrão): acessível na raiz do site
+- Inglês: acessível em `/en/`
+- Espanhol: acessível em `/es/`
+
+Para extrair as strings para tradução:
+
+```bash
+npm run extract-i18n
+```
+
+Os arquivos de tradução estão localizados em `src/assets/i18n/`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Build para Todos os Idiomas
 
-## Running unit tests
+```bash
+npm run build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Este comando gera builds para todos os idiomas configurados.
 
-## Running end-to-end tests
+### Build para Idiomas Específicos
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para português:
+```bash
+npm run build:pt
+```
 
-## Further help
+Para inglês:
+```bash
+npm run build:en
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para espanhol:
+```bash
+npm run build:es
+```
+
+Os artefatos de build serão armazenados no diretório `dist/negra-midia/browser` para cada idioma.
+
+## Deploy na Cloudflare Pages
+
+### Configuração Inicial
+
+1. Crie uma conta na Cloudflare e acesse o serviço Pages
+2. Conecte seu repositório Git (GitHub, GitLab, etc.)
+3. Configure as seguintes opções de build:
+   - **Comando de build**: `npm run build`
+   - **Diretório de saída**: `dist/negra-midia/browser`
+   - **Ramificação de produção**: `main`
+
+### Arquivo _redirects
+
+O arquivo `_redirects` localizado em `public/_redirects` é essencial para o funcionamento correto da SPA em ambientes de hospedagem como a Cloudflare Pages. Este arquivo contém regras de redirecionamento que garantem que todas as rotas da aplicação sejam direcionadas corretamente para o arquivo index.html apropriado, permitindo que o Angular Router funcione adequadamente.
+
+```
+# Redirecionamentos para SPA
+/*    /index.html   200
+/en/*  /en/index.html  200
+/es/*  /es/index.html  200
+```
+
+Estas regras garantem que:
+- Todas as rotas na raiz sejam direcionadas para o index.html em português
+- Todas as rotas começando com /en/ sejam direcionadas para o index.html em inglês
+- Todas as rotas começando com /es/ sejam direcionadas para o index.html em espanhol
+
+Para mais informações consulte [Redirects](https://developers.cloudflare.com/pages/configuration/redirects) na documentação da Cloudflare
+
+### Variáveis de Ambiente
+
+Para garantir que o deploy funcione corretamente na Cloudflare Pages, pode ser necessário definir manualmente a versão do Node.js. Para isso:
+
+1. Acesse o painel da Cloudflare
+2. Navegue até Pages > Configurações > Variáveis de Ambiente
+3. Adicione uma nova variável com nome `NODE_VERSION` e valor correspondente à versão desejada (ex: `18.20`)
+
+Além disso, você pode configurar a variável de ambiente `APIURL` para apontar para o endpoint correto da API em produção:
+
+1. Adicione uma variável com nome `APIURL` e valor `https://negramidia.net/api`
+
+### Estrutura de Build
+
+O processo de build gera os arquivos no diretório `dist/negra-midia/browser`. Esta estrutura é importante para o deploy na Cloudflare Pages, pois:
+
+- O diretório raiz contém os arquivos para o idioma português
+- O subdiretório `/en` contém os arquivos para o idioma inglês
+- O subdiretório `/es` contém os arquivos para o idioma espanhol
+
+### Cache e Service Worker
+
+A aplicação utiliza o Angular Service Worker para funcionalidades de PWA. O arquivo de configuração `ngsw-config.json` define as estratégias de cache e é ativado apenas em builds de produção.
+
+## Solução de Problemas Comuns
+
+### Erro de Versão do Node.js
+
+Se o build falhar na Cloudflare com erros relacionados à versão do Node.js, verifique se a variável de ambiente `NODE_VERSION` está configurada corretamente conforme as versões suportadas no `package.json`.
+
+### Problemas com Redirecionamentos
+
+Se as rotas não estiverem funcionando corretamente após o deploy, verifique se o arquivo `_redirects` está sendo incluído corretamente no build. O arquivo deve estar presente no diretório `public` e ser copiado para o diretório de saída durante o build.
+
+### Variáveis de Ambiente não Aplicadas
+
+Se as variáveis de ambiente não estiverem sendo aplicadas corretamente, verifique se elas estão configuradas no painel da Cloudflare e se o processo de build está substituindo corretamente os valores no arquivo `environment.ts`.
+
+## Recursos Adicionais
+
+- [Documentação do Angular](https://angular.dev)
+- [Documentação da Cloudflare Pages](https://developers.cloudflare.com/pages)
+- [Guia de Internacionalização do Angular](https://angular.dev/guide/i18n)
+        

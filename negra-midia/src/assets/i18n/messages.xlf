@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="pt" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="sobreTituloSEO" datatype="html">
+        <source>Fernanda Rosário - Jornalista Especializada em Comunicação Antirracista e Direitos Humanos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobreQuemFaz" datatype="html">
+        <source>Quem faz</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobreFernandaAlt" datatype="html">
+        <source>Fernanda Rosário</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto1" datatype="html">
+        <source>Sou apaixonada pelas palavras e por facilitar narrativas potentes e engajadoras. Sou jornalista com atuação em projetos pautados na temática racial, direitos humanos, combate ao racismo, meio ambiente, educação midiática e diversidade.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto2" datatype="html">
+        <source>Nos últimos anos, atuei na comunicação e/ou assistência de direção de documentários alinhados à Agenda 2030 da produtora <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Deusdará Filmes: CIBERNÉTICAS, DE REPENTE 50, DOAR, VARANDAS, CASAS FLUTUANTES e COMIDA PARA QUEM PRECISA.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">27,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto3" datatype="html">
+        <source>Já tive materiais publicados (entre textos, vídeos, podcasts e apresentação de programa) na <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Alma Preta Jornalismo, Folha de São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">30,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto4" datatype="html">
+        <source>Tenho experiência em produção de textos, podcasts, vídeos, liderança de equipes e comunicação corporativa.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto5" datatype="html">
+        <source>Saiba mais sobre mim e sobre meus últimos trabalhos clicando nos botões ao lado. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">35,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contatoTitulo" datatype="html">
+        <source>Saiba mais</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contatoEnviarEmail" datatype="html">
+        <source>Enviar email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contatoLinkedIn" datatype="html">
+        <source>Acessar perfil do LinkedIn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contatoWhatsApp" datatype="html">
+        <source>Acessar contato do WhatsApp</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contatoEnvieMensagem" datatype="html">
+        <source> Envie uma mensagem </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contatoNome" datatype="html">
+        <source>Nome*</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contatoEmail" datatype="html">
+        <source>E-mail*</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contatoTelefone" datatype="html">
+        <source>(00)00000-0000</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contatoAssunto" datatype="html">
+        <source>Assunto*</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contatoMensagem" datatype="html">
+        <source>Mensagem*</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contatoBotaoEnviar" datatype="html">
+        <source>Enviar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">82,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerDesenvolvido" datatype="html">
+        <source> Desenvolvido por <x id="START_LINK" ctype="x-a" equiv-text="&lt;a class=&quot;dev-url&quot;
+        href=&quot;https://www.linkedin.com/in/hedgarbezerra/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/> Hedgar Bezerra. <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">90,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="idiomaSelector" datatype="html">
+        <source>Seletor de idioma</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">96,97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="idiomaPT" datatype="html">
+        <source>Português</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="idiomaEN" datatype="html">
+        <source>English</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="idiomaES" datatype="html">
+        <source>Español</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="headerSloganAlt" datatype="html">
+        <source>Negra Mídia - Comunicação com propósito</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="headerIlustracaoAlt" datatype="html">
+        <source>Ilustração de pessoa escrevendo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTitulo" datatype="html">
+        <source>ESTRATÉGIA - RESPONSABILIDADE - SENSIBILIDADE - CRIATIVIDADE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTexto1" datatype="html">
+        <source>Contamos boas histórias com sensibilidade, criatividade e com um olhar estratégico em diferentes formatos e para múltiplas plataformas.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTexto2" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Criamos conteúdos customizados e acessíveis que conectam, mobilizam e engajam pessoas e comunidades<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTexto3" datatype="html">
+        <source>Temos em nossa base o antirracismo e o combate a desigualdades e preconceitos.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">21,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTexto4" datatype="html">
+        <source>Existimos para transformar com palavras, ideias e responsabilidade!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">23,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="historicoTitulo" datatype="html">
+        <source>Já trabalhamos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="historicoSubtitulo" datatype="html">
+        <source>Nossos realizadores já estiveram em trabalhos nas seguintes empresas:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="historicoEmpresasAlt" datatype="html">
+        <source>Empresas parceiras</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/history/history.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navInicio" datatype="html">
+        <source>Início</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navServicos" datatype="html">
+        <source>Serviços</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navSobre" datatype="html">
+        <source>Sobre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navContatos" datatype="html">
+        <source>Contatos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosTitulo" datatype="html">
+        <source>Serviços</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosCarrosselAriaLabel" datatype="html">
+        <source>Carrossel de serviços</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosDocumentariosTitulo" datatype="html">
+        <source>Documentários e podcasts 🎬</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosDocumentariosDescricao" datatype="html">
+        <source>Atuamos em produções de não ficção desde o desenvolvimento da ideia até a assistência de direção. Cuidamos da pesquisa, roteiro, planejamento estético e narrativo, cobrindo etapas necessárias para que as ideias saiam do papel com organização e profundidade.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">12,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosJornalisticoTitulo" datatype="html">
+        <source>Conteúdo jornalístico 📰</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosJornalisticoDescricao" datatype="html">
+        <source> Produzimos reportagens e outros formatos jornalísticos, desde a pauta até a redação final. Trabalhamos em projetos autorais ou encomendados por veículos de notícias, com foco em temas de interesse e relevância pública como meio ambiente, cultura, direitos humanos e combate ao racismo, sempre atentos às transformações trazidas pelas novas tecnologias e algoritmos, com profundidade e responsabilidade.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">23,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosPlanejamentoTitulo" datatype="html">
+        <source>Planejamento estratégico de comunicação 🧭</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosPlanejamentoDescricao" datatype="html">
+        <source>Criamos estratégias de comunicação sob medida para lançamentos de documentários, campanhas ou projetos. Atuamos desde o encontro de um melhor posicionamento e oportunidades de narrativas para sua audiência até a produção de calendários editoriais, roteiros, newsletters, e-books e materiais institucionais. Monitoramos tendências e dados para gerar impacto real e acompanhamos a execução junto a parceiros, quando necessário.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">36,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosComunicacaoTitulo" datatype="html">
+        <source>Comunicação institucional 🏛️</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosComunicacaoDescricao" datatype="html">
+        <source>Pensamos estratégias para uma boa comunicação institucional para coletivos, organizações sociais e empresas, aliando planejamento estratégico, criação de uma narrativa institucional consistente, produção e distribuição de conteúdo diverso e envolvente, além de articulação entre diferentes frentes de um projeto. Tudo com atenção aos detalhes, responsabilidade, criatividade e estratégia.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">48,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosReleaseTitulo" datatype="html">
+        <source>Release e distribuição de conteúdo 🗞️</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosReleaseDescricao" datatype="html">
+        <source>Escrevemos releases atrativos e estratégicos para diferentes tipos de projetos e auxiliamos na distribuição do conteúdo a partir de um mapeamento sobre possíveis parceiros.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">60,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosNewslettersTitulo" datatype="html">
+        <source>Newsletters ✉️</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosNewslettersDescricao" datatype="html">
+        <source>Produzimos e editamos newsletters com foco no engajamento da sua audiência. Textos, imagens e curadoria editorial em sintonia com o seu projeto, seja institucional ou comercial.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">68,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosEbooksTitulo" datatype="html">
+        <source>E-books 📚</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosEbooksDescricao" datatype="html">
+        <source>Criamos textos para e-books institucionais, sejam digitais ou impressos. Também articulamos o design e a finalização visual com parceiros especializados.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">78,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosMidiasTitulo" datatype="html">
+        <source>Mídias sociais e produção de conteúdo📱 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">86,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosMidiasDescricao" datatype="html">
+        <source>Planejamos e executamos conteúdos para redes sociais como Instagram, LinkedIn, X/Twitter e Facebook. Fazemos desde o calendário editorial até a análise de engajamento, além da produção de textos para blogs, vídeos, sites e materiais institucionais.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">88,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="servicosBotaoConversar" datatype="html">
+        <source> Vamos conversar sobre o seu projeto </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/services/services.component.html</context>
+          <context context-type="linenumber">112,115</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

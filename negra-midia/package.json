@@ -7,7 +7,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "start:en": "ng serve --configuration=en",
+    "start:es": "ng serve --configuration=es",
+    "start:all": "concurrently \"npm run start -- --port=4200\" \"npm run start:en -- --port=4201\" \"npm run start:es -- --port=4202\"",
+    "build": "ng build --localize",
+    "build:pt": "ng build --configuration=production",
+    "build:en": "ng build --configuration=production,en",
+    "build:es": "ng build --configuration=production,es",
+    "extract-i18n": "ng extract-i18n --output-path src/assets/i18n",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -33,6 +40,7 @@
     "@angular/compiler-cli": "^18.0.0",
     "@angular/localize": "^18.0.4",
     "@types/jasmine": "~5.1.0",
+    "concurrently": "^9.2.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

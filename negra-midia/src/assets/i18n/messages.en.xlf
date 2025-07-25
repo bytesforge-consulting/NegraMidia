@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="pt" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="invisibleH1Title" datatype="html">
+        <source>Negra Mídia - Agência de Comunicação Especializada em Conteúdo Antirracista e
+          Diversidade</source>
+        <target>Negra Mídia - Communication Agency Specialized in Anti-racist Content and Diversity</target>
+      </trans-unit>
+      <!-- Meta Tags -->
+      <trans-unit id="metaDescription" datatype="html">
+        <source>Negra Mídia: Agência especializada em comunicação estratégica, marketing digital e
+          produção de conteúdo jornalístico com foco em representatividade e diversidade.
+          Newsletters, reportagens e consultoria em mídia social personalizados para seu negócio.</source>
+        <target>Negra Mídia: Agency specialized in strategic communication, digital marketing, and
+          journalistic content production focused on representation and diversity. Customized
+          newsletters, reports, and social media consulting for your business.</target>
+      </trans-unit>
+      <trans-unit id="metaKeywords" datatype="html">
+        <source>agência de comunicação, marketing digital, produção de conteúdo, jornalismo negro,
+          consultoria em mídia, newsletter empresarial, reportagens especializadas, comunicação
+          estratégica, diversidade na mídia, representatividade negra, gestão de redes sociais,
+          produção de e-books, assessoria de imprensa</source>
+        <target>communication agency, digital marketing, content production, black journalism, media
+          consulting, business newsletter, specialized reporting, strategic communication, media
+          diversity, black representation, social media management, e-book production, press
+          relations</target>
+      </trans-unit>
+      <trans-unit id="pageTitle" datatype="html">
+        <source>Negra Mídia - Comunicação com propósito</source>
+        <target>Negra Mídia - Communication with purpose</target>
+      </trans-unit>
+      <trans-unit id="ogTitle" datatype="html">
+        <source>Negra Mídia - Comunicação com propósito</source>
+        <target>Negra Mídia - Communication with purpose</target>
+      </trans-unit>
+      <trans-unit id="ogDescription" datatype="html">
+        <source>Negra Mídia: Agência especializada em comunicação estratégica, marketing digital e
+          produção de conteúdo jornalístico com foco em representatividade e diversidade.
+          Newsletters, reportagens e consultoria em mídia social personalizados para seu negócio.</source>
+        <target>Negra Mídia: Agency specialized in strategic communication, digital marketing, and
+          journalistic content production focused on representation and diversity. Customized
+          newsletters, reports, and social media consulting for your business.</target>
+      </trans-unit>
+      <trans-unit id="twitterTitle" datatype="html">
+        <source>Negra Mídia - Comunicação com propósito</source>
+        <target>Negra Mídia - Communication with purpose</target>
+      </trans-unit>
+      <trans-unit id="twitterDescription" datatype="html">
+        <source>Negra Mídia: Agência especializada em comunicação estratégica, marketing digital e
+          produção de conteúdo jornalístico com foco em representatividade e diversidade.
+          Newsletters, reportagens e consultoria em mídia social personalizados para seu negócio.</source>
+        <target>Negra Mídia: Agency specialized in strategic communication, digital marketing, and
+          journalistic content production focused on representation and diversity. Customized
+          newsletters, reports, and social media consulting for your business.</target>
+      </trans-unit>
+      <trans-unit id="noscriptMessage" datatype="html">
+        <source>Por favor, habilite JavaScript para continuar utilizando este aplicativo.</source>
+        <target>Please enable JavaScript to continue using this application.</target>
+      </trans-unit>
+      <!-- Navbar Component -->
+      <trans-unit id="navMenuPrincipal" datatype="html">
+        <source>Menu principal</source>
+        <target>Main Menu</target>
+      </trans-unit>
+      <trans-unit id="navPaginaInicial" datatype="html">
+        <source>Página inicial Negra Mídia</source>
+        <target>Negra Mídia Home Page</target>
+      </trans-unit>
+      <trans-unit id="logoAlt" datatype="html">
+        <source>Logo Negra Mídia - Comunicação com propósito</source>
+        <target>Negra Mídia Logo - Communication with purpose</target>
+      </trans-unit>
+      <trans-unit id="navInicio" datatype="html">
+        <source>Início</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="navServicos" datatype="html">
+        <source>Serviços</source>
+        <target>Services</target>
+      </trans-unit>
+      <trans-unit id="navSobre" datatype="html">
+        <source>Sobre</source>
+        <target>About</target>
+      </trans-unit>
+      <trans-unit id="navContatos" datatype="html">
+        <source>Contatos</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="logoAltMobile" datatype="html">
+        <source>logo negra mídia</source>
+        <target>negra mídia logo</target>
+      </trans-unit>
+      <trans-unit id="logoAriaLabelMobile" datatype="html">
+        <source>logo escrito negra mídia</source>
+        <target>logo with negra mídia text</target>
+      </trans-unit>
+      <trans-unit id="navMenu" datatype="html">
+        <source>Menu</source>
+        <target>Menu</target>
+      </trans-unit>
+
+      <!-- Header Component -->
+      <trans-unit id="headerSloganAlt" datatype="html">
+        <source>Negra Mídia - Comunicação com propósito</source>
+        <target>Negra Mídia - Communication with purpose</target>
+      </trans-unit>
+      <trans-unit id="headerIlustracaoAlt" datatype="html">
+        <source>Ilustração de pessoa escrevendo</source>
+        <target>Illustration of a person writing</target>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTitulo" datatype="html">
+        <source>ESTRATÉGIA - RESPONSABILIDADE - SENSIBILIDADE - CRIATIVIDADE</source>
+        <target>STRATEGY - RESPONSIBILITY - SENSITIVITY - CREATIVITY</target>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTexto1" datatype="html">
+        <source>Contamos boas histórias com sensibilidade, criatividade e com um olhar estratégico
+          em diferentes formatos e para múltiplas plataformas.</source>
+        <target>We tell good stories with sensitivity, creativity, and a strategic approach in
+          different formats and for multiple platforms.</target>
+      </trans-unit>
+      <!-- Para headerEstrategiaTexto2 -->
+      <trans-unit id="headerEstrategiaTexto2" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" />Criamos conteúdos customizados e
+          acessíveis que conectam, mobilizam e engajam pessoas e comunidades<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" />.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" />We create customized and accessible
+          content that connects, mobilizes, and engages people and communities<x
+            id="CLOSE_TAG_STRONG" ctype="x-strong" />.</target>
+      </trans-unit>
+
+      <!-- Para sobreFernandaTexto2 -->
+      <trans-unit id="sobreFernandaTexto2" datatype="html">
+        <source>Nos últimos anos, atuei na comunicação e/ou assistência de direção de documentários
+          alinhados à Agenda 2030 da produtora <x id="START_TAG_STRONG" ctype="x-strong" />Deusdará
+          Filmes: CIBERNÉTICAS, DE REPENTE 50, DOAR, VARANDAS, CASAS FLUTUANTES e COMIDA PARA QUEM
+          PRECISA.<x id="CLOSE_TAG_STRONG" ctype="x-strong" /></source>
+        <target>In recent years, I have worked in communication and/or directing assistance for
+          documentaries aligned with the 2030 Agenda by the production company <x
+            id="START_TAG_STRONG" ctype="x-strong" />Deusdará Filmes: CIBERNÉTICAS, DE REPENTE 50,
+          DOAR, VARANDAS, CASAS FLUTUANTES and COMIDA PARA QUEM PRECISA.<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" /></target>
+      </trans-unit>
+
+      <!-- Para sobreFernandaTexto3 -->
+      <trans-unit id="sobreFernandaTexto3" datatype="html">
+        <source>Já tive materiais publicados (entre textos, vídeos, podcasts e apresentação de
+          programa) na <x id="START_TAG_STRONG" ctype="x-strong" />Alma Preta Jornalismo, Folha de
+          São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" />.</source>
+        <target>I have had materials published (including texts, videos, podcasts, and program
+          presentations) in <x id="START_TAG_STRONG" ctype="x-strong" />Alma Preta Jornalismo, Folha
+          de São Paulo, UOL, Portal Terra, TV Unesp, and Canal Futura<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" />.</target>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTexto3" datatype="html">
+        <source>Temos em nossa base o antirracismo e o combate a desigualdades e preconceitos.</source>
+        <target>Our foundation is built on anti-racism and fighting inequalities and prejudices.</target>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTexto4" datatype="html">
+        <source>Existimos para transformar com palavras, ideias e responsabilidade!</source>
+        <target>We exist to transform with words, ideas, and responsibility!</target>
+      </trans-unit>
+
+      <!-- Services Component -->
+      <trans-unit id="servicosTitulo" datatype="html">
+        <source>Serviços</source>
+        <target>Services</target>
+      </trans-unit>
+      <trans-unit id="servicosCarrosselAriaLabel" datatype="html">
+        <source>Carrossel de serviços</source>
+        <target>Services carousel</target>
+      </trans-unit>
+      <trans-unit id="servicosDocumentariosTitulo" datatype="html">
+        <source>Documentários e podcasts 🎬</source>
+        <target>Documentaries and podcasts 🎬</target>
+      </trans-unit>
+      <trans-unit id="servicosDocumentariosDescricao" datatype="html">
+        <source>Atuamos em produções de não ficção desde o desenvolvimento da ideia até a
+          assistência de direção. Cuidamos da pesquisa, roteiro, planejamento estético e narrativo,
+          cobrindo etapas necessárias para que as ideias saiam do papel com organização e
+          profundidade.</source>
+        <target>We work on non-fiction productions from idea development to directing assistance. We
+          handle research, scripting, aesthetic and narrative planning, covering all necessary steps
+          to bring ideas to life with organization and depth.</target>
+      </trans-unit>
+      <trans-unit id="servicosJornalisticoTitulo" datatype="html">
+        <source>Conteúdo jornalístico 📰</source>
+        <target>Journalistic content 📰</target>
+      </trans-unit>
+      <trans-unit id="servicosJornalisticoDescricao" datatype="html">
+        <source>Produzimos reportagens e outros formatos jornalísticos, desde a pauta até a redação
+          final. Trabalhamos em projetos autorais ou encomendados por veículos de notícias, com foco
+          em temas de interesse e relevância pública como meio ambiente, cultura, direitos humanos e
+          combate ao racismo, sempre atentos às transformações trazidas pelas novas tecnologias e
+          algoritmos, com profundidade e responsabilidade.</source>
+        <target>We produce reports and other journalistic formats, from the initial brief to the
+          final draft. We work on original projects or those commissioned by news outlets, focusing
+          on topics of public interest and relevance such as environment, culture, human rights, and
+          anti-racism, always attentive to the transformations brought by new technologies and
+          algorithms, with depth and responsibility.</target>
+      </trans-unit>
+      <trans-unit id="servicosPlanejamentoTitulo" datatype="html">
+        <source>Planejamento estratégico de comunicação 🧭</source>
+        <target>Strategic communication planning 🧭</target>
+      </trans-unit>
+      <trans-unit id="servicosPlanejamentoDescricao" datatype="html">
+        <source>Criamos estratégias de comunicação sob medida para lançamentos de documentários,
+          campanhas ou projetos. Atuamos desde o encontro de um melhor posicionamento e
+          oportunidades de narrativas para sua audiência até a produção de calendários editoriais,
+          roteiros, newsletters, e-books e materiais institucionais. Monitoramos tendências e dados
+          para gerar impacto real e acompanhamos a execução junto a parceiros, quando necessário.</source>
+        <target>We create tailored communication strategies for documentary launches, campaigns, or
+          projects. We work from finding the best positioning and narrative opportunities for your
+          audience to producing editorial calendars, scripts, newsletters, e-books, and
+          institutional materials. We monitor trends and data to generate real impact and follow up
+          on execution with partners when necessary.</target>
+      </trans-unit>
+      <trans-unit id="servicosComunicacaoTitulo" datatype="html">
+        <source>Comunicação institucional 🏛️</source>
+        <target>Institutional communication 🏛️</target>
+      </trans-unit>
+      <trans-unit id="servicosComunicacaoDescricao" datatype="html">
+        <source>Pensamos estratégias para uma boa comunicação institucional para coletivos,
+          organizações sociais e empresas, aliando planejamento estratégico, criação de uma
+          narrativa institucional consistente, produção e distribuição de conteúdo diverso e
+          envolvente, além de articulação entre diferentes frentes de um projeto. Tudo com atenção
+          aos detalhes, responsabilidade, criatividade e estratégia.</source>
+        <target>We develop strategies for effective institutional communication for collectives,
+          social organizations, and companies, combining strategic planning, creation of a
+          consistent institutional narrative, production and distribution of diverse and engaging
+          content, as well as coordination between different project fronts. All with attention to
+          detail, responsibility, creativity, and strategy.</target>
+      </trans-unit>
+      <trans-unit id="servicosReleaseTitulo" datatype="html">
+        <source>Release e distribuição de conteúdo 🗞️</source>
+        <target>Content release and distribution 🗞️</target>
+      </trans-unit>
+      <trans-unit id="servicosReleaseDescricao" datatype="html">
+        <source>Escrevemos releases atrativos e estratégicos para diferentes tipos de projetos e
+          auxiliamos na distribuição do conteúdo a partir de um mapeamento sobre possíveis
+          parceiros.</source>
+        <target>We write attractive and strategic press releases for different types of projects and
+          assist in content distribution through mapping potential partners.</target>
+      </trans-unit>
+      <trans-unit id="servicosNewslettersTitulo" datatype="html">
+        <source>Newsletters ✉️</source>
+        <target>Newsletters ✉️</target>
+      </trans-unit>
+      <trans-unit id="servicosNewslettersDescricao" datatype="html">
+        <source>Produzimos e editamos newsletters com foco no engajamento da sua audiência. Textos,
+          imagens e curadoria editorial em sintonia com o seu projeto, seja institucional ou
+          comercial.</source>
+        <target>We produce and edit newsletters focused on engaging your audience. Texts, images,
+          and editorial curation in tune with your project, whether institutional or commercial.</target>
+      </trans-unit>
+      <trans-unit id="servicosEbooksTitulo" datatype="html">
+        <source>E-books 📚</source>
+        <target>E-books 📚</target>
+      </trans-unit>
+      <trans-unit id="servicosEbooksDescricao" datatype="html">
+        <source>Criamos textos para e-books institucionais, sejam digitais ou impressos. Também
+          articulamos o design e a finalização visual com parceiros especializados.</source>
+        <target>We create texts for institutional e-books, whether digital or printed. We also
+          coordinate design and visual finalization with specialized partners.</target>
+      </trans-unit>
+      <trans-unit id="servicosMidiasTitulo" datatype="html">
+        <source>Mídias sociais e produção de conteúdo📱</source>
+        <target>Social media and content production 📱</target>
+      </trans-unit>
+      <trans-unit id="servicosMidiasDescricao" datatype="html">
+        <source>Planejamos e executamos conteúdos para redes sociais como Instagram, LinkedIn,
+          X/Twitter e Facebook. Fazemos desde o calendário editorial até a análise de engajamento,
+          além da produção de textos para blogs, vídeos, sites e materiais institucionais.</source>
+        <target>We plan and execute content for social networks such as Instagram, LinkedIn,
+          X/Twitter, and Facebook. We handle everything from the editorial calendar to engagement
+          analysis, as well as producing texts for blogs, videos, websites, and institutional
+          materials.</target>
+      </trans-unit>
+      <trans-unit id="servicosBotaoConversar" datatype="html">
+        <source>Vamos conversar sobre o seu projeto</source>
+        <target>Let's talk about your project</target>
+      </trans-unit>
+
+      <!-- About Component -->
+      <trans-unit id="sobreTituloSEO" datatype="html">
+        <source>Fernanda Rosário - Jornalista Especializada em Comunicação Antirracista e Direitos
+          Humanos</source>
+        <target>Fernanda Rosário - Journalist Specialized in Anti-racist Communication and Human
+          Rights</target>
+      </trans-unit>
+      <trans-unit id="sobreQuemFaz" datatype="html">
+        <source>Quem faz</source>
+        <target>Who we are</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaAlt" datatype="html">
+        <source>Fernanda Rosário</source>
+        <target>Fernanda Rosário</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto1" datatype="html">
+        <source>Sou apaixonada pelas palavras e por facilitar narrativas potentes e engajadoras. Sou
+          jornalista com atuação em projetos pautados na temática racial, direitos humanos, combate
+          ao racismo, meio ambiente, educação midiática e diversidade.</source>
+        <target>I am passionate about words and facilitating powerful and engaging narratives. I am
+          a journalist working on projects focused on racial issues, human rights, anti-racism,
+          environment, media education, and diversity.</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto2" datatype="html">
+        <source>Nos últimos anos, atuei na comunicação e/ou assistência de direção de documentários
+          alinhados à Agenda 2030 da produtora <x id="START_TAG_STRONG" ctype="x-strong" />Deusdará
+          Filmes: CIBERNÉTICAS, DE REPENTE 50, DOAR, VARANDAS, CASAS FLUTUANTES e COMIDA PARA QUEM
+          PRECISA.<x id="CLOSE_TAG_STRONG" ctype="x-strong" /></source>
+        <target>In recent years, I have worked in communication and/or directing assistance for
+          documentaries aligned with the 2030 Agenda by the production company <x
+            id="START_TAG_STRONG" ctype="x-strong" />Deusdará Filmes: CIBERNÉTICAS, DE REPENTE 50,
+          DOAR, VARANDAS, CASAS FLUTUANTES and COMIDA PARA QUEM PRECISA.<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" /></target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto3" datatype="html">
+        <source>Já tive materiais publicados (entre textos, vídeos, podcasts e apresentação de
+          programa) na <x id="START_TAG_STRONG" ctype="x-strong" />Alma Preta Jornalismo, Folha de
+          São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" />.</source>
+        <target>I have had materials published (including texts, videos, podcasts, and program
+          presentations) in <x id="START_TAG_STRONG" ctype="x-strong" />Alma Preta Jornalismo, Folha
+          de São Paulo, UOL, Portal Terra, TV Unesp, and Canal Futura<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" />.</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto4" datatype="html">
+        <source>Tenho experiência em produção de textos, podcasts, vídeos, liderança de equipes e
+          comunicação corporativa.</source>
+        <target>I have experience in producing texts, podcasts, videos, team leadership, and
+          corporate communication.</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto5" datatype="html">
+        <source>Saiba mais sobre mim e sobre meus últimos trabalhos clicando nos botões ao lado.</source>
+        <target>Learn more about me and my latest work by clicking the buttons on the side.</target>
+      </trans-unit>
+
+      <!-- History Component -->
+      <trans-unit id="historicoTitulo" datatype="html">
+        <source>Já trabalhamos</source>
+        <target>We've worked with</target>
+      </trans-unit>
+      <trans-unit id="historicoSubtitulo" datatype="html">
+        <source>Nossos realizadores já estiveram em trabalhos nas seguintes empresas:</source>
+        <target>Our team members have worked with the following companies:</target>
+      </trans-unit>
+      <trans-unit id="historicoEmpresasAlt" datatype="html">
+        <source>Empresas parceiras</source>
+        <target>Partner companies</target>
+      </trans-unit>
+
+      <!-- Footer Component -->
+      <trans-unit id="contatoTitulo" datatype="html">
+        <source>Saiba mais</source>
+        <target>Learn more</target>
+      </trans-unit>
+      <trans-unit id="contatoEnviarEmail" datatype="html">
+        <source>Enviar email</source>
+        <target>Send email</target>
+      </trans-unit>
+      <trans-unit id="contatoLinkedIn" datatype="html">
+        <source>Acessar perfil do LinkedIn</source>
+        <target>Visit LinkedIn profile</target>
+      </trans-unit>
+      <trans-unit id="contatoWhatsApp" datatype="html">
+        <source>Acessar contato do WhatsApp</source>
+        <target>Contact via WhatsApp</target>
+      </trans-unit>
+      <trans-unit id="contatoEnvieMensagem" datatype="html">
+        <source>Envie uma mensagem</source>
+        <target>Send a message</target>
+      </trans-unit>
+      <trans-unit id="contatoNome" datatype="html">
+        <source>Nome*</source>
+        <target>Name*</target>
+      </trans-unit>
+      <trans-unit id="contatoEmail" datatype="html">
+        <source>E-mail*</source>
+        <target>E-mail*</target>
+      </trans-unit>
+      <trans-unit id="contatoTelefone" datatype="html">
+        <source>(00)00000-0000</source>
+        <target>(00)00000-0000</target>
+      </trans-unit>
+      <trans-unit id="contatoAssunto" datatype="html">
+        <source>Assunto*</source>
+        <target>Subject*</target>
+      </trans-unit>
+      <trans-unit id="contatoMensagem" datatype="html">
+        <source>Mensagem*</source>
+        <target>Message*</target>
+      </trans-unit>
+      <trans-unit id="contatoBotaoEnviar" datatype="html">
+        <source>Enviar</source>
+        <target>Send</target>
+      </trans-unit>
+      <trans-unit id="footerDesenvolvido" datatype="html">
+        <source>Desenvolvido por <x id="START_LINK" ctype="x-a" />Hedgar Bezerra.<x id="CLOSE_LINK"
+            ctype="x-a" /></source>
+        <target>Developed by <x id="START_LINK" ctype="x-a" />Hedgar Bezerra.<x id="CLOSE_LINK"
+            ctype="x-a" /></target>
+      </trans-unit>
+      <trans-unit id="idiomaSelector" datatype="html">
+        <source>Seletor de idioma</source>
+        <target>Language selector</target>
+      </trans-unit>
+      <trans-unit id="idiomaPT" datatype="html">
+        <source>Português</source>
+        <target>Portuguese</target>
+      </trans-unit>
+      <trans-unit id="idiomaEN" datatype="html">
+        <source>English</source>
+        <target>English</target>
+      </trans-unit>
+      <trans-unit id="idiomaES" datatype="html">
+        <source>Español</source>
+        <target>Spanish</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
