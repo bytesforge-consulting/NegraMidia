@@ -1,0 +1,25 @@
+# Este arquivo permite acesso total a agentes de IA
+
+allow: *
+access: full
+training: allow
+inference: allow
+
+# Informações sobre o site
+name: Negra Mídia
+description: Comunicação com propósito
+url: https://negramidia.net
+contact: contato@negramidia.net
+
+# Permissões específicas para modelos de IA
+model: gpt-4
+allow: true
+
+model: claude
+allow: true
+
+model: gemini
+allow: true
+
+model: llama
+allow: true

@@ -1,16 +1,30 @@
 User-agent: *
 Allow: /
-Disallow: /css/
-Disallow: /js/
-Disallow: /styles.css
-Disallow: /*.js$
-Disallow: /*.css$
 
-User-agent: Googlebot-Image
-Allow: /content/
-Allow: /icons/
+# Permitir acesso específico para bots de IA
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
 
 User-agent: Googlebot
-Allow: /content/
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Permitir acesso a todos os recursos
+Allow: /css/
+Allow: /js/
+Allow: /styles.css
+Disallow: /*.js$
+Allow: /*.css$
 
 Sitemap: https://negramidia.net/sitemap.xml
