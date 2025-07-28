@@ -1,5 +1,0 @@
-# Redirecionamentos para SPA
-/index.html  /pt/index.html  200
-/  /pt/index.html  200
-/en/*  /en/index.html  200
-/es/*  /es/index.html  200

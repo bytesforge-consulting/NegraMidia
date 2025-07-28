@@ -4,8 +4,8 @@ import { i18nRoute } from "./helpers/i18n-route";
 
 // Definir as rotas da aplicação
 const routes: Routes = [
-  // Rotas da aplicação
-  // Como a aplicação é uma SPA sem rotas específicas, não precisamos adicionar rotas aqui
+  // Rota para redirecionar implicitamente para /pt
+  { path: '', redirectTo: '/pt', pathMatch: 'full' }
 ];
 
 @NgModule({
