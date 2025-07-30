@@ -5,11 +5,11 @@ import { i18nRoute } from "./helpers/i18n-route";
 // Definir as rotas da aplicação
 const routes: Routes = [
   // Rota para redirecionar implicitamente para /pt
-  { path: '', redirectTo: '/pt', pathMatch: 'full' }
+  // { path: '', redirectTo: '/pt', pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(i18nRoute(routes), {
+  imports: [RouterModule.forRoot(routes, {
     initialNavigation: 'enabledBlocking'
   })],
   exports: [RouterModule]

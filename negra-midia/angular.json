@@ -10,10 +10,7 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": {
-          "code": "pt",
-          "baseHref": "/pt/"
-        },
+        "sourceLocale": "pt",
         "locales": {
           "en": {
             "translation": "src/assets/i18n/messages.en.xlf",
@@ -32,6 +29,7 @@
             "outputPath": "dist/negra-midia",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "localize": true,
             "polyfills": [
               "zone.js",
               "@angular/localize/init"
