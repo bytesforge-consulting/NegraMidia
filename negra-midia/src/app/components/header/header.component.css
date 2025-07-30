@@ -40,6 +40,12 @@
   margin-bottom: 20px;
 }
 
+/* Adicionar quebra de linha para cada palavra no mobile */
+@media (max-width: 639px) {
+  .estrategia-titulo {
+    display: none;
+  }
+}
 .estrategia-texto {
   margin-bottom: 15px;
   font-size: 1.1rem;

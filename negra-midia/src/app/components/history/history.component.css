@@ -7,7 +7,7 @@
     border-bottom: calc(0.2px + 0.05em) solid var(--primary-white) !important;
 }
 
-#historico h1 {
+#historico header {
   color: var(--primary-white);
 }
 
