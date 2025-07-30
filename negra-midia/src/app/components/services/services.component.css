@@ -27,11 +27,11 @@
   color: var(--primary-white);
 }
 
-#servicos h2{
+#servicos h1{
   font-weight: 600;
 }
 
-#servicos h3{
+#servicos h2{
   font-weight: 300;
 }
 
