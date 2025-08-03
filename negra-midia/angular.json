@@ -39,7 +39,7 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "ignore": ["content/**"] }
+                "ignore": ["content/**", "fonts/**"] }
             ],
             "styles": [
               "src/styles.css"
