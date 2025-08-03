@@ -99,6 +99,22 @@
         <source>Menu</source>
         <target>Menu</target>
       </trans-unit>
+      <trans-unit id="navInicioAriaLabel" datatype="html">
+        <source>Ir para a seção Início (menu principal)</source>
+        <target>Go to the Home section (main menu)</target>
+      </trans-unit>
+      <trans-unit id="navServicosAriaLabel" datatype="html">
+        <source>Ir para a seção Serviços (menu principal)</source>
+        <target>Go to the Services section (main menu)</target>
+      </trans-unit>
+      <trans-unit id="navSobreAriaLabel" datatype="html">
+        <source>Ir para a seção Sobre (menu principal)</source>
+        <target>Go to the About section (main menu)</target>
+      </trans-unit>
+      <trans-unit id="navContatosAriaLabel" datatype="html">
+        <source>Ir para a seção Contatos (menu principal)</source>
+        <target>Go to the Contact section (main menu)</target>
+      </trans-unit>
 
       <!-- Header Component -->
       <trans-unit id="headerSloganAlt" datatype="html">
@@ -283,6 +299,14 @@
       </trans-unit>
 
       <!-- About Component -->
+      <trans-unit id="sobreFernandaPortfolioAriaLabel" datatype="html">
+        <source>Portfólio de Fernanda Rosário</source>
+        <target>Fernanda Rosário's portfolio</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaLinkedinAriaLabel" datatype="html">
+        <source>LinkedIn de Fernanda Rosário</source>
+        <target>Fernanda Rosário's LinkedIn</target>
+      </trans-unit>
       <trans-unit id="sobreTituloSEO" datatype="html">
         <source>Fernanda Rosário - Jornalista Especializada em Comunicação Antirracista e Direitos
           Humanos</source>
@@ -335,6 +359,18 @@
       <trans-unit id="sobreFernandaTexto5" datatype="html">
         <source>Saiba mais sobre mim e sobre meus últimos trabalhos clicando nos botões ao lado.</source>
         <target>Learn more about me and my latest work by clicking the buttons on the side.</target>
+      </trans-unit>
+      <trans-unit id="servicosSlideAnteriorAriaLabel" datatype="html">
+        <source>Ir para o slide anterior dos serviços</source>
+        <target>Go to the previous services slide</target>
+      </trans-unit>
+      <trans-unit id="servicosSlideProximoAriaLabel" datatype="html">
+        <source>Ir para o próximo slide dos serviços</source>
+        <target>Go to the next services slide</target>
+      </trans-unit>
+      <trans-unit id="servicosBotaoConversarAriaLabel" datatype="html">
+        <source>Abrir conversa no WhatsApp sobre o seu projeto</source>
+        <target>Open WhatsApp chat about your project</target>
       </trans-unit>
 
       <!-- History Component -->
@@ -417,6 +453,21 @@
       <trans-unit id="idiomaES" datatype="html">
         <source>Español</source>
         <target>Spanish</target>
+      </trans-unit>
+      <trans-unit id="sobreSlideAnteriorAriaLabel" datatype="html">
+        <source>Anterior slide</source>
+        <target>Previous slide</target>
+      </trans-unit>
+      <trans-unit id="sobreSlideProximoAriaLabel" datatype="html">
+        <source>Próximo slide</source>
+        <target>Next slide</target>
+      </trans-unit>
+
+
+      <!-- Floating Icons Component -->
+      <trans-unit id="floatingWhatsappAriaLabel" datatype="html">
+        <source>Converse conosco pelo WhatsApp</source>
+        <target>Chat with us on WhatsApp</target>
       </trans-unit>
     </body>
   </file>

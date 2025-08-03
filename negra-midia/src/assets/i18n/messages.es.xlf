@@ -104,6 +104,22 @@
         <source>Menu</source>
         <target>Menú</target>
       </trans-unit>
+      <trans-unit id="navInicioAriaLabel" datatype="html">
+        <source>Ir para a seção Início (menu principal)</source>
+        <target>Ir a la sección Inicio (menú principal)</target>
+      </trans-unit>
+      <trans-unit id="navServicosAriaLabel" datatype="html">
+        <source>Ir para a seção Serviços (menu principal)</source>
+        <target>Ir a la sección Servicios (menú principal)</target>
+      </trans-unit>
+      <trans-unit id="navSobreAriaLabel" datatype="html">
+        <source>Ir para a seção Sobre (menu principal)</source>
+        <target>Ir a la sección Sobre (menú principal)</target>
+      </trans-unit>
+      <trans-unit id="navContatosAriaLabel" datatype="html">
+        <source>Ir para a seção Contatos (menu principal)</source>
+        <target>Ir a la sección Contactos (menú principal)</target>
+      </trans-unit>
 
       <!-- Header Component -->
       <trans-unit id="headerSloganAlt" datatype="html">
@@ -291,8 +307,28 @@
         <source>Vamos conversar sobre o seu projeto</source>
         <target>Hablemos sobre tu proyecto</target>
       </trans-unit>
+      <trans-unit id="servicosSlideAnteriorAriaLabel" datatype="html">
+        <source>Ir para o slide anterior dos serviços</source>
+        <target>Ir al slide anterior de servicios</target>
+      </trans-unit>
+      <trans-unit id="servicosSlideProximoAriaLabel" datatype="html">
+        <source>Ir para o próximo slide dos serviços</source>
+        <target>Ir al siguiente slide de servicios</target>
+      </trans-unit>
+      <trans-unit id="servicosBotaoConversarAriaLabel" datatype="html">
+        <source>Abrir conversa no WhatsApp sobre o seu projeto</source>
+        <target>Abrir chat de WhatsApp sobre tu proyecto</target>
+      </trans-unit>
 
       <!-- About Component -->
+      <trans-unit id="sobreFernandaPortfolioAriaLabel" datatype="html">
+        <source>Portfólio de Fernanda Rosário</source>
+        <target>Portafolio de Fernanda Rosário</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaLinkedinAriaLabel" datatype="html">
+        <source>LinkedIn de Fernanda Rosário</source>
+        <target>LinkedIn de Fernanda Rosário</target>
+      </trans-unit>
       <trans-unit id="sobreTituloSEO" datatype="html">
         <source>Fernanda Rosário - Jornalista Especializada em Comunicação Antirracista e Direitos
           Humanos</source>
@@ -424,6 +460,20 @@
       <trans-unit id="idiomaES" datatype="html">
         <source>Español</source>
         <target>Español</target>
+      </trans-unit>
+      <trans-unit id="sobreSlideAnteriorAriaLabel" datatype="html">
+        <source>Anterior slide</source>
+        <target>Diapositiva anterior</target>
+      </trans-unit>
+      <trans-unit id="sobreSlideProximoAriaLabel" datatype="html">
+        <source>Próximo slide</source>
+        <target>Siguiente diapositiva</target>
+      </trans-unit>
+
+      <!-- Floating Icons Component -->
+      <trans-unit id="floatingWhatsappAriaLabel" datatype="html">
+        <source>Converse conosco pelo WhatsApp</source>
+        <target>Chatea con nosotros por WhatsApp</target>
       </trans-unit>
     </body>
   </file>

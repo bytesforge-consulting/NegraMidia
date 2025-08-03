@@ -138,9 +138,7 @@ O arquivo `_redirects` localizado em `public/_redirects` é essencial para o fun
 
 ```
 # Redirecionamentos para SPA
-/*    /index.html   200
-/en/*  /en/index.html  200
-/es/*  /es/index.html  200
+/  /pt/  301
 ```
 
 Estas regras garantem que:
@@ -202,3 +200,35 @@ Todas as imagens utilizadas na aplicação agora são servidas diretamente do Cl
 O arquivo `angular.json` foi ajustado para ignorar completamente a pasta `public/content` durante o build, garantindo que nenhuma imagem local seja incluída no deploy.
 
 Outros arquivos estáticos (como favicon, manifest, fontes, CSS e JS) continuam sendo servidos localmente pela pasta `public`.
+
+## Como adicionar regras de redirecionamento na Cloudflare
+
+1. Acesse o painel da Cloudflare e selecione o domínio desejado.
+2. No menu lateral, clique em **Regras** > **Regras de redirecionamento**.
+3. Clique em **Criar regra**.
+4. Dê um nome para a regra (ex: "redirect www").
+5. Defina a condição (ex: "Nome do host contém www").
+6. Escolha a ação **Redirecionar URL** e selecione o código de status (geralmente 301).
+7. No campo de destino, insira a URL para onde deseja redirecionar (ex: `https://dominio.com/$1`).
+8. Salve e ative a regra.
+
+### Redirecionamento da raiz para /pt
+
+1. Acesse o painel da Cloudflare e selecione o domínio desejado.
+2. No menu lateral, clique em **Regras** > **Regras de redirecionamento**.
+3. Clique em **Criar regra**.
+4. Dê um nome para a regra (ex: "Redirecionar raiz para /pt").
+5. Defina a condição como "Caminho da URL é igual a /".
+6. Escolha a ação **Redirecionar URL** e selecione o código de status 302 (redirecionamento temporário).
+7. No campo de destino, insira a URL `https://seudominio.com/pt/`.
+8. Salve e ative a regra.
+
+**Importante**: A ordem das regras importa. Certifique-se de que a regra de redirecionamento www para não-www seja executada antes da regra de redirecionamento da raiz para /pt.
+
+## Como usar modelos de regras existentes
+
+1. Na tela de **Regras de redirecionamento**, clique em **Modelos** (canto superior direito).
+2. Escolha um modelo pronto, como "Redirecionar www para não-www" ou "Redirecionar HTTP para HTTPS".
+3. Clique em **Usar modelo**.
+4. Ajuste os parâmetros conforme necessário para o seu domínio.
+5. Salve e ative a regra.
