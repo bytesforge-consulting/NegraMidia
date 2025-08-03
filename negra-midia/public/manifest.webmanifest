@@ -1,7 +1,7 @@
 {
   "name": "Negra Mídia",
   "short_name": "Negra Mídia",
-  "description": "Uma empresa de comunicação criada para desenvolver conteúdos para múltiplas plataformas e mídias. Especializada em produção de conteúdo para empresas compromissadas com trabalhos de impacto e marcas engajadas em causas socioambientais.",
+  "description": "Comunicação estratégica, marketing digital, storytelling e conteúdo com foco em diversidade e representatividade.",
   "theme_color": "#ed7d31",
   "background_color": "#f6f1ee",
   "display": "standalone",
@@ -65,10 +65,5 @@
       "sizes": "1919x919",
       "form_factor": "wide"
     }
-  ],
-  "related_applications": [
-    {
-    "platform": "webapp",
-    "url": "https://negramidia.net"
-  }]
+  ]
 }

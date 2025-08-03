@@ -194,3 +194,11 @@ Se as variáveis de ambiente não estiverem sendo aplicadas corretamente, verifi
 - [Documentação da Cloudflare Pages](https://developers.cloudflare.com/pages)
 - [Guia de Internacionalização do Angular](https://angular.dev/guide/i18n)
         
+
+## Cloudflare R2 para Imagens
+
+Todas as imagens utilizadas na aplicação agora são servidas diretamente do Cloudflare R2, e não mais do diretório local `public/content`. Para adicionar ou atualizar imagens, faça upload dos arquivos para o bucket R2 e utilize as URLs públicas correspondentes.
+
+O arquivo `angular.json` foi ajustado para ignorar completamente a pasta `public/content` durante o build, garantindo que nenhuma imagem local seja incluída no deploy.
+
+Outros arquivos estáticos (como favicon, manifest, fontes, CSS e JS) continuam sendo servidos localmente pela pasta `public`.
