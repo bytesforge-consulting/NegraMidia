@@ -22,28 +22,21 @@ export class MetaTranslationService {
     this.title.setTitle(pageTitle);
 
     // Atualiza as meta tags
-    const metaDescription = $localize`:@@metaDescription:Negra Mídia: Agência especializada em comunicação estratégica, marketing digital e produção de conteúdo jornalístico com foco em representatividade e diversidade. Newsletters, reportagens e consultoria em mídia social personalizados para seu negócio.`;
+    const metaDescription = $localize`:@@metaDescription:Comunicação estratégica, marketing digital, storytelling e conteúdo com foco em diversidade e representatividade.`;
     const metaKeywords = $localize`:@@metaKeywords:agência de comunicação, marketing digital, produção de conteúdo, jornalismo negro, consultoria em mídia, newsletter empresarial, reportagens especializadas, comunicação estratégica, diversidade na mídia, representatividade negra, gestão de redes sociais, produção de e-books, assessoria de imprensa`;
 
-    // Open Graph
-    const ogTitle = $localize`:@@ogTitle:Negra Mídia - Comunicação com propósito`;
-    const ogDescription = $localize`:@@ogDescription:Negra Mídia: Agência especializada em comunicação estratégica, marketing digital e produção de conteúdo jornalístico com foco em representatividade e diversidade. Newsletters, reportagens e consultoria em mídia social personalizados para seu negócio.`;
-
-    // Twitter Card
-    const twitterTitle = $localize`:@@twitterTitle:Negra Mídia - Comunicação com propósito`;
-    const twitterDescription = $localize`:@@twitterDescription:Negra Mídia: Agência especializada em comunicação estratégica, marketing digital e produção de conteúdo jornalístico com foco em representatividade e diversidade. Newsletters, reportagens e consultoria em mídia social personalizados para seu negócio.`;
-
-    // Atualiza as meta tags
+    // Atualiza as meta tags básicas
     this.meta.updateTag({ name: 'description', content: metaDescription });
     this.meta.updateTag({ name: 'keywords', content: metaKeywords });
 
-    // Open Graph
-    this.meta.updateTag({ property: 'og:title', content: ogTitle });
-    this.meta.updateTag({ property: 'og:description', content: ogDescription });
+    // Atualiza as meta tags Open Graph
+    this.meta.updateTag({ property: 'og:title', content: pageTitle });
+    this.meta.updateTag({ property: 'og:description', content: metaDescription });
 
-    // Twitter Card
-    this.meta.updateTag({ name: 'twitter:title', content: twitterTitle });
-    this.meta.updateTag({ name: 'twitter:description', content: twitterDescription });
+    // Atualiza as meta tags Twitter
+    this.meta.updateTag({ name: 'twitter:title', content: pageTitle });
+    this.meta.updateTag({ name: 'twitter:description', content: metaDescription });
+
     this.updateInvisibleH1();
   }
 

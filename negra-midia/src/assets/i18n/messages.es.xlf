@@ -9,54 +9,17 @@
           Diversidad</target>
       </trans-unit>
       <!-- Meta Tags -->
-      <trans-unit id="metaDescription" datatype="html">
-        <source>Negra Mídia: Agência especializada em comunicação estratégica, marketing digital e
-          produção de conteúdo jornalístico com foco em representatividade e diversidade.
-          Newsletters, reportagens e consultoria em mídia social personalizados para seu negócio.</source>
-        <target>Negra Mídia: Agencia especializada en comunicación estratégica, marketing digital y
-          producción de contenido periodístico con enfoque en representatividad y diversidad.
-          Boletines informativos, reportajes y consultoría en medios sociales personalizados para su
-          negocio.</target>
-      </trans-unit>
-      <trans-unit id="metaKeywords" datatype="html">
-        <source>agência de comunicação, marketing digital, produção de conteúdo, jornalismo negro,
-          consultoria em mídia, newsletter empresarial, reportagens especializadas, comunicação
-          estratégica, diversidade na mídia, representatividade negra, gestão de redes sociais,
-          produção de e-books, assessoria de imprensa</source>
-        <target>agencia de comunicación, marketing digital, producción de contenido, periodismo
-          negro, consultoría en medios, boletín empresarial, reportajes especializados, comunicación
-          estratégica, diversidad en los medios, representatividad negra, gestión de redes sociales,
-          producción de libros electrónicos, asesoría de prensa</target>
-      </trans-unit>
       <trans-unit id="pageTitle" datatype="html">
         <source>Negra Mídia - Comunicação com propósito</source>
         <target>Negra Mídia - Comunicación con propósito</target>
       </trans-unit>
-      <trans-unit id="ogTitle" datatype="html">
-        <source>Negra Mídia - Comunicação com propósito</source>
-        <target>Negra Mídia - Comunicación con propósito</target>
+      <trans-unit id="metaDescription" datatype="html">
+        <source>Comunicação estratégica, marketing digital, storytelling e conteúdo com foco em diversidade e representatividade.</source>
+        <target>Comunicación estratégica, marketing digital, storytelling y contenido con enfoque en diversidad y representatividad.</target>
       </trans-unit>
-      <trans-unit id="ogDescription" datatype="html">
-        <source>Negra Mídia: Agência especializada em comunicação estratégica, marketing digital e
-          produção de conteúdo jornalístico com foco em representatividade e diversidade.
-          Newsletters, reportagens e consultoria em mídia social personalizados para seu negócio.</source>
-        <target>Negra Mídia: Agencia especializada en comunicación estratégica, marketing digital y
-          producción de contenido periodístico con enfoque en representatividad y diversidad.
-          Boletines informativos, reportajes y consultoría en medios sociales personalizados para su
-          negocio.</target>
-      </trans-unit>
-      <trans-unit id="twitterTitle" datatype="html">
-        <source>Negra Mídia - Comunicação com propósito</source>
-        <target>Negra Mídia - Comunicación con propósito</target>
-      </trans-unit>
-      <trans-unit id="twitterDescription" datatype="html">
-        <source>Negra Mídia: Agência especializada em comunicação estratégica, marketing digital e
-          produção de conteúdo jornalístico com foco em representatividade e diversidade.
-          Newsletters, reportagens e consultoria em mídia social personalizados para seu negócio.</source>
-        <target>Negra Mídia: Agencia especializada en comunicación estratégica, marketing digital y
-          producción de contenido periodístico con enfoque en representatividad y diversidad.
-          Boletines informativos, reportajes y consultoría en medios sociales personalizados para su
-          negocio.</target>
+      <trans-unit id="metaKeywords" datatype="html">
+        <source>Agência de comunicação, marketing digital, produção de conteúdo, jornalismo negro, consultoria em mídia, newsletter empresarial, reportagens especializadas, comunicação estratégica, diversidade na mídia, representatividade negra, gestão de redes sociais, produção de e-books, assessoria de imprensa, storytelling, comunicação inclusiva, conteúdo antirracista, mídia negra, comunicação com propósito, narrativas diversas, identidade cultural, comunicação afirmativa, produção audiovisual, consultoria em diversidade</source>
+        <target>Agencia de comunicación, marketing digital, producción de contenido, periodismo negro, consultoría en medios, boletín empresarial, reportajes especializados, comunicación estratégica, diversidad en los medios, representatividad negra, gestión de redes sociales, producción de libros electrónicos, asesoría de prensa, storytelling, comunicación inclusiva, contenido antirracista, medios negros, comunicación con propósito, narrativas diversas, identidad cultural, comunicación afirmativa, producción audiovisual, consultoría en diversidad</target>
       </trans-unit>
       <trans-unit id="noscriptMessage" datatype="html">
         <source>Por favor, habilite JavaScript para continuar utilizando este aplicativo.</source>
@@ -249,7 +212,7 @@
           narrativa institucional consistente, produção e distribuição de conteúdo diverso e
           envolvente, além de articulação entre diferentes frentes de um projeto. Tudo com atenção
           aos detalhes, responsabilidade, criatividade e estratégia.</source>
-        <target>Pensamos estrategias para una buena comunicación institucional para colectivos,
+        <target>Pensamos estrategias para uma buena comunicación institucional para colectivos,
           organizaciones sociales y empresas, combinando planificación estratégica, creación de una
           narrativa institucional consistente, producción y distribución de contenido diverso y
           atractivo, además de articulación entre diferentes frentes de un proyecto. Todo con
