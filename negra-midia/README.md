@@ -2,15 +2,13 @@
 
 ## Descrição
 
-NegraMidia é uma aplicação web desenvolvida em Angular 18 que oferece suporte a múltiplos idiomas (Português, Inglês e Espanhol). A aplicação funciona como uma Single Page Application (SPA) e inclui recursos de Progressive Web App (PWA) através do Angular Service Worker. 
+NegraMidia é uma aplicação web desenvolvida em Angular 18 que oferece suporte a múltiplos idiomas (Português, Inglês e Espanhol). A aplicação funciona como uma Single Page Application (SPA) e inclui recursos de Progressive Web App (PWA) através do Angular Service Worker.
 
 Seu objetivo é informar os visitantes dos serviços oferecidos pela Negra Mídia, bem como apresentar informações sobre a empresa e seu time.
 
-
-
 ## Estrutura do Projeto
 
-```              
+```
 ├── public/                  # Arquivos públicos estáticos
 │   ├── _redirects           # Regras de redirecionamento para SPA
 │   ├── content/             # Conteúdo estático (imagens, etc.)
@@ -71,6 +69,7 @@ npm run start:all
 ```
 
 Navegue para os seguintes endereços para acessar a aplicação em cada idioma:
+
 - Português: `http://localhost:4200/`
 - Inglês: `http://localhost:4201/en/`
 - Espanhol: `http://localhost:4202/es/`
@@ -80,6 +79,7 @@ A aplicação será recarregada automaticamente se você alterar qualquer um dos
 ## Internacionalização (i18n)
 
 O projeto suporta três idiomas:
+
 - Português (padrão): acessível na raiz do site
 - Inglês: acessível em `/en/`
 - Espanhol: acessível em `/es/`
@@ -105,16 +105,19 @@ Este comando gera builds para todos os idiomas configurados.
 ### Build para Idiomas Específicos
 
 Para português:
+
 ```bash
 npm run build:pt
 ```
 
 Para inglês:
+
 ```bash
 npm run build:en
 ```
 
 Para espanhol:
+
 ```bash
 npm run build:es
 ```
@@ -142,6 +145,7 @@ O arquivo `_redirects` localizado em `public/_redirects` é essencial para o fun
 ```
 
 Estas regras garantem que:
+
 - Todas as rotas na raiz sejam direcionadas para o index.html em português
 - Todas as rotas começando com /en/ sejam direcionadas para o index.html em inglês
 - Todas as rotas começando com /es/ sejam direcionadas para o index.html em espanhol
@@ -191,7 +195,6 @@ Se as variáveis de ambiente não estiverem sendo aplicadas corretamente, verifi
 - [Documentação do Angular](https://angular.dev)
 - [Documentação da Cloudflare Pages](https://developers.cloudflare.com/pages)
 - [Guia de Internacionalização do Angular](https://angular.dev/guide/i18n)
-        
 
 ## Cloudflare R2 para Imagens
 
@@ -232,3 +235,81 @@ Outros arquivos estáticos (como favicon, manifest, fontes, CSS e JS) continuam 
 3. Clique em **Usar modelo**.
 4. Ajuste os parâmetros conforme necessário para o seu domínio.
 5. Salve e ative a regra.
+
+## Configuração de Redirecionamento por País/Idioma
+
+Para configurar redirecionamentos baseados no país de origem do visitante, siga estas instruções:
+
+1. Acesse o painel da Cloudflare e selecione o domínio desejado.
+2. No menu lateral, clique em **Regras** > **Regras de redirecionamento**.
+3. Crie as seguintes regras na ordem especificada:
+
+### 1. Regra para a Raiz (Maior Prioridade, desabilitada)
+
+- **Nome**: Redirecionar Raiz para PT
+- **Expressão**:
+
+```
+(http.request.uri.path eq "/") and not starts_with(http.request.uri.path, "/pt") and not starts_with(http.request.uri.path, "/en") and not starts_with(http.request.uri.path, "/es")
+```
+
+- **Ação**: Redirecionar para URL
+- **Status**: 301 (Permanentemente movido)
+- **URL de Destino**:
+
+```
+https://negramidia.net/pt
+```
+
+### 2. Regra para Português
+
+- **Nome**: Redirecionar para PT (Países Lusófonos)
+- **Expressão**:
+
+```
+(ip.src.country in {"BR" "PT" "AO" "MZ" "CV" "GW" "ST" "TL" "GQ"}) and not starts_with(http.request.uri.path, "/pt") and not starts_with(http.request.uri.path, "/en") and not starts_with(http.request.uri.path, "/es")
+```
+
+- **Ação**: Redirecionar para URL
+- **Status**: 301 (Permanentemente movido)
+- **URL de Destino**:
+
+```
+https://negramidia.net/pt
+```
+
+### 3. Regra para Espanhol
+
+- **Nome**: Redirecionar para ES (Países Hispânicos)
+- **Expressão**:
+
+```
+(ip.src.country in {"ES" "MX" "AR" "CO" "PE" "VE" "CL" "EC" "GT" "CU" "BO" "DO" "HN" "PY" "SV" "NI" "CR" "PA" "UY" "PR"}) and not starts_with(http.request.uri.path, "/es") and not starts_with(http.request.uri.path, "/pt") and not starts_with(http.request.uri.path, "/en")
+```
+
+- **Ação**: Redirecionar para URL
+- **Status**: 301 (Permanentemente movido)
+- **URL de Destino**:
+
+```
+https://negramidia.net/es
+```
+
+### 4. Regra para Inglês (Menor Prioridade)
+
+- **Nome**: Redirecionar para EN (Padrão)
+- **Expressão**:
+
+```
+not starts_with(http.request.uri.path, "/en") and not starts_with(http.request.uri.path, "/pt") and not starts_with(http.request.uri.path, "/es")
+```
+
+- **Ação**: Redirecionar para URL
+- **Status**: 301 (Permanentemente movido)
+- **URL de Destino**:
+
+```
+https://negramidia.net/en
+```
+![image.png](/doc/cloudflare-redirect-rules.png)
+**Importante**: A ordem das regras é crucial. Elas devem ser configuradas na ordem exata listada acima (Raiz → Português → Espanhol → Inglês) para garantir o funcionamento correto. As condições `not starts_with` garantem que caminhos já definidos para idiomas específicos não sejam sobrescritos.
