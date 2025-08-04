@@ -250,7 +250,7 @@ Para configurar redirecionamentos baseados no país de origem do visitante, siga
 - **Expressão**:
 
 ```
-(http.request.uri.path eq "/") and not starts_with(http.request.uri.path, "/pt") and not starts_with(http.request.uri.path, "/en") and not starts_with(http.request.uri.path, "/es")
+(http.request.uri.path eq "/")
 ```
 
 - **Ação**: Redirecionar para URL
@@ -267,7 +267,7 @@ https://negramidia.net/pt
 - **Expressão**:
 
 ```
-(ip.src.country in {"BR" "PT" "AO" "MZ" "CV" "GW" "ST" "TL" "GQ"}) and not starts_with(http.request.uri.path, "/pt") and not starts_with(http.request.uri.path, "/en") and not starts_with(http.request.uri.path, "/es")
+(ip.src.country in {"BR" "PT" "AO" "MZ" "CV" "GW" "ST" "TL" "GQ"}) and (http.request.uri.path eq "/")
 ```
 
 - **Ação**: Redirecionar para URL
@@ -284,7 +284,7 @@ https://negramidia.net/pt
 - **Expressão**:
 
 ```
-(ip.src.country in {"ES" "MX" "AR" "CO" "PE" "VE" "CL" "EC" "GT" "CU" "BO" "DO" "HN" "PY" "SV" "NI" "CR" "PA" "UY" "PR"}) and not starts_with(http.request.uri.path, "/es") and not starts_with(http.request.uri.path, "/pt") and not starts_with(http.request.uri.path, "/en")
+(ip.src.country in {"ES" "MX" "AR" "CO" "PE" "VE" "CL" "EC" "GT" "CU" "BO" "DO" "HN" "PY" "SV" "NI" "CR" "PA" "UY" "PR"}) and (http.request.uri.path eq "/")
 ```
 
 - **Ação**: Redirecionar para URL
@@ -301,7 +301,7 @@ https://negramidia.net/es
 - **Expressão**:
 
 ```
-not starts_with(http.request.uri.path, "/en") and not starts_with(http.request.uri.path, "/pt") and not starts_with(http.request.uri.path, "/es")
+(http.request.uri.path eq "/")
 ```
 
 - **Ação**: Redirecionar para URL
@@ -312,4 +312,4 @@ not starts_with(http.request.uri.path, "/en") and not starts_with(http.request.u
 https://negramidia.net/en
 ```
 ![image.png](/doc/cloudflare-redirect-rules.png)
-**Importante**: A ordem das regras é crucial. Elas devem ser configuradas na ordem exata listada acima (Raiz → Português → Espanhol → Inglês) para garantir o funcionamento correto. As condições `not starts_with` garantem que caminhos já definidos para idiomas específicos não sejam sobrescritos.
+**Importante**: A ordem das regras é crucial. Elas devem ser configuradas na ordem exata listada acima (Raiz → Português → Espanhol → Inglês) para garantir o funcionamento correto. A condição `http.request.uri.path eq "/"` garante que os redirecionamentos só ocorram quando o usuário acessar a raiz do site, preservando qualquer caminho já definido.

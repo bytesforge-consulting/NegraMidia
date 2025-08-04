@@ -20,9 +20,12 @@
   <meta property="og:description" i18n="@@metaDescription"
     content="Comunicação estratégica, marketing digital, storytelling e conteúdo com foco em diversidade e representatividade." />
   <meta property="og:image" content="https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/content/logo.png">
-  <meta property="og:url" content="https://negramidia.net">
+  <meta property="og:url" content="/">
   <meta property="og:type" content="website">
   <meta property="og:article:author" content="Negra Mídia">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
   <!-- Tags Twitter Card para compartilhamento no Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" i18n="@@pageTitle" content="Negra Mídia - Comunicação com propósito">
@@ -30,20 +33,51 @@
     content="Comunicação estratégica, marketing digital, storytelling e conteúdo com foco em diversidade e representatividade." />
   <meta name="twitter:image" content="https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/content/logo.png">
   <!-- SEO -->
-  <link rel="canonical" href="https://negramidia.net/">
+  <!-- Tags hreflang para SEO multilíngue -->
+  <link rel="alternate" hreflang="pt-br" href="/pt/">
+  <link rel="alternate" hreflang="en-us" href="/en/">
+  <link rel="alternate" hreflang="es" href="/es/">
+  <link rel="alternate" hreflang="x-default" href="/">
+  <!-- Tag canônica dinâmica que será ajustada para cada idioma no build -->
+  <link rel="canonical" href="/">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Negra Mídia",
+  "alternateName": ["Negra Media", "Negra Midia"],
   "description": "Agência especializada em comunicação estratégica e marketing digital com foco em representatividade",
-  "url": "https://negramidia.net",
+  "description_en": "Agency specialized in strategic communication and digital marketing with a focus on representation",
+  "description_es": "Agencia especializada en comunicación estratégica y marketing digital con enfoque en representatividad",
+  "url": "/",
+  "inLanguage": "pt-BR",
   "logo": "https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/content/logo.png",
   "sameAs": [
-    "https://www.linkedin.com/company/negra-midia-comunicacao",
-    "https://negramidia.net/en",
-    "https://negramidia.net/es"
-  ]
+    "https://www.linkedin.com/company/negra-midia-comunicacao"
+  ],
+  "potentialAction": {
+    "@type": "ViewAction",
+    "target": [
+      {
+        "@type": "EntryPoint",
+        "urlTemplate": "/pt/",
+        "inLanguage": "pt-BR",
+        "name": "Português"
+      },
+      {
+        "@type": "EntryPoint",
+        "urlTemplate": "/en/",
+        "inLanguage": "en",
+        "name": "English"
+      },
+      {
+        "@type": "EntryPoint",
+        "urlTemplate": "/es/",
+        "inLanguage": "es",
+        "name": "Español"
+      }
+    ]
+  }
 }
 </script>
   <!-- Manifesto para PWA -->
