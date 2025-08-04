@@ -36,10 +36,11 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public",
-                "ignore": ["content/**", "fonts/**"] }
+                {
+                  "glob": "**/*",
+                  "input": "public",
+                  "ignore": ["content/**", "fonts/**"]
+                }
             ],
             "styles": [
               "src/styles.css"
