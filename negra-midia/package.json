@@ -14,7 +14,7 @@
     "build:pt": "ng build --configuration=production && npm run postbuild",
     "build:en": "ng build --configuration=production,en && npm run postbuild",
     "build:es": "ng build --configuration=production,es && npm run postbuild",
-    "postbuild": "shx cp public/robots.txt public/sitemap.xml public/llms.txt dist/negra-midia/browser/",
+    "postbuild": "shx cp public/favicon.ico public/robots.txt public/sitemap.xml public/llms.txt dist/negra-midia/browser/",
     "extract-i18n": "ng extract-i18n --output-path src/assets/i18n",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
