@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="pt" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="invisibleH1Title" datatype="html">
+        <source>Negra Mídia - Agência de Comunicação Especializada em Conteúdo Antirracista e
+          Diversidade</source>
+        <target>Negra Mídia - Agencia de Comunicación Especializada en Contenido Antirracista y
+          Diversidad</target>
+      </trans-unit>
+      <!-- Meta Tags -->
+      <trans-unit id="pageTitle" datatype="html">
+        <source>Negra Mídia - Comunicação com propósito</source>
+        <target>Negra Mídia - Comunicación con propósito</target>
+      </trans-unit>
+      <trans-unit id="metaDescription" datatype="html">
+        <source>Comunicação estratégica, marketing digital, storytelling e conteúdo com foco em diversidade e representatividade.</source>
+        <target>Comunicación estratégica, marketing digital, storytelling y contenido con enfoque en diversidad y representatividad.</target>
+      </trans-unit>
+      <trans-unit id="metaKeywords" datatype="html">
+        <source>Agência de comunicação, marketing digital, produção de conteúdo, jornalismo negro, consultoria em mídia, newsletter empresarial, reportagens especializadas, comunicação estratégica, diversidade na mídia, representatividade negra, gestão de redes sociais, produção de e-books, assessoria de imprensa, storytelling, comunicação inclusiva, conteúdo antirracista, mídia negra, comunicação com propósito, narrativas diversas, identidade cultural, comunicação afirmativa, produção audiovisual, consultoria em diversidade</source>
+        <target>Agencia de comunicación, marketing digital, producción de contenido, periodismo negro, consultoría en medios, boletín empresarial, reportajes especializados, comunicación estratégica, diversidad en los medios, representatividad negra, gestión de redes sociales, producción de libros electrónicos, asesoría de prensa, storytelling, comunicación inclusiva, contenido antirracista, medios negros, comunicación con propósito, narrativas diversas, identidad cultural, comunicación afirmativa, producción audiovisual, consultoría en diversidad</target>
+      </trans-unit>
+      <trans-unit id="noscriptMessage" datatype="html">
+        <source>Por favor, habilite JavaScript para continuar utilizando este aplicativo.</source>
+        <target>Por favor, habilite JavaScript para continuar utilizando esta aplicación.</target>
+      </trans-unit>
+
+      <!-- Navbar Component -->
+      <trans-unit id="navMenuPrincipal" datatype="html">
+        <source>Menu principal</source>
+        <target>Menú principal</target>
+      </trans-unit>
+      <trans-unit id="navPaginaInicial" datatype="html">
+        <source>Página inicial Negra Mídia</source>
+        <target>Página inicial de Negra Mídia</target>
+      </trans-unit>
+      <trans-unit id="logoAlt" datatype="html">
+        <source>Logo Negra Mídia - Comunicação com propósito</source>
+        <target>Logo Negra Mídia - Comunicación con propósito</target>
+      </trans-unit>
+      <trans-unit id="navInicio" datatype="html">
+        <source>Início</source>
+        <target>Inicio</target>
+      </trans-unit>
+      <trans-unit id="navServicos" datatype="html">
+        <source>Serviços</source>
+        <target>Servicios</target>
+      </trans-unit>
+      <trans-unit id="navSobre" datatype="html">
+        <source>Sobre</source>
+        <target>Sobre</target>
+      </trans-unit>
+      <trans-unit id="navContatos" datatype="html">
+        <source>Contatos</source>
+        <target>Contactos</target>
+      </trans-unit>
+      <trans-unit id="logoAltMobile" datatype="html">
+        <source>logo negra mídia</source>
+        <target>logo negra mídia</target>
+      </trans-unit>
+      <trans-unit id="logoAriaLabelMobile" datatype="html">
+        <source>logo escrito negra mídia</source>
+        <target>logo con texto negra mídia</target>
+      </trans-unit>
+      <trans-unit id="navMenu" datatype="html">
+        <source>Menu</source>
+        <target>Menú</target>
+      </trans-unit>
+      <trans-unit id="navInicioAriaLabel" datatype="html">
+        <source>Ir para a seção Início (menu principal)</source>
+        <target>Ir a la sección Inicio (menú principal)</target>
+      </trans-unit>
+      <trans-unit id="navServicosAriaLabel" datatype="html">
+        <source>Ir para a seção Serviços (menu principal)</source>
+        <target>Ir a la sección Servicios (menú principal)</target>
+      </trans-unit>
+      <trans-unit id="navSobreAriaLabel" datatype="html">
+        <source>Ir para a seção Sobre (menu principal)</source>
+        <target>Ir a la sección Sobre (menú principal)</target>
+      </trans-unit>
+      <trans-unit id="navContatosAriaLabel" datatype="html">
+        <source>Ir para a seção Contatos (menu principal)</source>
+        <target>Ir a la sección Contactos (menú principal)</target>
+      </trans-unit>
+
+      <!-- Header Component -->
+      <trans-unit id="headerSloganAlt" datatype="html">
+        <source>Negra Mídia - Comunicação com propósito</source>
+        <target>Negra Mídia - Comunicación con propósito</target>
+      </trans-unit>
+      <trans-unit id="headerIlustracaoAlt" datatype="html">
+        <source>Ilustração de pessoa escrevendo</source>
+        <target>Ilustración de una persona escribiendo</target>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTitulo" datatype="html">
+        <source>ESTRATÉGIA - RESPONSABILIDADE - SENSIBILIDADE - CRIATIVIDADE</source>
+        <target>ESTRATEGIA - RESPONSABILIDAD - SENSIBILIDAD - CREATIVIDAD</target>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTexto1" datatype="html">
+        <source>Contamos boas histórias com sensibilidade, criatividade e com um olhar estratégico
+          em diferentes formatos e para múltiplas plataformas.</source>
+        <target>Contamos buenas historias con sensibilidad, creatividad y con una mirada estratégica
+          en diferentes formatos y para múltiples plataformas.</target>
+      </trans-unit>
+      <!-- Para headerEstrategiaTexto2 -->
+      <trans-unit id="headerEstrategiaTexto2" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" />Criamos conteúdos customizados e
+          acessíveis que conectam, mobilizam e engajam pessoas e comunidades<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" />.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" />Creamos contenidos personalizados y
+          accesibles que conectan, movilizan y comprometen a personas y comunidades<x
+            id="CLOSE_TAG_STRONG" ctype="x-strong" />.</target>
+      </trans-unit>
+
+      <!-- Para sobreFernandaTexto2 -->
+      <trans-unit id="sobreFernandaTexto2" datatype="html">
+        <source>Nos últimos anos, atuei na comunicação e/ou assistência de direção de documentários
+          alinhados à Agenda 2030 da produtora <x id="START_TAG_STRONG" ctype="x-strong" />Deusdará
+          Filmes: CIBERNÉTICAS, DE REPENTE 50, DOAR, VARANDAS, CASAS FLUTUANTES e COMIDA PARA QUEM
+          PRECISA.<x id="CLOSE_TAG_STRONG" ctype="x-strong" /></source>
+        <target>En los últimos años, he trabajado en comunicación y/o asistencia de dirección de
+          documentales alineados con la Agenda 2030 de la productora <x id="START_TAG_STRONG"
+            ctype="x-strong" />Deusdará Filmes: CIBERNÉTICAS, DE REPENTE 50, DOAR, VARANDAS, CASAS
+          FLUTUANTES y COMIDA PARA QUEM PRECISA.<x id="CLOSE_TAG_STRONG" ctype="x-strong" /></target>
+      </trans-unit>
+
+      <!-- Para sobreFernandaTexto3 -->
+      <trans-unit id="sobreFernandaTexto3" datatype="html">
+        <source>Já tive materiais publicados (entre textos, vídeos, podcasts e apresentação de
+          programa) na <x id="START_TAG_STRONG" ctype="x-strong" />Alma Preta Jornalismo, Folha de
+          São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" />.</source>
+        <target>Ya he tenido materiales publicados (entre textos, videos, podcasts y presentación de
+          programas) en <x id="START_TAG_STRONG" ctype="x-strong" />Alma Preta Jornalismo, Folha de
+          São Paulo, UOL, Portal Terra, TV Unesp y Canal Futura<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" />.</target>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTexto3" datatype="html">
+        <source>Temos em nossa base o antirracismo e o combate a desigualdades e preconceitos.</source>
+        <target>Tenemos en nuestra base el antirracismo y la lucha contra las desigualdades y
+          prejuicios.</target>
+      </trans-unit>
+      <trans-unit id="headerEstrategiaTexto4" datatype="html">
+        <source>Existimos para transformar com palavras, ideias e responsabilidade!</source>
+        <target>¡Existimos para transformar con palabras, ideas y responsabilidad!</target>
+      </trans-unit>
+
+      <!-- Services Component -->
+      <trans-unit id="servicosTitulo" datatype="html">
+        <source>Serviços</source>
+        <target>Servicios</target>
+      </trans-unit>
+      <trans-unit id="servicosCarrosselAriaLabel" datatype="html">
+        <source>Carrossel de serviços</source>
+        <target>Carrusel de servicios</target>
+      </trans-unit>
+      <trans-unit id="servicosDocumentariosTitulo" datatype="html">
+        <source>Documentários e podcasts 🎬</source>
+        <target>Documentales y podcasts 🎬</target>
+      </trans-unit>
+      <trans-unit id="servicosDocumentariosDescricao" datatype="html">
+        <source>Atuamos em produções de não ficção desde o desenvolvimento da ideia até a
+          assistência de direção. Cuidamos da pesquisa, roteiro, planejamento estético e narrativo,
+          cobrindo etapas necessárias para que as ideias saiam do papel com organização e
+          profundidade.</source>
+        <target>Trabajamos en producciones de no ficción desde el desarrollo de la idea hasta la
+          asistencia de dirección. Nos encargamos de la investigación, guión, planificación estética
+          y narrativa, cubriendo las etapas necesarias para que las ideas salgan del papel con
+          organización y profundidad.</target>
+      </trans-unit>
+      <trans-unit id="servicosJornalisticoTitulo" datatype="html">
+        <source>Conteúdo jornalístico 📰</source>
+        <target>Contenido periodístico 📰</target>
+      </trans-unit>
+      <trans-unit id="servicosJornalisticoDescricao" datatype="html">
+        <source>Produzimos reportagens e outros formatos jornalísticos, desde a pauta até a redação
+          final. Trabalhamos em projetos autorais ou encomendados por veículos de notícias, com foco
+          em temas de interesse e relevância pública como meio ambiente, cultura, direitos humanos e
+          combate ao racismo, sempre atentos às transformações trazidas pelas novas tecnologias e
+          algoritmos, com profundidade e responsabilidade.</source>
+        <target>Producimos reportajes y otros formatos periodísticos, desde la pauta hasta la
+          redacción final. Trabajamos en proyectos propios o encargados por medios de comunicación,
+          con enfoque en temas de interés y relevancia pública como medio ambiente, cultura,
+          derechos humanos y lucha contra el racismo, siempre atentos a las transformaciones traídas
+          por las nuevas tecnologías y algoritmos, con profundidad y responsabilidad.</target>
+      </trans-unit>
+      <trans-unit id="servicosPlanejamentoTitulo" datatype="html">
+        <source>Planejamento estratégico de comunicação 🧭</source>
+        <target>Planificación estratégica de comunicación 🧭</target>
+      </trans-unit>
+      <trans-unit id="servicosPlanejamentoDescricao" datatype="html">
+        <source>Criamos estratégias de comunicação sob medida para lançamentos de documentários,
+          campanhas ou projetos. Atuamos desde o encontro de um melhor posicionamento e
+          oportunidades de narrativas para sua audiência até a produção de calendários editoriais,
+          roteiros, newsletters, e-books e materiais institucionais. Monitoramos tendências e dados
+          para gerar impacto real e acompanhamos a execução junto a parceiros, quando necessário.</source>
+        <target>Creamos estrategias de comunicación a medida para lanzamientos de documentales,
+          campañas o proyectos. Actuamos desde la búsqueda de un mejor posicionamiento y
+          oportunidades narrativas para su audiencia hasta la producción de calendarios editoriales,
+          guiones, boletines, libros electrónicos y materiales institucionales. Monitoreamos
+          tendencias y datos para generar impacto real y acompañamos la ejecución junto a socios,
+          cuando es necesario.</target>
+      </trans-unit>
+      <trans-unit id="servicosComunicacaoTitulo" datatype="html">
+        <source>Comunicação institucional 🏛️</source>
+        <target>Comunicación institucional 🏛️</target>
+      </trans-unit>
+      <trans-unit id="servicosComunicacaoDescricao" datatype="html">
+        <source>Pensamos estratégias para uma boa comunicação institucional para coletivos,
+          organizações sociais e empresas, aliando planejamento estratégico, criação de uma
+          narrativa institucional consistente, produção e distribuição de conteúdo diverso e
+          envolvente, além de articulação entre diferentes frentes de um projeto. Tudo com atenção
+          aos detalhes, responsabilidade, criatividade e estratégia.</source>
+        <target>Pensamos estrategias para uma buena comunicación institucional para colectivos,
+          organizaciones sociales y empresas, combinando planificación estratégica, creación de una
+          narrativa institucional consistente, producción y distribución de contenido diverso y
+          atractivo, además de articulación entre diferentes frentes de un proyecto. Todo con
+          atención a los detalles, responsabilidad, creatividad y estrategia.</target>
+      </trans-unit>
+      <trans-unit id="servicosReleaseTitulo" datatype="html">
+        <source>Release e distribuição de conteúdo 🗞️</source>
+        <target>Comunicados de prensa y distribuição de contenido 🗞️</target>
+      </trans-unit>
+      <trans-unit id="servicosReleaseDescricao" datatype="html">
+        <source>Escrevemos releases atrativos e estratégicos para diferentes tipos de projetos e
+          auxiliamos na distribuição do conteúdo a partir de um mapeamento sobre possíveis
+          parceiros.</source>
+        <target>Escribimos comunicados de prensa atractivos y estratégicos para diferentes tipos de
+          proyectos y ayudamos en la distribución del contenido a partir de un mapeo de posibles
+          socios.</target>
+      </trans-unit>
+      <trans-unit id="servicosNewslettersTitulo" datatype="html">
+        <source>Newsletters ✉️</source>
+        <target>Boletines informativos ✉️</target>
+      </trans-unit>
+      <trans-unit id="servicosNewslettersDescricao" datatype="html">
+        <source>Produzimos e editamos newsletters com foco no engajamento da sua audiência. Textos,
+          imagens e curadoria editorial em sintonia com o seu projeto, seja institucional ou
+          comercial.</source>
+        <target>Producimos y editamos boletines informativos enfocados en el compromiso de su
+          audiencia. Textos, imágenes y curaduría editorial en sintonía con su proyecto, ya sea
+          institucional o comercial.</target>
+      </trans-unit>
+      <trans-unit id="servicosEbooksTitulo" datatype="html">
+        <source>E-books 📚</source>
+        <target>Libros electrónicos 📚</target>
+      </trans-unit>
+      <trans-unit id="servicosEbooksDescricao" datatype="html">
+        <source>Criamos textos para e-books institucionais, sejam digitais ou impressos. Também
+          articulamos o design e a finalização visual com parceiros especializados.</source>
+        <target>Creamos textos para libros electrónicos institucionales, ya sean digitales o
+          impresos. También articulamos el diseño y la finalización visual con socios
+          especializados.</target>
+      </trans-unit>
+      <trans-unit id="servicosMidiasTitulo" datatype="html">
+        <source>Mídias sociais e produção de conteúdo📱</source>
+        <target>Redes sociales y producción de contenido 📱</target>
+      </trans-unit>
+      <trans-unit id="servicosMidiasDescricao" datatype="html">
+        <source>Planejamos e executamos conteúdos para redes sociais como Instagram, LinkedIn,
+          X/Twitter e Facebook. Fazemos desde o calendário editorial até a análise de engajamento,
+          além da produção de textos para blogs, vídeos, sites e materiais institucionais.</source>
+        <target>Planificamos y ejecutamos contenidos para redes sociales como Instagram, LinkedIn,
+          X/Twitter y Facebook. Hacemos desde el calendario editorial hasta el análisis de
+          engagement, además de la producción de textos para blogs, videos, sitios web y materiales
+          institucionales.</target>
+      </trans-unit>
+      <trans-unit id="servicosBotaoConversar" datatype="html">
+        <source>Vamos conversar sobre o seu projeto</source>
+        <target>Hablemos sobre tu proyecto</target>
+      </trans-unit>
+      <trans-unit id="servicosSlideAnteriorAriaLabel" datatype="html">
+        <source>Ir para o slide anterior dos serviços</source>
+        <target>Ir al slide anterior de servicios</target>
+      </trans-unit>
+      <trans-unit id="servicosSlideProximoAriaLabel" datatype="html">
+        <source>Ir para o próximo slide dos serviços</source>
+        <target>Ir al siguiente slide de servicios</target>
+      </trans-unit>
+      <trans-unit id="servicosBotaoConversarAriaLabel" datatype="html">
+        <source>Abrir conversa no WhatsApp sobre o seu projeto</source>
+        <target>Abrir chat de WhatsApp sobre tu proyecto</target>
+      </trans-unit>
+
+      <!-- About Component -->
+      <trans-unit id="sobreFernandaPortfolioAriaLabel" datatype="html">
+        <source>Portfólio de Fernanda Rosário</source>
+        <target>Portafolio de Fernanda Rosário</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaLinkedinAriaLabel" datatype="html">
+        <source>LinkedIn de Fernanda Rosário</source>
+        <target>LinkedIn de Fernanda Rosário</target>
+      </trans-unit>
+      <trans-unit id="sobreTituloSEO" datatype="html">
+        <source>Fernanda Rosário - Jornalista Especializada em Comunicação Antirracista e Direitos
+          Humanos</source>
+        <target>Fernanda Rosário - Periodista Especializada en Comunicación Antirracista y Derechos
+          Humanos</target>
+      </trans-unit>
+      <trans-unit id="sobreQuemFaz" datatype="html">
+        <source>Quem faz</source>
+        <target>Quiénes somos</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaAlt" datatype="html">
+        <source>Fernanda Rosário</source>
+        <target>Fernanda Rosário</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto1" datatype="html">
+        <source>Contamos boas histórias com sensibilidade, criatividade e com um olhar estratégico
+          em diferentes formatos e para múltiplas plataformas.</source>
+        <target>Contamos buenas historias con sensibilidad, creatividad y con una mirada estratégica
+          en diferentes formatos y para múltiples plataformas.</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto2" datatype="html">
+        <source>Nos últimos anos, atuei na comunicação e/ou assistência de direção de documentários
+          alinhados à Agenda 2030 da produtora <x id="START_TAG_STRONG" ctype="x-strong" />Deusdará
+          Filmes: CIBERNÉTICAS, DE REPENTE 50, DOAR, VARANDAS, CASAS FLUTUANTES e COMIDA PARA QUEM
+          PRECISA.<x id="CLOSE_TAG_STRONG" ctype="x-strong" /></source>
+        <target>En los últimos años, he trabajado en comunicación y/o asistencia de dirección de
+          documentales alineados con la Agenda 2030 de la productora <x id="START_TAG_STRONG"
+            ctype="x-strong" />Deusdará Filmes: CIBERNÉTICAS, DE REPENTE 50, DOAR, VARANDAS, CASAS
+          FLUTUANTES y COMIDA PARA QUEM PRECISA.<x id="CLOSE_TAG_STRONG" ctype="x-strong" /></target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto3" datatype="html">
+        <source>Já tive materiais publicados (entre textos, vídeos, podcasts e apresentação de
+          programa) na <x id="START_TAG_STRONG" ctype="x-strong" />Alma Preta Jornalismo, Folha de
+          São Paulo, UOL, Portal Terra, TV Unesp e Canal Futura<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" />.</source>
+        <target>Ya he tenido materiales publicados (entre textos, videos, podcasts y presentación de
+          programas) en <x id="START_TAG_STRONG" ctype="x-strong" />Alma Preta Jornalismo, Folha de
+          São Paulo, UOL, Portal Terra, TV Unesp y Canal Futura<x id="CLOSE_TAG_STRONG"
+            ctype="x-strong" />.</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto4" datatype="html">
+        <source>Tenho experiência em produção de textos, podcasts, vídeos, liderança de equipes e
+          comunicação corporativa.</source>
+        <target>Tengo experiencia en producción de textos, podcasts, videos, liderazgo de equipos y
+          comunicación corporativa.</target>
+      </trans-unit>
+      <trans-unit id="sobreFernandaTexto5" datatype="html">
+        <source>Saiba mais sobre mim e sobre meus últimos trabalhos clicando nos botões ao lado.</source>
+        <target>Conoce más sobre mí y mis últimos trabajos haciendo clic en los botones al lado.</target>
+      </trans-unit>
+
+      <!-- History Component -->
+      <trans-unit id="historicoTitulo" datatype="html">
+        <source>Já trabalhamos</source>
+        <target>Ya hemos trabajado</target>
+      </trans-unit>
+      <trans-unit id="historicoSubtitulo" datatype="html">
+        <source>Nossos realizadores já estiveram em trabalhos nas seguintes empresas:</source>
+        <target>Nuestros realizadores ya han trabajado con las siguientes empresas:</target>
+      </trans-unit>
+      <trans-unit id="historicoEmpresasAlt" datatype="html">
+        <source>Empresas parceiras</source>
+        <target>Empresas colaboradoras</target>
+      </trans-unit>
+
+      <!-- Footer Component -->
+      <trans-unit id="contatoTitulo" datatype="html">
+        <source>Saiba mais</source>
+        <target>Saber más</target>
+      </trans-unit>
+      <trans-unit id="contatoEnviarEmail" datatype="html">
+        <source>Enviar email</source>
+        <target>Enviar correo</target>
+      </trans-unit>
+      <trans-unit id="contatoLinkedIn" datatype="html">
+        <source>Acessar perfil do LinkedIn</source>
+        <target>Acceder al perfil de LinkedIn</target>
+      </trans-unit>
+      <trans-unit id="contatoWhatsApp" datatype="html">
+        <source>Acessar contato do WhatsApp</source>
+        <target>Contactar por WhatsApp</target>
+      </trans-unit>
+      <trans-unit id="contatoEnvieMensagem" datatype="html">
+        <source>Envie uma mensagem</source>
+        <target>Envía un mensaje</target>
+      </trans-unit>
+      <trans-unit id="contatoNome" datatype="html">
+        <source>Nome*</source>
+        <target>Nombre*</target>
+      </trans-unit>
+      <trans-unit id="contatoEmail" datatype="html">
+        <source>E-mail*</source>
+        <target>Correo electrónico*</target>
+      </trans-unit>
+      <trans-unit id="contatoTelefone" datatype="html">
+        <source>(00)00000-0000</source>
+        <target>(00)00000-0000</target>
+      </trans-unit>
+      <trans-unit id="contatoAssunto" datatype="html">
+        <source>Assunto*</source>
+        <target>Asunto*</target>
+      </trans-unit>
+      <trans-unit id="contatoMensagem" datatype="html">
+        <source>Mensagem*</source>
+        <target>Mensaje*</target>
+      </trans-unit>
+      <trans-unit id="contatoBotaoEnviar" datatype="html">
+        <source>Enviar</source>
+        <target>Enviar</target>
+      </trans-unit>
+      <trans-unit id="footerDesenvolvido" datatype="html">
+        <source>Desenvolvido por <x id="START_LINK" ctype="x-a" />Hedgar Bezerra.<x id="CLOSE_LINK"
+            ctype="x-a" /></source>
+        <target>Desarrollado por <x id="START_LINK" ctype="x-a" />Hedgar Bezerra.<x id="CLOSE_LINK"
+            ctype="x-a" /></target>
+      </trans-unit>
+      <trans-unit id="idiomaSelector" datatype="html">
+        <source>Seletor de idioma</source>
+        <target>Selector de idioma</target>
+      </trans-unit>
+      <trans-unit id="idiomaPT" datatype="html">
+        <source>Português</source>
+        <target>Portugués</target>
+      </trans-unit>
+      <trans-unit id="idiomaEN" datatype="html">
+        <source>English</source>
+        <target>Inglés</target>
+      </trans-unit>
+      <trans-unit id="idiomaES" datatype="html">
+        <source>Español</source>
+        <target>Español</target>
+      </trans-unit>
+      <trans-unit id="sobreSlideAnteriorAriaLabel" datatype="html">
+        <source>Anterior slide</source>
+        <target>Diapositiva anterior</target>
+      </trans-unit>
+      <trans-unit id="sobreSlideProximoAriaLabel" datatype="html">
+        <source>Próximo slide</source>
+        <target>Siguiente diapositiva</target>
+      </trans-unit>
+
+      <!-- Floating Icons Component -->
+      <trans-unit id="floatingWhatsappAriaLabel" datatype="html">
+        <source>Converse conosco pelo WhatsApp</source>
+        <target>Chatea con nosotros por WhatsApp</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

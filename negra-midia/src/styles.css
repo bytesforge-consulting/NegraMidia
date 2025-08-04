@@ -1,30 +1,30 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+  src: url('https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+  src: url('https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/Montserrat/static/Montserrat-Italic.ttf') format('truetype');
+  src: url('https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/fonts/Montserrat/static/Montserrat-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: 'Reddit Sans';
-  src: url('/fonts/Reddit_Sans/static/RedditSans-Regular.ttf') format('truetype');
+  src: url('https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/fonts/Reddit_Sans/static/RedditSans-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto';
-  src: url('/fonts/Roboto/static/Roboto-Regular.ttf') format('truetype');
+  src: url('https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/fonts/Roboto/static/Roboto-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }

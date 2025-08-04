@@ -9,6 +9,19 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "pt",
+        "locales": {
+          "en": {
+            "translation": "src/assets/i18n/messages.en.xlf",
+            "baseHref": "/en/"
+          },
+          "es": {
+            "translation": "src/assets/i18n/messages.es.xlf",
+            "baseHref": "/es/"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -16,6 +29,7 @@
             "outputPath": "dist/negra-midia",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "localize": true,
             "polyfills": [
               "zone.js",
               "@angular/localize/init"
@@ -25,7 +39,7 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "ignore": ["content/**"] }
+                "ignore": ["content/**", "fonts/**"] }
             ],
             "styles": [
               "src/styles.css"
@@ -60,6 +74,12 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
+            },
+            "en": {
+              "localize": ["en"]
+            },
+            "es": {
+              "localize": ["es"]
             }
           },
           "defaultConfiguration": "production"
@@ -72,12 +92,22 @@
             },
             "development": {
               "buildTarget": "negra-midia:build:development"
+            },
+            "en": {
+              "buildTarget": "negra-midia:build:development,en"
+            },
+            "es": {
+              "buildTarget": "negra-midia:build:development,es"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "negra-midia:build",
+            "outputPath": "src/assets/i18n"
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -91,7 +121,23 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "ignore": ["content/**", "fonts/**", "pt/**", "en/**", "es/**"]
+              },
+              {
+                "glob": "robots.txt",
+                "input": "public",
+                "output": "/"
+              },
+              {
+                "glob": "sitemap.xml",
+                "input": "public",
+                "output": "/"
+              },
+              {
+                "glob": "_redirects",
+                "input": "public",
+                "output": "/"
               }
             ],
             "styles": [

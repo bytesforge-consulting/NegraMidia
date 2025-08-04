@@ -28,3 +28,17 @@
 .tile-message .uk-input {
   background-color: var(--primary-white) !important;
 }
+
+.language-selector .uk-button {
+  background-color: transparent;
+  color: var(--primary-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 2px;
+  min-width: 20px;
+  transition: all 0.3s ease;
+}
+
+.language-selector .uk-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}

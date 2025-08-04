@@ -2,16 +2,16 @@
     <nav class="uk-navbar-container uk-visible@s nav-main" uk-navibar role="navigation" aria-label="Menu principal">
     <div uk-navbar>
       <div class="uk-navbar-left">
-        <a class="uk-logo" href="#" aria-label="Página inicial Negra Mídia">
-          <img src="https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/content/logo.png" class="logo-img" alt="Logo Negra Mídia - Comunicação com propósito" width="200" height="80">
+        <a class="uk-logo" href="#" aria-label="Página inicial Negra Mídia" i18n-aria-label="@@navPaginaInicial">
+          <img src="https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/content/logo.png" class="logo-img" alt="Logo Negra Mídia - Comunicação com propósito" i18n-alt="@@logoAlt" width="200" height="80">
         </a>
       </div>
       <div class="uk-navbar-right">
         <ul class="uk-navbar-nav" role="menubar">
-          <li role="none"><a href="#inicio" role="menuitem">Início</a></li>
-          <li role="none"><a href="#servicos" role="menuitem">Serviços</a></li>
-          <li role="none"><a href="#sobre" role="menuitem">Sobre</a></li>
-          <li role="none"><a href="#contatos" role="menuitem">Contatos</a></li>
+          <li role="none"><a href="#inicio" role="menuitem" i18n="@@navInicio" aria-label="Ir para a seção Início da página" i18n-aria-label="@@navInicioAriaLabel">Início</a></li>
+          <li role="none"><a href="#servicos" role="menuitem" i18n="@@navServicos" aria-label="Ir para a seção Serviços da página" i18n-aria-label="@@navServicosAriaLabel">Serviços</a></li>
+          <li role="none"><a href="#sobre" role="menuitem" i18n="@@navSobre" aria-label="Ir para a seção Sobre da página" i18n-aria-label="@@navSobreAriaLabel">Sobre</a></li>
+          <li role="none"><a href="#contatos" role="menuitem" i18n="@@navContatos" aria-label="Ir para a seção Contatos da página" i18n-aria-label="@@navContatosAriaLabel">Contatos</a></li>
         </ul>
       </div>
     </div>
@@ -20,8 +20,8 @@
     <div uk-navbar>
       <div class="uk-navbar-left">
         <a class="uk-logo" href="#">
-          <img src="https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/content/logo.png" class="logo-img" alt="logo negra mídia"
-            aria-label="logo escrito negra mídia">
+          <img src="https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/content/logo.png" class="logo-img" alt="logo negra mídia" i18n-alt="@@logoAltMobile"
+            aria-label="logo escrito negra mídia" i18n-aria-label="@@logoAriaLabelMobile">
         </a>
       </div>
       <div class="uk-navbar-right">
@@ -32,10 +32,10 @@
         <div class="uk-navbar-dropdown nav-main-dropdown"
           uk-drop="stretch: x; target: !.uk-navbar-container; animation: reveal-top; animate-out: true; duration: 700">
           <ul class="uk-nav uk-navbar-dropdown-nav nav-main-dropdown-list">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contatos">Contatos</a></li>
+            <li><a href="#inicio" aria-label="Ir para a seção Início da página" i18n-aria-label="@@navInicioAriaLabel">Início</a></li>
+            <li><a href="#servicos" aria-label="Ir para a seção Serviços da página" i18n-aria-label="@@navServicosAriaLabel">Serviços</a></li>
+            <li><a href="#sobre" aria-label="Ir para a seção Sobre da página" i18n-aria-label="@@navSobreAriaLabel">Sobre</a></li>
+            <li><a href="#contatos" aria-label="Ir para a seção Contatos da página" i18n-aria-label="@@navContatosAriaLabel">Contatos</a></li>
           </ul>
         </div>
       </div>

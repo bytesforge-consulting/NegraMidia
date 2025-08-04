@@ -7,7 +7,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "start:en": "ng serve --configuration=en",
+    "start:es": "ng serve --configuration=es",
+    "start:all": "concurrently \"npm run start -- --port=4200\" \"npm run start:en -- --port=4201\" \"npm run start:es -- --port=4202\"",
+    "build": "ng build --localize && npm run postbuild",
+    "build:pt": "ng build --configuration=production && npm run postbuild",
+    "build:en": "ng build --configuration=production,en && npm run postbuild",
+    "build:es": "ng build --configuration=production,es && npm run postbuild",
+    "postbuild": "shx cp dist/negra-midia/browser/pt/robots.txt dist/negra-midia/browser/pt/sitemap.xml dist/negra-midia/browser/pt/llms.txt dist/negra-midia/browser/pt/manifest.webmanifest dist/negra-midia/browser/",
+    "extract-i18n": "ng extract-i18n --output-path src/assets/i18n",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -33,12 +41,14 @@
     "@angular/compiler-cli": "^18.0.0",
     "@angular/localize": "^18.0.4",
     "@types/jasmine": "~5.1.0",
+    "concurrently": "^9.2.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "shx": "^0.4.0",
     "typescript": "~5.4.2"
   }
 }
