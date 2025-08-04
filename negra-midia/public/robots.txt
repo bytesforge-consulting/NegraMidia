@@ -28,4 +28,4 @@ Disallow: /*.js$
 Allow: /*.css$
 
 # Sitemap com suporte a hreflang para todos os idiomas
-Sitemap: /sitemap.xml
+Sitemap: https://negramidia.net/sitemap.xml
