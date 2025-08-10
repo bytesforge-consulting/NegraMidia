@@ -55,6 +55,52 @@
         <source>Contatos</source>
         <target>Contactos</target>
       </trans-unit>
+      
+      <!-- Language Selector Component -->
+      <trans-unit id="languageSelectorLabel" datatype="html">
+        <source>Seletor de idioma</source>
+        <target>Selector de idioma</target>
+      </trans-unit>
+      <trans-unit id="currentLanguageLabel" datatype="html">
+        <source>Idioma atual</source>
+        <target>Idioma actual</target>
+      </trans-unit>
+      <trans-unit id="currentLanguageFlag" datatype="html">
+        <source>Bandeira do idioma atual</source>
+        <target>Bandera del idioma actual</target>
+      </trans-unit>
+      <trans-unit id="currentLanguageWithName" datatype="html">
+        <source>Idioma atual: <x id="INTERPOLATION" equiv-text="{{ getCurrentLanguageName() }}"/></source>
+        <target>Idioma actual: <x id="INTERPOLATION" equiv-text="{{ getCurrentLanguageName() }}"/></target>
+      </trans-unit>
+      <trans-unit id="languageOptionsLabel" datatype="html">
+        <source>Opções de idioma</source>
+        <target>Opciones de idioma</target>
+      </trans-unit>
+      <trans-unit id="changeToPT" datatype="html">
+        <source>Mudar para Português</source>
+        <target>Cambiar a Portugués</target>
+      </trans-unit>
+      <trans-unit id="portugueseLanguage" datatype="html">
+        <source>Português</source>
+        <target>Portugués</target>
+      </trans-unit>
+      <trans-unit id="changeToEN" datatype="html">
+        <source>Mudar para English</source>
+        <target>Cambiar a Inglés</target>
+      </trans-unit>
+      <trans-unit id="englishLanguage" datatype="html">
+        <source>Inglês</source>
+        <target>Inglés</target>
+      </trans-unit>
+      <trans-unit id="changeToES" datatype="html">
+        <source>Mudar para Español</source>
+        <target>Cambiar a Español</target>
+      </trans-unit>
+      <trans-unit id="spanishLanguage" datatype="html">
+        <source>Espanhol</source>
+        <target>Español</target>
+      </trans-unit>
       <trans-unit id="logoAltMobile" datatype="html">
         <source>logo negra mídia</source>
         <target>logo negra mídia</target>

@@ -10,11 +10,12 @@
     "start:en": "ng serve --configuration=en",
     "start:es": "ng serve --configuration=es",
     "start:all": "concurrently \"npm run start -- --port=4200\" \"npm run start:en -- --port=4201\" \"npm run start:es -- --port=4202\"",
+    "start:prod": "npm run build && docker-compose up nginx --force-recreate",
     "build": "ng build --localize && npm run postbuild",
     "build:pt": "ng build --configuration=production && npm run postbuild",
     "build:en": "ng build --configuration=production,en && npm run postbuild",
     "build:es": "ng build --configuration=production,es && npm run postbuild",
-    "postbuild": "shx cp public/favicon.ico public/robots.txt public/sitemap.xml public/llms.txt dist/negra-midia/browser/",
+    "postbuild": "bash scripts/postbuild.sh",
     "extract-i18n": "ng extract-i18n --output-path src/assets/i18n",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -49,6 +50,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "shx": "^0.4.0",
-    "typescript": "~5.4.2"
+    "typescript": "~5.4.2",
+    "http-server": "^14.1.1"
   }
 }

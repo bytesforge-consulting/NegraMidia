@@ -1,0 +1,99 @@
+.language-selector {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: inline-flex;
+  z-index: 1000;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.language-selector.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Classe para quando o menu está aberto */
+.language-selector.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Solução alternativa para garantir que o seletor apareça ao interagir */
+.language-selector:hover,
+.language-selector:focus,
+.language-selector:active,
+.language-selector.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.current-language {
+  display: flex;
+}
+
+.language-options {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  margin-bottom: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.language-selector:hover .language-options,
+.language-options.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.language-option {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.language-option:hover {
+  transform: scale(1.2);
+}
+
+.flag-icon {
+  width: 35px;
+  height: 25px;
+  border-radius: 3px;
+  transition: transform 0.2s ease;
+}
+
+.current-language .flag-icon:hover,
+.language-option:hover .flag-icon {
+  transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+  .language-options {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .language-selector.active .language-options,
+  .language-options.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .language-selector:hover .language-options:not(.open):not(.active) {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

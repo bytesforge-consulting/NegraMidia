@@ -1,0 +1,69 @@
+{
+  "name": "Negra Mídia",
+  "short_name": "Negra Mídia",
+  "description": "Comunicação estratégica, marketing digital, storytelling e conteúdo com foco em diversidade e representatividade.",
+  "theme_color": "#ed7d31",
+  "background_color": "#f6f1ee",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "pt-br",
+  "id": "/pt/",
+  "scope": "https://negramidia.net",
+  "start_url": "https://negramidia.net/pt/",
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/mobile.png",
+      "type": "image/png",
+      "sizes": "370x820",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/screenshots/web.png",
+      "type": "image/jpg",
+      "sizes": "1919x919",
+      "form_factor": "wide"
+    }
+  ]
+}

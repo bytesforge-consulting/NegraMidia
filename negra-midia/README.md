@@ -68,6 +68,12 @@ Para iniciar os servidores em todos os idiomas simultaneamente:
 npm run start:all
 ```
 
+Para iniciar o servidor simulando ambiente produtivo:
+
+```bash
+npm run start:prod
+```
+
 Navegue para os seguintes endereços para acessar a aplicação em cada idioma:
 
 - Português: `http://localhost:4200/`
@@ -176,6 +182,56 @@ O processo de build gera os arquivos no diretório `dist/negra-midia/browser`. E
 
 A aplicação utiliza o Angular Service Worker para funcionalidades de PWA. O arquivo de configuração `ngsw-config.json` define as estratégias de cache e é ativado apenas em builds de produção.
 
+## Testes Locais com Docker e Nginx
+
+O projeto inclui configuração para testes locais utilizando Docker e Nginx, o que permite simular um ambiente de produção em sua máquina local.
+
+### Pré-requisitos
+
+- Docker e Docker Compose instalados em sua máquina
+- Build da aplicação gerado (diretório `dist/negra-midia/browser`)
+
+### Arquivos de Configuração
+
+- **docker-compose.yml**: Define o serviço Nginx e mapeia as portas e volumes necessários
+- **nginx.conf**: Configura o servidor Nginx para servir a aplicação Angular com suporte a rotas e múltiplos idiomas
+
+### Como Executar
+
+Para construir a aplicação e iniciar o servidor Nginx em um contêiner Docker:
+
+```bash
+npm run serve:prod
+```
+
+Este comando executa o build da aplicação e inicia o contêiner Docker com Nginx configurado para servir a aplicação.
+
+Alternativamente, se você já tiver o build pronto, pode executar apenas:
+
+```bash
+docker-compose up nginx --force-recreate
+```
+
+### Acessando a Aplicação
+
+Após iniciar o contêiner, a aplicação estará disponível em:
+
+```
+http://localhost:9000/
+```
+
+O Nginx está configurado para redirecionar corretamente as rotas para cada idioma:
+- Português: `http://localhost:9000/pt/`
+- Inglês: `http://localhost:9000/en/`
+- Espanhol: `http://localhost:9000/es/`
+
+### Estrutura de Arquivos Docker
+
+```
+├── docker-compose.yml    # Configuração do Docker Compose
+└── nginx.conf           # Configuração do servidor Nginx
+```
+
 ## Solução de Problemas Comuns
 
 ### Erro de Versão do Node.js
@@ -189,6 +245,13 @@ Se as rotas não estiverem funcionando corretamente após o deploy, verifique se
 ### Variáveis de Ambiente não Aplicadas
 
 Se as variáveis de ambiente não estiverem sendo aplicadas corretamente, verifique se elas estão configuradas no painel da Cloudflare e se o processo de build está substituindo corretamente os valores no arquivo `environment.ts`.
+
+### Problemas com Docker
+
+Se o contêiner Docker não iniciar corretamente, verifique:
+- Se o Docker e o Docker Compose estão instalados e funcionando
+- Se o build da aplicação foi gerado corretamente em `dist/negra-midia/browser`
+- Se as portas necessárias (9000) estão disponíveis em sua máquina
 
 ## Recursos Adicionais
 

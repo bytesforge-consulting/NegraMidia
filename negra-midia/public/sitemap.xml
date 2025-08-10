@@ -26,7 +26,6 @@
       <image:loc>https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/content/logo.png</image:loc>
       <image:title>Negra Mídia Logo</image:title>
     </image:image>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://negramidia.net/pt" />
     <xhtml:link rel="alternate" hreflang="en" href="https://negramidia.net/en/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://negramidia.net/es/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://negramidia.net/pt" />
@@ -42,7 +41,6 @@
       <image:title>Negra Mídia Logo</image:title>
     </image:image>
     <xhtml:link rel="alternate" hreflang="pt" href="https://negramidia.net/pt" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://negramidia.net/en/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://negramidia.net/es/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://negramidia.net/pt" />
   </url>
@@ -56,9 +54,8 @@
       <image:loc>https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/content/logo.png</image:loc>
       <image:title>Negra Mídia Logo</image:title>
     </image:image>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://negramidia.net/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://negramidia.net/pt" />
     <xhtml:link rel="alternate" hreflang="en" href="https://negramidia.net/en/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://negramidia.net/es/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://negramidia.net/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://negramidia.net/pt" />
   </url>
 </urlset>

@@ -1,0 +1,36 @@
+<div class="language-selector" [class.active]="isActive || menuOpen" [class.hidden]="!isVisible" (click)="toggleMobileDropdown($event)"
+  (mouseenter)="keepMenuOpen($event)" (mouseleave)="onMouseLeave($event)"
+  role="navigation" aria-label="Seletor de idioma" i18n-aria-label="@@languageSelectorLabel">
+  <div class="current-language" aria-label="Idioma atual" i18n-aria-label="@@currentLanguageLabel">
+    <img [src]="getCurrentLanguageFlag()" alt="Bandeira do idioma atual" i18n-alt="@@currentLanguageFlag"
+      class="flag-icon"
+      title="Idioma atual" i18n-title="@@currentLanguageLabel" aria-label="Idioma atual"
+      i18n-aria-label="@@currentLanguageLabel" />
+  </div>
+  <div class="language-options" [class.open]="menuOpen" (mouseenter)="keepMenuOpen($event)"
+    role="menu" aria-label="Opções de idioma" i18n-aria-label="@@languageOptionsLabel">
+    <!-- Português -->
+    <a *ngIf="currentLanguage !== 'pt'" class="language-option" href="/pt/"
+      (mouseenter)="keepMenuOpen($event)"
+      role="menuitem" aria-label="Mudar para Português" i18n-aria-label="@@changeToPT">
+      <img src="flags/br.svg" alt="Português" i18n-alt="@@portugueseLanguage" class="flag-icon"
+        title="Português" i18n-title="@@portugueseLanguage" aria-label="Mudar para Português"
+        i18n-aria-label="@@changeToPT" />
+    </a>
+    <!-- Inglês -->
+    <a *ngIf="currentLanguage !== 'en'" class="language-option" href="/en/"
+      (mouseenter)="keepMenuOpen($event)"
+      role="menuitem" aria-label="Mudar para Inglês" i18n-aria-label="@@changeToEN">
+      <img src="flags/us.svg" alt="Inglês" i18n-alt="@@englishLanguage" class="flag-icon"
+        title="Inglês" i18n-title="@@englishLanguage" aria-label="Mudar para Inglês" i18n-aria-label="@@changeToEN" />
+    </a>
+    <!-- Espanhol -->
+    <a *ngIf="currentLanguage !== 'es'" class="language-option" href="/es/"
+      (mouseenter)="keepMenuOpen($event)"
+      role="menuitem" aria-label="Mudar para Espanhol" i18n-aria-label="@@changeToES">
+      <img src="flags/es.svg" alt="Espanhol" i18n-alt="@@spanishLanguage" class="flag-icon"
+        title="Espanhol" i18n-title="@@spanishLanguage" aria-label="Mudar para Espanhol"
+        i18n-aria-label="@@changeToES" />
+    </a>
+  </div>
+</div>

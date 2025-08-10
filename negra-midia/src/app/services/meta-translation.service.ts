@@ -41,6 +41,22 @@ export class MetaTranslationService {
   }
 
   /**
+   * Atualiza o URL canônico com base na URL atual
+   */
+  updateCanonicalUrl(): void {
+    const baseUrl = this.document.location.origin;
+    const currentPath = document.location.pathname;
+    const canonicalUrl = baseUrl + currentPath;
+    let link: HTMLLinkElement | null = this.document.querySelector('link[rel="canonical"]');
+    if (!link) {
+      link = this.document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      this.document.head.appendChild(link);
+    }
+    link.setAttribute('href', canonicalUrl);
+  }
+
+  /**
    * Atualiza o conteúdo do h1 invisível com base na tradução
    */
   private updateInvisibleH1(): void {

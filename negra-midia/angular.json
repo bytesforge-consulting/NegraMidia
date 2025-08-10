@@ -10,7 +10,10 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "pt",
+        "sourceLocale": {
+          "code": "pt",
+          "baseHref": "/pt/"
+        },
         "locales": {
           "en": {
             "translation": "src/assets/i18n/messages.en.xlf",
@@ -39,7 +42,7 @@
                 {
                   "glob": "**/*",
                   "input": "public",
-                  "ignore": ["content/**", "fonts/**"]
+                  "ignore": ["content/**", "fonts/**", "pt/**", "en/**", "es/**", "manifest.webmanifest"]
                 }
             ],
             "styles": [
@@ -123,22 +126,7 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "ignore": ["content/**", "fonts/**", "pt/**", "en/**", "es/**"]
-              },
-              {
-                "glob": "robots.txt",
-                "input": "public",
-                "output": "/"
-              },
-              {
-                "glob": "sitemap.xml",
-                "input": "public",
-                "output": "/"
-              },
-              {
-                "glob": "_redirects",
-                "input": "public",
-                "output": "/"
+                "ignore": ["content/**", "fonts/**", "pt/**", "en/**", "es/**", "manifest.webmanifest"]
               }
             ],
             "styles": [

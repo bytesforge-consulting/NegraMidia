@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HistoryComponent } from "./components/history/history.component";
 import { FloatingIconsComponent } from "./components/floating-icons/floating-icons.component";
+import { LanguageSelectorComponent } from "./components/language-selector/language-selector.component";
 
 @NgModule({
   imports: [
@@ -27,6 +28,7 @@ import { FloatingIconsComponent } from "./components/floating-icons/floating-ico
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    LanguageSelectorComponent,
     ServiceWorkerModule.register('ngsw-worker.js', {
         enabled: !isDevMode(),
         registrationStrategy: 'registerImmediately',
