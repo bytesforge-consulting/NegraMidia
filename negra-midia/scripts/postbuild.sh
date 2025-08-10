@@ -15,4 +15,16 @@ echo "Copiando manifest.webmanifest do ES para pasta ES..."
 npx shx cp -r public/es/manifest.webmanifest dist/negra-midia/browser/es/
 if [ $? -eq 0 ]; then echo "✓ Cópia para ES concluída com sucesso"; else echo "✗ Erro na cópia para ES"; exit 1; fi
 
+echo "Copiando robots.txt para a raiz do build..."
+npx shx cp -r public/robots.txt dist/negra-midia/browser/
+if [ $? -eq 0 ]; then echo "✓ Cópia do robots.txt concluída com sucesso"; else echo "✗ Erro na cópia do robots.txt"; exit 1; fi
+
+echo "Copiando sitemap.xml para a raiz do build..."
+npx shx cp -r public/sitemap.xml dist/negra-midia/browser/
+if [ $? -eq 0 ]; then echo "✓ Cópia do sitemap.xml concluída com sucesso"; else echo "✗ Erro na cópia do sitemap.xml"; exit 1; fi
+
+echo "Copiando llms.txt para a raiz do build..."
+npx shx cp -r public/llms.txt dist/negra-midia/browser/
+if [ $? -eq 0 ]; then echo "✓ Cópia do llms.txt concluída com sucesso"; else echo "✗ Erro na cópia do llms.txt"; exit 1; fi
+
 echo "=== Script postbuild concluído com sucesso! ==="
