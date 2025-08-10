@@ -147,7 +147,7 @@ O arquivo `_redirects` localizado em `public/_redirects` é essencial para o fun
 
 ```
 # Redirecionamentos para SPA
-/  /pt/  301
+/  /pt/  308
 ```
 
 Estas regras garantem que:
@@ -274,7 +274,7 @@ Outros arquivos estáticos (como favicon, manifest, fontes, CSS e JS) continuam 
 3. Clique em **Criar regra**.
 4. Dê um nome para a regra (ex: "redirect www").
 5. Defina a condição (ex: "Nome do host contém www").
-6. Escolha a ação **Redirecionar URL** e selecione o código de status (geralmente 301).
+6. Escolha a ação **Redirecionar URL** e selecione o código de status (geralmente 308).
 7. No campo de destino, insira a URL para onde deseja redirecionar (ex: `https://dominio.com/$1`).
 8. Salve e ative a regra.
 
@@ -317,7 +317,7 @@ Para configurar redirecionamentos baseados no país de origem do visitante, siga
 ```
 
 - **Ação**: Redirecionar para URL
-- **Status**: 301 (Permanentemente movido)
+- **Status**: 308 (Permanentemente movido)
 - **URL de Destino**:
 
 ```
@@ -334,7 +334,7 @@ https://negramidia.net/pt
 ```
 
 - **Ação**: Redirecionar para URL
-- **Status**: 301 (Permanentemente movido)
+- **Status**: 308 (Permanentemente movido)
 - **URL de Destino**:
 
 ```
@@ -351,28 +351,46 @@ https://negramidia.net/pt
 ```
 
 - **Ação**: Redirecionar para URL
-- **Status**: 301 (Permanentemente movido)
+- **Status**: 308 (Permanentemente movido)
 - **URL de Destino**:
 
 ```
 https://negramidia.net/es
 ```
 
-### 4. Regra para Inglês (Menor Prioridade)
+### 4. Regra para Inglês
 
 - **Nome**: Redirecionar para EN (Padrão)
 - **Expressão**:
 
 ```
-(http.request.uri.path eq "/")
+(ip.src.country in {"US" "GB" "CA" "AU" "NZ" "IE" "JM" "BZ" "BS" "BB" "TT" "GY" "AG" "DM" "GD" "KN" "LC" "VC" "ZA" "NA" "BW" "ZW" "GH" "LR" "SL" "GM" "NG" "KE" "UG" "TZ" "RW" "SG" "MY" "IN" "PK" "PH" "FJ"}) and (http.request.uri.path eq "/")
 ```
 
 - **Ação**: Redirecionar para URL
-- **Status**: 301 (Permanentemente movido)
+- **Status**: 308 (Permanentemente movido)
 - **URL de Destino**:
 
 ```
 https://negramidia.net/en
 ```
+
+### 5. Regra para Inglês - Fallback (Menor Prioridade)
+
+- **Nome**: Redirecionar para EN (Fallback)
+- **Expressão**:
+
+```
+http.request.uri.path eq "/"
+```
+
+- **Ação**: Redirecionar para URL
+- **Status**: 308 (Permanentemente movido)
+- **URL de Destino**:
+
+```
+https://negramidia.net/en
+```
+
 ![image.png](/doc/cloudflare-redirect-rules.png)
 **Importante**: A ordem das regras é crucial. Elas devem ser configuradas na ordem exata listada acima (Raiz → Português → Espanhol → Inglês) para garantir o funcionamento correto. A condição `http.request.uri.path eq "/"` garante que os redirecionamentos só ocorram quando o usuário acessar a raiz do site, preservando qualquer caminho já definido.
