@@ -11,6 +11,7 @@ declare var UIkit: any;
 
 @Component({
   selector: 'app-footer',
+  standalone: false,
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css',
 })
