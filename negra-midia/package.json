@@ -43,6 +43,7 @@
     "@angular/localize": "^18.0.4",
     "@types/jasmine": "~5.1.0",
     "concurrently": "^9.2.0",
+    "http-server": "^14.1.1",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -50,7 +51,6 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "shx": "^0.4.0",
-    "typescript": "~5.4.2",
-    "http-server": "^14.1.1"
+    "typescript": "~5.8.0"
   }
 }
