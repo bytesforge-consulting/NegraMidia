@@ -7,7 +7,7 @@ export class PwaInstalledService {
   constructor() {}
 
   isInstalled(): boolean {
-    let nav: any = window.navigator;
+    const nav: any = window.navigator;
 
     if (nav.standalone) return true;
 

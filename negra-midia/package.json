@@ -1,6 +1,7 @@
 {
   "name": "negra-midia",
   "version": "0.0.0",
+  "type": "module",
   "engines": {
     "node": "^18.19.1 || ^20.11.1 || >=22.0.0"
   },
@@ -18,7 +19,12 @@
     "postbuild": "bash scripts/postbuild.sh",
     "extract-i18n": "ng extract-i18n --output-path src/assets/i18n",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "eslint \"src/**/*.{ts,js}\" --cache",
+    "lint:fix": "eslint \"src/**/*.{ts,js}\" --cache --fix",
+    "lint:html": "eslint \"src/**/*.html\" --cache",
+    "lint:all": "npm run lint && npm run lint:html",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -38,19 +44,39 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^20.1.6",
+    "@angular-eslint/eslint-plugin": "^20.1.1",
+    "@angular-eslint/eslint-plugin-template": "^20.1.1",
+    "@angular-eslint/template-parser": "^20.1.1",
     "@angular/cli": "^20.1.6",
     "@angular/compiler-cli": "^20.1.7",
     "@angular/localize": "^20.1.7",
+    "@eslint/js": "^9.33.0",
     "@types/jasmine": "~5.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.39.1",
     "concurrently": "^9.2.0",
+    "eslint": "^9.33.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsdoc": "^54.0.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
     "http-server": "^14.1.1",
+    "husky": "^9.1.7",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^16.1.5",
     "shx": "^0.4.0",
     "typescript": "~5.8.0"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --cache --fix"
+    ],
+    "*.html": [
+      "eslint --cache --fix"
+    ]
   }
 }
