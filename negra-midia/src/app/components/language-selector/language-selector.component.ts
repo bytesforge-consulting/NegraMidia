@@ -153,6 +153,7 @@ export class LanguageSelectorComponent implements OnInit, OnDestroy {
   resetHideTimeout(): void {
     if (this.hideTimeout) {
       clearTimeout(this.hideTimeout);
+      this.hideTimeout = undefined;
     }
   }
 }
