@@ -12,55 +12,55 @@
   "start_url": "https://negramidia.net/es/",
   "icons": [
     {
-      "src": "/icons/icon-72x72.png",
+      "src": "https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-96x96.png",
+      "src": "https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/icons/icon-96x96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-128x128.png",
+      "src": "https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/icons/icon-128x128.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-144x144.png",
+      "src": "https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/icons/icon-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-152x152.png",
+      "src": "https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/icons/icon-152x152.png",
       "sizes": "152x152",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-192x192.png",
+      "src": "https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-384x384.png",
+      "src": "https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/icons/icon-384x384.png",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-512x512.png",
+      "src": "https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "/screenshots/mobile.png",
+      "src": "https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/screenshots/mobile.png",
       "type": "image/png",
       "sizes": "370x820",
       "form_factor": "narrow"
     },
     {
-      "src": "/screenshots/web.png",
+      "src": "https://pub-e64fe8b49f444007aad6eebc8c570b2c.r2.dev/screenshots/web.png",
       "type": "image/jpg",
       "sizes": "1919x919",
       "form_factor": "wide"
