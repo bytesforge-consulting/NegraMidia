@@ -1,31 +1,6 @@
+# Política de acesso total - permite TUDO automaticamente
 User-agent: *
 Allow: /
 
-# Permitir acesso específico para bots de IA
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-# Permitir acesso a todos os recursos
-Allow: /css/
-Allow: /js/
-Allow: /styles.css
-Disallow: /*.js$
-Allow: /*.css$
-
-# Sitemap com suporte a hreflang para todos os idiomas
+# Sitemap principal
 Sitemap: https://negramidia.net/sitemap.xml

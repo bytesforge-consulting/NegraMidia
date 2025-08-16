@@ -1,5 +1,5 @@
 import { ConnectionStatusService } from './../../services/connection-status.service';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AppNotification } from '../../interfaces/notification';
 import { HttpClient } from '@angular/common/http';
@@ -7,14 +7,15 @@ import { environment } from '../../../environments/environment';
 import { debounceTime, distinctUntilChanged, first } from 'rxjs';
 import { PwaInstalledService } from '../../services/pwa-installed.service';
 import { CustomValidators } from '../../helpers/custom-validators';
-declare var UIkit: any;
+declare let UIkit: any;
 
 @Component({
   selector: 'app-footer',
+  standalone: false,
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css',
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit {
   private readonly notificationOptions = { body: 'Mensagem enviada com sucesso.', icon: '/icons/icon-128x128.png', silent: true, lang: 'pt-BR'};
   private readonly MESSAGE_STOREKEY: string = 'SAVEDMESSAGE';
   private readonly MESSAGE_SENT: string = 'SAVEDMESSAGESENT'
@@ -70,15 +71,15 @@ export class FooterComponent {
   }
 
   LoadExistingContactForm() {
-    let messageStored = localStorage.getItem(this.MESSAGE_STOREKEY);
+    const messageStored = localStorage.getItem(this.MESSAGE_STOREKEY);
     if (messageStored == undefined || messageStored == null) return;
 
-    let message = JSON.parse(messageStored) as AppNotification;
+    const message = JSON.parse(messageStored) as AppNotification;
     this.notification.setValue(message);
   }
 
   submitContact(){
-    let contact = this.notification.value as AppNotification;
+    const contact = this.notification.value as AppNotification;
 
     this.httpClient
         .post(`${environment.APIURL}`, contact, {
@@ -143,7 +144,7 @@ export class FooterComponent {
   }
 
   getFormValidationClass(formName: string) : string{
-    let form = this.notification.get(formName);
+    const form = this.notification.get(formName);
     if(form?.pristine)
       return '';
     return form?.valid ? 'success' : 'error'

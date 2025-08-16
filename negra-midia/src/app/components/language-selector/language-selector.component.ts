@@ -1,13 +1,12 @@
 import { Component, OnInit, HostListener, OnDestroy } from '@angular/core';
-import { CommonModule, Location } from '@angular/common';
+import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { debounceTime, takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-language-selector',
-  standalone: true,
-  imports: [CommonModule],
+  standalone: false,
   templateUrl: './language-selector.component.html',
   styleUrl: './language-selector.component.css'
 })
@@ -154,6 +153,7 @@ export class LanguageSelectorComponent implements OnInit, OnDestroy {
   resetHideTimeout(): void {
     if (this.hideTimeout) {
       clearTimeout(this.hideTimeout);
+      this.hideTimeout = undefined;
     }
   }
 }

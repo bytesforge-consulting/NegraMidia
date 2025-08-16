@@ -7,7 +7,8 @@ export class PwaInstalledService {
   constructor() {}
 
   isInstalled(): boolean {
-    let nav: any = window.navigator;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const nav: any = window.navigator;
 
     if (nav.standalone) return true;
 

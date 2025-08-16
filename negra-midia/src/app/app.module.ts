@@ -28,7 +28,6 @@ import { LanguageSelectorComponent } from "./components/language-selector/langua
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    LanguageSelectorComponent,
     ServiceWorkerModule.register('ngsw-worker.js', {
         enabled: !isDevMode(),
         registrationStrategy: 'registerImmediately',
@@ -43,7 +42,8 @@ import { LanguageSelectorComponent } from "./components/language-selector/langua
     AboutComponent,
     LoadingSpinnerComponent,
     HistoryComponent,
-    FloatingIconsComponent
+    FloatingIconsComponent,
+    LanguageSelectorComponent
   ],
   providers: [
     {

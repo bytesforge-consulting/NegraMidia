@@ -4,6 +4,7 @@ import { MetaTranslationService } from './services/meta-translation.service';
 
 @Component({
   selector: 'app-root',
+  standalone: false,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
