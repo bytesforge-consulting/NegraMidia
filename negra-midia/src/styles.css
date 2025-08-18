@@ -151,25 +151,6 @@ body.scrolling > * {
   color: var(--primary-white) !important;
 }
 
-.icon-form-input {
-  display: block !important;
-}
-.icon-form-input * {
-  color: var(--primary-white) !important;
-}
-
-.dev-url:hover {
-  color: var(--primary-color) !important;
-}
-
-.ltda {
-  padding: 10px 0 10px 0 !important;
-  background-color: var(--auxiliary-lighterblack);
-}
-.ltda * {
-  color: var(--primary-white) !important;
-}
-
 .team-card {
   --angle: 45deg;
   background: radial-gradient(
@@ -228,26 +209,6 @@ body.scrolling > * {
 .nav-main,
 .nav-main-dropdown {
   background-color: var(--primary-white) !important;
-}
-
-.uk-input,
-.uk-card {
-  border-radius: 3px !important;
-}
-
-.uk-input:focus,
-.uk-select:focus,
-.uk-textarea:focus {
-  border-color: var(--primary-color) !important;
-}
-
-.uk-input.success{
-  border-color: var(--primary-color) !important;
-}
-
-.uk-input.error{
-  animation: pulseError 2s infinite;
-  border-color: rgb(126, 18, 18) !important;
 }
 
 .uk-dotnav > .uk-active > * {

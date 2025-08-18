@@ -21,7 +21,7 @@ describe('FooterComponent', () => {
     const mockUIkit = {
       notification: jest.fn()
     };
-    
+
     // Safely set up UIkit mock
     if (!(globalThis as any).UIkit) {
       Object.defineProperty(globalThis, 'UIkit', {
@@ -80,7 +80,7 @@ describe('FooterComponent', () => {
 
   it('should initialize form with required validators', () => {
     fixture.detectChanges();
-    
+
     expect(component.notification.get('name')?.hasError('required')).toBe(true);
     expect(component.notification.get('email')?.hasError('required')).toBe(true);
     expect(component.notification.get('body')?.hasError('required')).toBe(true);
@@ -102,7 +102,7 @@ describe('FooterComponent', () => {
     };
 
     (localStorage.getItem as jest.Mock).mockReturnValue(JSON.stringify(savedData));
-    
+
     component.LoadExistingContactForm();
 
     expect(component.notification.value).toEqual(savedData);
@@ -115,22 +115,23 @@ describe('FooterComponent', () => {
 
   it('should handle form validation classes', () => {
     const nameControl = component.notification.get('name');
-    
+
     // Pristine state
     expect(component.getFormValidationClass('name')).toBe('');
-    
-    // Mark as touched and invalid
+
+    // Mark as touched and invalid (markAsDirty is needed to remove pristine state)
     nameControl?.markAsTouched();
+    nameControl?.markAsDirty();
     nameControl?.setValue('');
     nameControl?.updateValueAndValidity();
     fixture.detectChanges();
     expect(component.getFormValidationClass('name')).toBe('error');
-    
+
     // Valid state
     nameControl?.setValue('Valid Name');
     nameControl?.updateValueAndValidity();
     fixture.detectChanges();
-    expect(component.getFormValidationClass('name')).toBe('');
+    expect(component.getFormValidationClass('name')).toBe('success');
   });
 
   it('should detect mobile devices correctly', () => {
@@ -139,23 +140,23 @@ describe('FooterComponent', () => {
       value: 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X)',
       configurable: true
     });
-    
+
     expect(component.isMobile()).toBe(true);
-    
+
     // Mock desktop user agent
     Object.defineProperty(navigator, 'userAgent', {
       value: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
       configurable: true
     });
-    
+
     expect(component.isMobile()).toBe(false);
   });
 
   it('should show UIkit notification for non-PWA users', () => {
     mockPwaService.isInstalled.mockReturnValue(false);
-    
+
     component.notify();
-    
+
     expect((globalThis as any).UIkit.notification).toHaveBeenCalledWith({
       message: "<span uk-icon='icon: check'></span> Mensagem enviada com sucesso.",
       status: 'primary',
@@ -165,11 +166,11 @@ describe('FooterComponent', () => {
 
   it('should handle phone field validation', () => {
     const phoneControl = component.notification.get('phone');
-    
+
     // Valid phone format
     phoneControl?.setValue('(11)99999-9999');
     expect(phoneControl?.valid).toBe(true);
-    
+
     // Empty phone (should be valid due to PatternIfNotNull)
     phoneControl?.setValue('');
     expect(phoneControl?.valid).toBe(true);

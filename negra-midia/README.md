@@ -42,6 +42,118 @@ Seu objetivo é informar os visitantes dos serviços oferecidos pela Negra Mídi
 npm install
 ```
 
+### Configuração de Variáveis de Ambiente
+
+O projeto utiliza variáveis de ambiente para configurações flexíveis entre diferentes ambientes (desenvolvimento, produção, staging).
+
+#### Setup Inicial das Variáveis
+
+1. **Copiar arquivo de exemplo:**
+
+```bash
+npm run env:copy
+# ou manualmente:
+cp .env.example .env
+```
+
+2. **Configurar suas variáveis:**
+Edite o arquivo `.env` com suas configurações específicas:
+
+```bash
+# Exemplo de configuração local
+NG_APP_API_URL=http://localhost:8787
+NG_APP_DEBUG=true
+NG_APP_ENVIRONMENT=development
+```
+
+#### Variáveis Principais
+
+| Variável | Descrição | Padrão (Prod) | Padrão (Dev) |
+|----------|-----------|---------------|--------------|
+| `NG_APP_API_URL` | URL da API principal | `https://negramidia.net/api/notify` | `http://127.0.0.1:8787` |
+| `NG_APP_API_TIMEOUT` | Timeout das requisições (ms) | `30000` | `30000` |
+| `NG_APP_DEBUG` | Habilita logs de debug | `false` | `true` |
+| `NG_APP_VERSION` | Versão da aplicação | `2.0.0` | `dev` |
+| `NG_APP_ENVIRONMENT` | Ambiente atual | `production` | `development` |
+
+#### Como Usar no Código
+
+```typescript
+import { environment } from '../environments/environment';
+
+// Verificar se debug está habilitado
+if (environment.DEBUG_MODE) {
+  console.log('Debug: Dados da API:', response);
+}
+
+// Usar API configurável
+this.httpClient.post(environment.APIURL, data);
+```
+
+#### Scripts com Variáveis de Ambiente
+
+```bash
+# Desenvolvimento normal
+npm start
+
+# Com variável específica
+NG_APP_DEBUG=true npm start
+
+# Com API de staging
+NG_APP_API_URL=https://staging.negramidia.net/api npm start
+
+# Build com variáveis específicas
+NG_APP_ENVIRONMENT=staging npm run build
+```
+
+#### Cloudflare Pages - Configuração
+
+No painel do Cloudflare Pages > **Settings > Environment Variables**:
+
+**Production:**
+
+```env
+NG_APP_API_URL=https://negramidia.net/api/notify
+NG_APP_DEBUG=false
+NG_APP_ENVIRONMENT=production
+NG_APP_VERSION=2.0.0
+```
+
+**Preview (branches):**
+
+```env
+NG_APP_API_URL=https://staging.negramidia.net/api/notify
+NG_APP_DEBUG=true
+NG_APP_ENVIRONMENT=preview
+NG_APP_VERSION=preview
+```
+
+#### Segurança das Variáveis
+
+- ✅ **NUNCA** commite o arquivo `.env` no Git
+- ✅ Use `.env.example` como template
+- ✅ Mantenha variáveis sensíveis apenas no Cloudflare
+- ✅ Use prefixo `NG_APP_` para todas as variáveis
+- ❌ **NÃO** exponha secrets/keys no frontend
+
+#### Troubleshooting - Variáveis de Ambiente
+
+**Variável não está sendo carregada:**
+
+1. Verifique se tem o prefixo `NG_APP_`
+2. Reinicie o servidor de desenvolvimento (`npm start`)
+3. Verifique se o arquivo `.env` existe e está configurado corretamente
+
+**Build falha no Cloudflare:**
+
+1. Verifique se todas as variáveis estão configuradas no painel do Cloudflare
+2. Use valores padrão nos environment files como fallback
+3. Teste o build localmente primeiro com `npm run build:prod`
+
+**Problemas de sincronização:**
+
+- Se o `package-lock.json` estiver dessincronizado, execute `npm install` localmente e faça commit das mudanças
+
 ### Servidor de Desenvolvimento
 
 Para iniciar o servidor de desenvolvimento em português (idioma padrão):

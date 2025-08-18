@@ -82,7 +82,7 @@ export class FooterComponent implements OnInit {
     const contact = this.notification.value as AppNotification;
 
     this.httpClient
-        .post(`${environment.APIURL}`, contact, {
+        .post(`${environment.APIURL}/notification`, contact, {
           responseType: 'text',
         })
         .subscribe({

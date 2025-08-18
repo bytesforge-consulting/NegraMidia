@@ -1,3 +1,3 @@
 export const environment = {
-  APIURL: 'https://negramidia.net/api/notify'
+    APIURL: 'https://negra-midia-api.hedgarbezerra35.workers.dev'
 };
