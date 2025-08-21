@@ -10,7 +10,7 @@ Seu objetivo é informar os visitantes dos serviços oferecidos pela Negra Mídi
 
 ```
 ├── public/                  # Arquivos públicos estáticos
-│   ├── _redirects           # Regras de redirecionamento para SPA
+
 │   ├── content/             # Conteúdo estático (imagens, etc.)
 │   ├── css/                 # Arquivos CSS (UIKit)
 │   ├── js/                  # Scripts JavaScript
@@ -253,16 +253,9 @@ Os artefatos de build serão armazenados no diretório `dist/negra-midia/browser
    - **Diretório de saída**: `dist/negra-midia/browser`
    - **Ramificação de produção**: `main`
 
-### Arquivo _redirects
+### Configuração de Redirecionamentos
 
-O arquivo `_redirects` localizado em `public/_redirects` é essencial para o funcionamento correto da SPA em ambientes de hospedagem como a Cloudflare Pages. Este arquivo contém regras de redirecionamento que garantem que todas as rotas da aplicação sejam direcionadas corretamente para o arquivo index.html apropriado, permitindo que o Angular Router funcione adequadamente.
-
-```
-# Redirecionamentos para SPA
-/  /pt/  301
-```
-
-Estas regras garantem que:
+O projeto utiliza configuração no `nginx.conf` para garantir o funcionamento correto da SPA. As regras garantem que:
 
 - Todas as rotas na raiz sejam direcionadas para o index.html em português
 - Todas as rotas começando com /en/ sejam direcionadas para o index.html em inglês
@@ -287,8 +280,8 @@ Além disso, você pode configurar a variável de ambiente `APIURL` para apontar
 O processo de build gera os arquivos no diretório `dist/negra-midia/browser`. Esta estrutura é importante para o deploy na Cloudflare Pages, pois:
 
 - O diretório raiz contém os arquivos para o idioma português
-- O subdiretório `/en` contém os arquivos para o idioma inglês
-- O subdiretório `/es` contém os arquivos para o idioma espanhol
+- O subdiretório `/en/` contém os arquivos para o idioma inglês
+- O subdiretório `/es/` contém os arquivos para o idioma espanhol
 
 ### Cache e Service Worker
 
@@ -352,7 +345,7 @@ Se o build falhar na Cloudflare com erros relacionados à versão do Node.js, ve
 
 ### Problemas com Redirecionamentos
 
-Se as rotas não estiverem funcionando corretamente após o deploy, verifique se o arquivo `_redirects` está sendo incluído corretamente no build. O arquivo deve estar presente no diretório `public` e ser copiado para o diretório de saída durante o build.
+Se as rotas não estiverem funcionando corretamente após o deploy na Cloudflare Pages, verifique se as configurações de redirecionamento estão corretas no painel da Cloudflare. Para SPAs Angular, pode ser necessário configurar regras de redirecionamento diretamente no painel da Cloudflare Pages.
 
 ### Variáveis de Ambiente não Aplicadas
 
@@ -433,7 +426,7 @@ Para configurar redirecionamentos baseados no país de origem do visitante, siga
 - **URL de Destino**:
 
 ```
-https://negramidia.net/pt
+https://negramidia.net/pt/
 ```
 
 ### 2. Regra para Português
@@ -450,7 +443,7 @@ https://negramidia.net/pt
 - **URL de Destino**:
 
 ```
-https://negramidia.net/pt
+https://negramidia.net/pt/
 ```
 
 ### 3. Regra para Espanhol
@@ -467,7 +460,7 @@ https://negramidia.net/pt
 - **URL de Destino**:
 
 ```
-https://negramidia.net/es
+https://negramidia.net/es/
 ```
 
 ### 4. Regra para Inglês (Menor Prioridade)
@@ -484,7 +477,7 @@ https://negramidia.net/es
 - **URL de Destino**:
 
 ```
-https://negramidia.net/en
+https://negramidia.net/en/
 ```
 ![image.png](/doc/cloudflare-redirect-rules.png)
 **Importante**: A ordem das regras é crucial. Elas devem ser configuradas na ordem exata listada acima (Raiz → Português → Espanhol → Inglês) para garantir o funcionamento correto. A condição `http.request.uri.path eq "/"` garante que os redirecionamentos só ocorram quando o usuário acessar a raiz do site, preservando qualquer caminho já definido.
