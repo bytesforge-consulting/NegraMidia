@@ -4,7 +4,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AppNotification } from '../../interfaces/notification';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
-import { debounceTime, distinctUntilChanged, first } from 'rxjs';
+import { debounceTime, distinctUntilChanged } from 'rxjs';
 import { PwaInstalledService } from '../../services/pwa-installed.service';
 import { CustomValidators } from '../../helpers/custom-validators';
 declare let UIkit: any;
@@ -81,25 +81,55 @@ export class FooterComponent implements OnInit {
   submitContact(){
     const contact = this.notification.value as AppNotification;
 
+    // Basic Auth credentials from environment variables
+    const username = environment.API_USER;
+    const password = environment.API_PASSWORD;
+    const credentials = btoa(`${username}:${password}`);
+
     this.httpClient
         .post(`${environment.APIURL}/notifications`, contact, {
-          responseType: 'text',
+          headers: {
+            'Authorization': `Basic ${credentials}`,
+            'Content-Type': 'application/json'
+          },
+          responseType: 'json',
         })
         .subscribe({
-          next: (res) => {
-            this.notify();
-            this.notification.reset();
-            localStorage.removeItem(this.MESSAGE_STOREKEY);
-            localStorage.removeItem(this.MESSAGE_SENT);
+          next: (response: any) => {
+            if (response.success) {
+              this.notify();
+              this.notification.reset();
+              localStorage.removeItem(this.MESSAGE_STOREKEY);
+              localStorage.removeItem(this.MESSAGE_SENT);
+            } else {
+              this.handleError(response.error);
+            }
           },
-          error: (err) =>
-            UIkit.notification({
-              message:
-                "<span uk-icon='icon: warning'></span> Houve um erro ao enviar sua mensagem",
-              status: 'danger',
-              pos: 'bottom-right',
-            }),
+          error: (error) => {
+            this.handleError(error.error || 'Erro desconhecido ao enviar mensagem');
+          },
         });
+  }
+
+  private handleError(error: any) {
+    let errorMessage = 'Houve um erro ao enviar sua mensagem';
+
+    if (typeof error === 'string') {
+      errorMessage = error;
+    } else if (error && typeof error === 'object') {
+      // Handle specific error cases
+      if (error.includes('Todos os campos são obrigatórios')) {
+        errorMessage = 'Por favor, preencha todos os campos obrigatórios';
+      } else {
+        errorMessage = 'Erro interno do servidor. Tente novamente mais tarde.';
+      }
+    }
+
+    UIkit.notification({
+      message: `<span uk-icon='icon: warning'></span> ${errorMessage}`,
+      status: 'danger',
+      pos: 'bottom-right',
+    });
   }
 
   notify() {
@@ -117,7 +147,7 @@ export class FooterComponent implements OnInit {
         Notification.requestPermission().then((permission) => {
 
           if (permission === 'granted') {
-            const notification = new Notification('Notificação - Negra Mídia', this.notificationOptions);
+            new Notification('Notificação - Negra Mídia', this.notificationOptions);
           }
           else if (permission === 'denied') {
             UIkit.notification({
@@ -130,7 +160,7 @@ export class FooterComponent implements OnInit {
         });
       }
         else if(Notification.permission === 'granted') {
-          const notification = new Notification('Notificação - Negra Mídia', this.notificationOptions);
+          new Notification('Notificação - Negra Mídia', this.notificationOptions);
         }
     }
     else {
