@@ -667,6 +667,55 @@
           <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="notificationSuccess" datatype="html">
+        <source>Mensagem enviada com sucesso.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/notification.service.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notificationError" datatype="html">
+        <source>Houve um erro ao enviar sua mensagem</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/notification.service.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notificationValidationRequired" datatype="html">
+        <source>Por favor, preencha todos os campos obrigatórios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/notification.service.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notificationValidationServer" datatype="html">
+        <source>Erro interno do servidor. Tente novamente mais tarde.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/notification.service.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notificationOffline" datatype="html">
+        <source>Parece estar sem conexão, assim que reestabelecida a mensagem será enviada.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/notification.service.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notificationTitle" datatype="html">
+        <source>Notificação - Negra Mídia</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/notification.service.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notificationUnknown" datatype="html">
+        <source>Erro desconhecido ao enviar mensagem</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/notification.service.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

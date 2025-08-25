@@ -55,7 +55,7 @@
         <source>Contatos</source>
         <target>Contactos</target>
       </trans-unit>
-      
+
       <!-- Language Selector Component -->
       <trans-unit id="languageSelectorLabel" datatype="html">
         <source>Seletor de idioma</source>
@@ -483,6 +483,36 @@
       <trans-unit id="floatingWhatsappAriaLabel" datatype="html">
         <source>Converse conosco pelo WhatsApp</source>
         <target>Chatea con nosotros por WhatsApp</target>
+      </trans-unit>
+
+      <!-- Notification Messages -->
+      <trans-unit id="notificationSuccess" datatype="html">
+        <source>Mensagem enviada com sucesso.</source>
+        <target>Mensaje enviado con éxito.</target>
+      </trans-unit>
+      <trans-unit id="notificationError" datatype="html">
+        <source>Houve um erro ao enviar sua mensagem</source>
+        <target>Hubo un error al enviar tu mensaje</target>
+      </trans-unit>
+      <trans-unit id="notificationValidationRequired" datatype="html">
+        <source>Por favor, preencha todos os campos obrigatórios</source>
+        <target>Por favor, completa todos los campos obligatorios</target>
+      </trans-unit>
+      <trans-unit id="notificationValidationServer" datatype="html">
+        <source>Erro interno do servidor. Tente novamente mais tarde.</source>
+        <target>Error interno del servidor. Inténtalo de nuevo más tarde.</target>
+      </trans-unit>
+      <trans-unit id="notificationOffline" datatype="html">
+        <source>Parece estar sem conexão, assim que reestabelecida a mensagem será enviada.</source>
+        <target>Parece que no tienes conexión, el mensaje se enviará cuando se restablezca la conexión.</target>
+      </trans-unit>
+      <trans-unit id="notificationTitle" datatype="html">
+        <source>Notificação - Negra Mídia</source>
+        <target>Notificación - Negra Mídia</target>
+      </trans-unit>
+      <trans-unit id="notificationUnknown" datatype="html">
+        <source>Erro desconhecido ao enviar mensagem</source>
+        <target>Error desconocido al enviar mensaje</target>
       </trans-unit>
     </body>
   </file>
