@@ -53,7 +53,7 @@
         <source>Contatos</source>
         <target>Contact</target>
       </trans-unit>
-      
+
       <!-- Language Selector Component -->
       <trans-unit id="languageSelectorLabel" datatype="html">
         <source>Seletor de idioma</source>
@@ -480,6 +480,36 @@
       <trans-unit id="floatingWhatsappAriaLabel" datatype="html">
         <source>Converse conosco pelo WhatsApp</source>
         <target>Chat with us on WhatsApp</target>
+      </trans-unit>
+
+      <!-- Notification Messages -->
+      <trans-unit id="notificationSuccess" datatype="html">
+        <source>Mensagem enviada com sucesso.</source>
+        <target>Message sent successfully.</target>
+      </trans-unit>
+      <trans-unit id="notificationError" datatype="html">
+        <source>Houve um erro ao enviar sua mensagem</source>
+        <target>There was an error sending your message</target>
+      </trans-unit>
+      <trans-unit id="notificationValidationRequired" datatype="html">
+        <source>Por favor, preencha todos os campos obrigatórios</source>
+        <target>Please fill in all required fields</target>
+      </trans-unit>
+      <trans-unit id="notificationValidationServer" datatype="html">
+        <source>Erro interno do servidor. Tente novamente mais tarde.</source>
+        <target>Internal server error. Please try again later.</target>
+      </trans-unit>
+      <trans-unit id="notificationOffline" datatype="html">
+        <source>Parece estar sem conexão, assim que reestabelecida a mensagem será enviada.</source>
+        <target>It seems you are offline, the message will be sent once the connection is restored.</target>
+      </trans-unit>
+      <trans-unit id="notificationTitle" datatype="html">
+        <source>Notificação - Negra Mídia</source>
+        <target>Notification - Negra Mídia</target>
+      </trans-unit>
+      <trans-unit id="notificationUnknown" datatype="html">
+        <source>Erro desconhecido ao enviar mensagem</source>
+        <target>Unknown error sending message</target>
       </trans-unit>
     </body>
   </file>

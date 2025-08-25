@@ -12,6 +12,7 @@
     "start:es": "ng serve --configuration=es",
     "start:all": "concurrently \"npm run start -- --port=4200\" \"npm run start:en -- --port=4201\" \"npm run start:es -- --port=4202\"",
     "start:prod": "npm run build && docker-compose up nginx --force-recreate",
+    "nginx": "docker-compose up nginx --force-recreate",
     "build": "ng build --localize && npm run postbuild",
     "build:pt": "ng build --configuration=production && npm run postbuild",
     "build:en": "ng build --configuration=production,en && npm run postbuild",

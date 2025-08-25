@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer.component';
 import { ConnectionStatusService } from '../../services/connection-status.service';
 import { PwaInstalledService } from '../../services/pwa-installed.service';
+import { NotificationService } from '../../services/notification.service';
 import { BehaviorSubject } from 'rxjs';
 
 // Simple UIkit mock - will be set up in beforeEach
@@ -45,6 +46,18 @@ describe('FooterComponent', () => {
       isInstalled: jest.fn().mockReturnValue(false)
     } as any;
 
+    const mockNotificationService = {
+      showSuccess: jest.fn(),
+      showError: jest.fn(),
+      showWarning: jest.fn(),
+      showOfflineNotification: jest.fn(),
+      showValidationError: jest.fn(),
+      showBrowserNotification: jest.fn(),
+      requestNotificationPermission: jest.fn(),
+      isNotificationSupported: jest.fn(),
+      isNotificationPermissionGranted: jest.fn()
+    };
+
     await TestBed.configureTestingModule({
       declarations: [FooterComponent],
       imports: [
@@ -53,7 +66,8 @@ describe('FooterComponent', () => {
       ],
       providers: [
         { provide: ConnectionStatusService, useValue: mockConnectionService },
-        { provide: PwaInstalledService, useValue: mockPwaService }
+        { provide: PwaInstalledService, useValue: mockPwaService },
+        { provide: NotificationService, useValue: mockNotificationService }
       ]
     }).compileComponents();
 
@@ -152,16 +166,13 @@ describe('FooterComponent', () => {
     expect(component.isMobile()).toBe(false);
   });
 
-  it('should show UIkit notification for non-PWA users', () => {
+  it('should show success notification for non-PWA users', async () => {
     mockPwaService.isInstalled.mockReturnValue(false);
+    const notificationService = TestBed.inject(NotificationService);
 
-    component.notify();
+    await component.notify();
 
-    expect((globalThis as any).UIkit.notification).toHaveBeenCalledWith({
-      message: "<span uk-icon='icon: check'></span> Mensagem enviada com sucesso.",
-      status: 'primary',
-      pos: 'bottom-right'
-    });
+    expect(notificationService.showSuccess).toHaveBeenCalled();
   });
 
   it('should handle phone field validation', () => {

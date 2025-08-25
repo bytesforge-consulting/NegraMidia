@@ -7,7 +7,7 @@ import { environment } from '../../../environments/environment';
 import { debounceTime, distinctUntilChanged } from 'rxjs';
 import { PwaInstalledService } from '../../services/pwa-installed.service';
 import { CustomValidators } from '../../helpers/custom-validators';
-declare let UIkit: any;
+import { NotificationService } from '../../services/notification.service';
 
 @Component({
   selector: 'app-footer',
@@ -16,13 +16,17 @@ declare let UIkit: any;
   styleUrl: './footer.component.css',
 })
 export class FooterComponent implements OnInit {
-  private readonly notificationOptions = { body: 'Mensagem enviada com sucesso.', icon: '/icons/icon-128x128.png', silent: true, lang: 'pt-BR'};
   private readonly MESSAGE_STOREKEY: string = 'SAVEDMESSAGE';
   private readonly MESSAGE_SENT: string = 'SAVEDMESSAGESENT'
 
   protected readonly CURRENTYEAR: number = new Date().getFullYear();
 
-  constructor(private httpClient: HttpClient, private connection: ConnectionStatusService, private installedVerifier: PwaInstalledService) {}
+  constructor(
+    private httpClient: HttpClient,
+    private connection: ConnectionStatusService,
+    private installedVerifier: PwaInstalledService,
+    private notificationService: NotificationService
+  ) {}
 
   notification = new FormGroup({
     name: new FormControl('', [Validators.required]),
@@ -33,18 +37,12 @@ export class FooterComponent implements OnInit {
   });
 
   onContactSubmit() {
-
     if(this.connection.isOnline){
       this.submitContact();
     }
     else{
       localStorage.setItem(this.MESSAGE_SENT, '1');
-      UIkit.notification({
-        message:
-          "<span uk-icon='icon: warning'></span> Parece estar sem conexão, assim que reestabelecida a mensagem será enviada.",
-        status: 'primary',
-        pos: 'bottom-right',
-      });
+      this.notificationService.showOfflineNotification();
     }
   }
 
@@ -112,64 +110,29 @@ export class FooterComponent implements OnInit {
   }
 
   private handleError(error: any) {
-    let errorMessage = 'Houve um erro ao enviar sua mensagem';
-
-    if (typeof error === 'string') {
-      errorMessage = error;
-    } else if (error && typeof error === 'object') {
-      // Handle specific error cases
-      if (error.includes('Todos os campos são obrigatórios')) {
-        errorMessage = 'Por favor, preencha todos os campos obrigatórios';
-      } else {
-        errorMessage = 'Erro interno do servidor. Tente novamente mais tarde.';
-      }
-    }
-
-    UIkit.notification({
-      message: `<span uk-icon='icon: warning'></span> ${errorMessage}`,
-      status: 'danger',
-      pos: 'bottom-right',
-    });
+    this.notificationService.showValidationError(error);
   }
 
-  notify() {
+  async notify() {
     if(!this.installedVerifier.isInstalled()){
-      UIkit.notification({
-        message:
-          "<span uk-icon='icon: check'></span> Mensagem enviada com sucesso.",
-        status: 'primary',
-        pos: 'bottom-right',
-      });
-
+      this.notificationService.showSuccess();
     }
-    else if ('Notification' in window && !this.isMobile()){
+    else if (this.notificationService.isNotificationSupported() && !this.isMobile()){
       if(Notification.permission === 'default') {
-        Notification.requestPermission().then((permission) => {
+        const permissionGranted = await this.notificationService.requestNotificationPermission();
 
-          if (permission === 'granted') {
-            new Notification('Notificação - Negra Mídia', this.notificationOptions);
-          }
-          else if (permission === 'denied') {
-            UIkit.notification({
-              message:
-                "<span uk-icon='icon: check'></span> Mensagem enviada com sucesso.",
-              status: 'primary',
-              pos: 'bottom-right',
-            });
-          }
-        });
-      }
-        else if(Notification.permission === 'granted') {
-          new Notification('Notificação - Negra Mídia', this.notificationOptions);
+        if (permissionGranted) {
+          this.notificationService.showBrowserNotification('notification.title', 'notification.success');
+        } else {
+          this.notificationService.showSuccess();
         }
+      }
+      else if(this.notificationService.isNotificationPermissionGranted()) {
+        this.notificationService.showBrowserNotification('notification.title', 'notification.success');
+      }
     }
     else {
-      UIkit.notification({
-        message:
-          "<span uk-icon='icon: check'></span> Mensagem enviada com sucesso.",
-        status: 'primary',
-        pos: 'bottom-right',
-      });
+      this.notificationService.showSuccess();
     }
   }
 
