@@ -373,7 +373,7 @@ O arquivo `angular.json` foi ajustado para ignorar completamente a pasta `public
 Outros arquivos estáticos (como favicon, manifest, fontes, CSS e JS) continuam sendo servidos localmente pela pasta `public`.
 
 ## Como adicionar regras de redirecionamento na Cloudflare
-
+![alt text](./doc/cloudflare-redirect-page.png)
 1. Acesse o painel da Cloudflare e selecione o domínio desejado.
 2. No menu lateral, clique em **Regras** > **Regras de redirecionamento**.
 3. Clique em **Criar regra**.
